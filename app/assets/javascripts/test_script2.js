@@ -23,13 +23,15 @@
 		if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
   		loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', function(){
   		  jQuery191 = jQuery.noConflict(true);
+  		  console.log("this loop2")
   		  myAppJavaScript(jQuery191);
   		});
 		} else {
+		 console.log("this loop1")	
  		 myAppJavaScript(jQuery);
 		}
 
-
+		console.log('Your app is using jQuery version '+jQuery.fn.jquery)
 		console.log("1123456 This is loaded and work!");
 		console.log("1123456 This is loaded and work!");
 		console.log("1123456 This is loaded and work!");
