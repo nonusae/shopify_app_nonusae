@@ -1,16 +1,29 @@
-<div class="row">
-	<div class="column small-12">
+<div class="container">
 
-		<h2>Dashboard</h2>
+	<div class="row">
+		<div class="column small-12">
 
-		<h3>Products</h3>
 
-		<ul>
-			<% @products.each do |product| %>
-				<li><%= product.title %></li>
-			<% end %>
-		</ul>
 
-		<%= @asset.value.inspect %>	
+			<%= button_to 'update', update_tags_path, method: :get %>
+
+			<h2>TAG</h2>
+			<%= form_for :tag, url: update_multiple_tags_path, :html => { :method => :put } do |f| %>
+				<% @tag.each do |tag| %>
+				<div class="row">
+					<%= hidden_field_tag "tag_ids[]", tag.id %>
+					<span class="col-md-6">
+						<%= tag.title %>
+					</span>   
+					<span class= "col-md-6">
+						<%= f.text_field :thai_title , value: "" %>
+					</span>
+				</div>	
+				<% end %>	
+				<%= f.submit %>
+			<% end %>	
+
+
+		</div>
 	</div>
 </div>
