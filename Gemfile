@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
+gem 'rack-cors', '~> 0.3.1'
 
 
 
@@ -34,7 +35,8 @@ group :development do
 end
 
 group :production do
-
+	gem 'puma'
+	gem 'pg'
 	gem 'rails_12factor'
 end
 
