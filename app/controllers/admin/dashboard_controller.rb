@@ -1,9 +1,10 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
+  before_action :check_or_create_shopify_shop
+
   def index
-    @products = ShopifyAPI::Product.find(:all, :params => {:limit => 10})
- 	@tag = Tag.all  
+ 	@tag = @shop.tags.all  
   end
 
   def update_tags
@@ -14,6 +15,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     	unless Tag.find_by_title(tag)
     		unless tag == ""
     			t = Tag.new
+    			t.shopify_shop = @shop
     			t.title = tag
     			t.thai_title = ""
     			t.save
@@ -22,4 +24,15 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     end
     redirect_to root_path
   end
+
+  def check_or_create_shopify_shop
+  	  	shop_domain = ShopifyAPI::Shop.current.domain
+  	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+  	  		shop = ShopifyShop.new
+  	  		shop.shop_domain = shop_domain
+  	  		shop.save
+  	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
+  	  	end
+  end
+
 end

@@ -1,4 +1,6 @@
-class TagsController < ApplicationController
+class TagsController < ShopifyApp::AuthenticatedController
+
+before_action :check_or_create_shopify_shop
 
 	def update_multiple
 	  @tags = Tag.find(params[:tag_ids])
@@ -29,5 +31,19 @@ class TagsController < ApplicationController
 			format.json { render :json => @tag }
 		end 		
 	end
+
+private
+
+  def check_or_create_shopify_shop
+  	puts "1111212321321123"
+  	  	shop_domain = ShopifyAPI::Shop.current.domain
+  	  	puts shop_domain
+  	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+  	  		shop = ShopifyShop.new
+  	  		shop.shop_domain = shop_domain
+  	  		shop.save
+  	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
+  	  	end
+  end	
 
 end
