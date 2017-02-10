@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :tags do
   	collection do 
-  		put 'update_multiple'
+  		post 'update_multiple'
+  		get 'get_all_translated_tag'
+  		get 'get_translated_tag'
   	end
   end
 

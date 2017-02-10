@@ -7,7 +7,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end
 
   def update_tags
-  	tag_raw = HTTParty.get('http://nonusae-app.myshopify.com/search?view=tags').body
+  	shop_domain = ShopifyAPI::Shop.current.domain
+  	tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
     tag_from_soruce = JSON.parse(tag_raw)
     tag_from_soruce.each do |tag|
     	unless Tag.find_by_title(tag)
