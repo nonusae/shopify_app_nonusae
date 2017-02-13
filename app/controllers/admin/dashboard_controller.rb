@@ -28,6 +28,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def check_or_create_shopify_shop
   	  	shop_domain = ShopifyAPI::Shop.current.domain
   	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+          ShopifyAPI::Asset.create(key: 'template/search.tags.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
   	  		shop = ShopifyShop.new
   	  		shop.shop_domain = shop_domain
   	  		shop.save
