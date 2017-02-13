@@ -40,7 +40,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
     rescue
       asset = nil
-      new_asset = ShopifyAPI::Asset.create(key: 'templates/search2.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
+      new_asset = ShopifyAPI::Asset.create(key: 'templates/search.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
     end   
   end
 
