@@ -1,7 +1,7 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
-  before_action :check_or_create_shopify_shop
+  before_action :check_or_create_shopify_shop, :asset_check
 
   def index
  	@tag = @shop.tags.all  
@@ -28,12 +28,20 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def check_or_create_shopify_shop
   	  	shop_domain = ShopifyAPI::Shop.current.domain
   	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
-          ShopifyAPI::Asset.create(key: 'template/search.tags.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
   	  		shop = ShopifyShop.new
   	  		shop.shop_domain = shop_domain
   	  		shop.save
   	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
   	  	end
+  end
+
+  def asset_check
+    begin
+      asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
+    rescue
+      asset = nil
+      new_asset = ShopifyAPI::Asset.create(key: 'templates/search2.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
+    end   
   end
 
 end
