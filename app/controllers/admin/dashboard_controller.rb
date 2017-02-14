@@ -19,7 +19,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   	tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
     tag_from_soruce = JSON.parse(tag_raw)
     tag_from_soruce.each do |tag|
-    	unless Tag.find_by_title(tag)
+    	unless @shop.tags.find_by_title(tag)
     		unless tag == ""
     			t = Tag.new
     			t.shopify_shop = @shop
