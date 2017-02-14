@@ -4,11 +4,18 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check
 
   def index
- 	@tag = @shop.tags.all  
+  if @shop.present?  
+ 	  @tag = @shop.tags.all
+  else
+    puts "shop not present"
+    @tag = []
+  end
+
   end
 
   def update_tags
-  	shop_domain = ShopifyAPI::Shop.current.domain
+    shop_domain  = params[:shop]
+    @shop = ShopifyShop.find_by_shop_domain(shop_domain)
   	tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
     tag_from_soruce = JSON.parse(tag_raw)
     tag_from_soruce.each do |tag|
@@ -22,17 +29,25 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     		end
     	end
     end
-    redirect_to root_path
+
+    redirect_to root_path(:shop => shop_domain)
   end
 
   def check_or_create_shopify_shop
-  	  	shop_domain = ShopifyAPI::Shop.current.domain
-  	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
-  	  		shop = ShopifyShop.new
-  	  		shop.shop_domain = shop_domain
-  	  		shop.save
-  	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
-  	  	end
+      if params[:shop].present?
+  	  	shop_domain = params[:shop]
+        puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
+    	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+    	  		if shop_domain.present?
+              shop = ShopifyShop.new
+      	  		shop.shop_domain = shop_domain
+      	  		shop.save
+      	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
+            end
+    	  	end
+      else
+        puts "SHOP IS NOT PRESENT THIS ROUND"
+      end
   end
 
   def asset_check
