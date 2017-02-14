@@ -23,6 +23,7 @@ class TagsController < ApplicationController
 		@tag= []
 		t.each do |tt|
 			tag = Tag.find_by_title(tt)
+			tag = "" unless tag.present?
 			@tag << tag
 		end
 		puts params[:tags].split(",")
