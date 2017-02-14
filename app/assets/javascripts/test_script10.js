@@ -52,7 +52,7 @@
 				for (i=0; i < data.length; i++){
 					title = data[i].title
 					t_title = data[i].thai_title
-					if t_title.trim != "" {
+					if ((t_title.trim) != "") {
 						$("#tag-"+(i+1)).children().text(t_title)
 					}
 				}
