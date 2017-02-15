@@ -32,6 +32,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     database_tags = @shop.tags.map(&:title)
     database_tags.each do |d_tag|
       unless tag_from_soruce.include?(d_tag)
+        puts "D TAG is #{d_tag}"
         tag = @shop.tags.find_by_title(d_tag)
         tag.destroy
       end
