@@ -28,6 +28,15 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     			t.save
     		end
     	end
+
+    database_tags = @shop.tags.map(&:title)
+    database_tags.each do |d_tag|
+      unless tag_from_soruce.include?(d_tag)
+        tag = @shop.tags.find_by_title(d_tag)
+        tag.destroy
+      end
+    end
+
     end
 
     redirect_to root_path(:shop => shop_domain)
