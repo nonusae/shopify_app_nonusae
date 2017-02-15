@@ -36,7 +36,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       unless tag_from_soruce.include?(d_tag)
         puts "D TAG is #{d_tag}"
         tag = @shop.tags.find_by_title(d_tag)
-        tag.destroy
+        tag.destroy if tag.present?
       end
     end
 
