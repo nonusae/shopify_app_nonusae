@@ -30,6 +30,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     	end
 
     database_tags = @shop.tags.map(&:title)
+    puts "DATABASE TAGS = #{database_tags}"
+    puts "TAG FROM SOURCE = #{tag_from_soruce}"
     database_tags.each do |d_tag|
       unless tag_from_soruce.include?(d_tag)
         puts "D TAG is #{d_tag}"
