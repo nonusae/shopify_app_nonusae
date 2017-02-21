@@ -1,49 +1,77 @@
 <div class="container">
+	<div class= "row col-md-12">
+		<div class= "col-md-12">
+			<% if @shop %>	
+			<div class= "text-right">	
+				<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-danger" %>	
+			</div>
+			<% end %>
+
+		<%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
+			<% if @shop %>
+				<br>	
+				<div class= "text-right">
+					<%= submit_tag "Update tags" , class: "btn btn-primary update-button", disabled:"disabled" %>
+				</div>
+			<% end %>				
+
+		</div>				
+	</div>
 
 	<div class="row">
 		<div class="column small-12">
 
-			<% if @shop %>
-				<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain} %>
-			<% end %>
 
-			<h2>TAG</h2>
 			<div class= "row col-md-12">
+				<h3>Tags List</h3>
 				Tag number: <%= @tag.count %>	
 			</div>
-			<div class="row">
-				<span class="col-md-6">
-					<h3>Original tag</h3>
-				</span>
-				<span class="col-md-6">
-					<h3>Translated Tag</h3>
-				</span>
+			<br>
+			<br>
+
+			<div class="row col-md-12">
+			<table class="table table-bordered ">
+			<thead>
+			<tr>
+				<!-- <span class="col-md-6"> -->
+				<th class= "text-center">
+					Original tags
+				</th>
+				<!-- </span> -->
+				<!-- <span class="col-md-6"> -->
+				<th class= "text-center">
+					Translated tags
+				</th>
+				<!-- </span> -->
+			</tr>	
+			</thead>	
 			</div>
-			<%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
+			<tbody>
 				<% @tag.each do |tag| %>
-				<div class="row">
+				<!-- <div class="row"> -->
+				<tr>
 					<%= hidden_field_tag "shop", @shop.shop_domain %>
 					<%= hidden_field_tag "tag_ids[]", tag.id %>
-					<span class="col-md-6">
+					<!-- <span class="col-md-6"> -->
+					<td class= "text-center">
 						<%= tag.title %>
-					</span>   
-					<span class= "col-md-6">
+					</td>	
+					<!-- </span>    -->
+					<!-- <span class= "col-md-6"> -->
+					<td class= "text-center">
 						<%= fields_for "tags[]", tag do |t| %>
-						       <%= t.text_field :thai_title %>
+						       <%= t.text_field :thai_title, class: "thai_title_field form-control" %>
 						<% end %>
-					</span>
-				</div>	
+					</td>	
+					<!-- </span> -->
+				</tr>	
+				<!-- </div>	 -->
 				<% end %>	
-			<% if @shop %>				
-				<%= submit_tag "Update tags" %>	
-			<% end %>	
+			</tbody>
 
 			<% end %>	
 
 
 		</div>
 	</div>
-	<%= @asset.inspect %>
 </div>
-
-
