@@ -18,7 +18,7 @@
 
 		}else{
 			label[0].class = "flagedLabel"
-			label[0].textContent += "***" 
+			label[0].textContent += "" 
 		}
 
 	}
