@@ -1,27 +1,29 @@
 ( function() {
 
 	console.log("Funciton is ready")
-	
+
 	$('.thai_title_field').on('keypress',function(){
-		console.log("KP")
+		eventTargetId = event.target.id
+		flagLabel(eventTargetId)
 
 		$('.update-button').removeAttr('disabled')
 	})
 
-	var inputsChanged = function(old_titles){
-		new_title = getCurrentTitle()
-////////
+	var flagLabel = function(eventTargetId){
+
+		id= eventTargetId.replace("field-","")
+		label = $('#label-'+id)
+
+		if (label[0].class == "flagedLabel") {
+
+		}else{
+			label[0].class = "flagedLabel"
+			label[0].textContent += "***" 
+		}
+
 	}
 
 
-	var getCurrentTitle = function() {
-		inputs = $('.thai_title_field')
-		result = []
-		for (i=0 ; i < inputs.length ; i++){
-			result.push(inputs[i].value)
-		}	
-		return result	
-	}
 
 
 })();

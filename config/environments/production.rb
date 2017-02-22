@@ -2,8 +2,11 @@ Rails.application.configure do
 
   config.public_url = 'https://shopify-tag-app.herokuapp.com/';
   
-  config.shopify_api_key = "1f5ffc34ded25b4cf826fb23ff939dde"
-  config.shopify_secret = "f5ef67554f9c267dac610559c0aa5274"
+  # config.shopify_api_key = "1f5ffc34ded25b4cf826fb23ff939dde"
+  # config.shopify_secret = "f5ef67554f9c267dac610559c0aa5274"
+
+  config.shopify_api_key = "22ce8526cd1afaaca1975aa54a0d40e3"
+  config.shopify_secret = "05b8159e8147c678d00072a0d7202739"
 
   config.cache_classes = true
 

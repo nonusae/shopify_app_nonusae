@@ -53,14 +53,14 @@
 					<%= hidden_field_tag "shop", @shop.shop_domain %>
 					<%= hidden_field_tag "tag_ids[]", tag.id %>
 					<!-- <span class="col-md-6"> -->
-					<td class= "text-center">
+					<td class= "text-center", id= "label-<%= tag.id %>">
 						<%= tag.title %>
 					</td>	
 					<!-- </span>    -->
 					<!-- <span class= "col-md-6"> -->
 					<td class= "text-center">
 						<%= fields_for "tags[]", tag do |t| %>
-						       <%= t.text_field :thai_title, class: "thai_title_field form-control" %>
+						       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
 						<% end %>
 					</td>	
 					<!-- </span> -->
