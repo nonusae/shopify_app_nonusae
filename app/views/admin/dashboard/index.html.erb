@@ -1,21 +1,18 @@
 <div class="container">
 	<div class= "row col-md-12">
-		<div class= "col-md-12">
 			<% if @shop %>	
-			<div class= "text-right">	
+			<span class= "col-md-6">	
 				<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom" %>	
-			</div>
+			</span>
 			<% end %>
-
+			
 		<%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
-			<% if @shop %>
-				<br>	
-				<div class= "text-right">
+			<% if @shop %>	
+				<span class= "col-md-6 text-right">
 					<%= submit_tag "Update tags" , class: "btn btn-primary update-button", disabled:"disabled" %>
-				</div>
-			<% end %>				
-
-		</div>				
+				</span>
+			<% end %>					
+			
 	</div>
 
 	<div class="row">
@@ -23,29 +20,28 @@
 
 
 			<div class= "row col-md-12">
-				<h3>Tags List</h3>
-				Tag number: <%= @tag.count %>	
+				<hr>
+				<h3>Tags List</h3>  ( Tag number: <%= @tag.count %>	)
 			</div>
-			<br>
 			<br>
 
 			<div class="row col-md-12">
 			<table class="table table-striped ">
-			<thead>
-			<tr>
-				<!-- <span class="col-md-6"> -->
-				<th class= "text-center">
-					Original tags
-				</th>
-				<!-- </span> -->
-				<!-- <span class="col-md-6"> -->
-				<th class= "text-center">
-					Translated tags
-				</th>
-				<!-- </span> -->
-			</tr>	
-			</thead>	
-			</div>
+				<thead>
+					<tr>
+						<!-- <span class="col-md-6"> -->
+						<th class= "text-center">
+							Original tags
+						</th>
+						<!-- </span> -->
+						<!-- <span class="col-md-6"> -->
+						<th class= "text-center">
+							Translated tags
+						</th>
+						<!-- </span> -->
+					</tr>	
+				</thead>	
+			
 			<tbody>
 				<% @tag.each do |tag| %>
 				<!-- <div class="row"> -->
@@ -66,6 +62,8 @@
 				<!-- </div>	 -->
 				<% end %>	
 			</tbody>
+			</table>
+			</div>
 
 			<% end %>	
 
