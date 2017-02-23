@@ -5,7 +5,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   def index
   if @shop.present?  
- 	  @tag = @shop.tags.all
+ 	  @tag = @shop.tags.all.order("title ASC")
   else
     puts "shop not present"
     @tag = []
