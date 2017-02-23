@@ -2,7 +2,7 @@
 
 	console.log("Funciton is ready")
 
-	$('.thai_title_field').on('keypress',function(){
+	$('.thai_title_field').on('input',function(){
 		eventTargetId = event.target.id
 		flagLabel(eventTargetId)
 
