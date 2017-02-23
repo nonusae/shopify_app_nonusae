@@ -30,7 +30,7 @@
 			<br>
 
 			<div class="row col-md-12">
-			<table class="table table-bordered ">
+			<table class="table table-striped ">
 			<thead>
 			<tr>
 				<!-- <span class="col-md-6"> -->
@@ -53,9 +53,7 @@
 					<%= hidden_field_tag "shop", @shop.shop_domain %>
 					<%= hidden_field_tag "tag_ids[]", tag.id %>
 					<!-- <span class="col-md-6"> -->
-					<td class= "text-center", id= "label-<%= tag.id %>">
-						<%= tag.title %>
-					</td>	
+					<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
 					<!-- </span>    -->
 					<!-- <span class= "col-md-6"> -->
 					<td class= "text-center">
