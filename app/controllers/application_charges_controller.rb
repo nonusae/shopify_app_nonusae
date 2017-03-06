@@ -13,7 +13,7 @@ class ApplicationChargesController < AuthenticatedController
       flash[:success] = "One-time charge was successfully created"
       puts "Prepare for redirect_to !!!!!!!!!!"
       puts application_charge.confirmation_url
-      fullpage_redirect_to application_charge.confirmation_url
+      render :layout => false, :inline => "<script>window.top.location = '#{application_charge.confirmation_url}';</script>"
     else
       flash[:danger] = application_charge.errors.full_messages.first.to_s.capitalize
       redirect_to application_charges_path
@@ -36,6 +36,10 @@ class ApplicationChargesController < AuthenticatedController
       :name,
       :price
     )
+  end
+
+  def ajax_redirect_to(url)
+      head 302, x_ajax_redirect_url: url
   end
 
 end
