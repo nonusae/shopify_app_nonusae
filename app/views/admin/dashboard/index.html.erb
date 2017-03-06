@@ -1,20 +1,21 @@
 <div class="container">
 	<div class= "row col-sm-12">
 			<% if @shop %>	
-			<div class= "col-sm-6">
-			<span class= "btn-group">	
-				<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom btnbtn" %>
-			</span>
-			Total tags: <%= @tag.count %>
+			<div class= "pull-left">
+				<span class= "btn-group">	
+					<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom btnbtn" %>
+				</span>
+
+				Total tags: <%= @tag.count %>
 			</div>
 
 			<% end %>
 			
-		<%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
-			<% if @shop %>	
-				<span class= "col-sm-6 text-right">
+		   <%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
+			<% if @shop %>
+				<div class= "pull-right">	
 					<%= submit_tag "Update tags" , class: "btn btn-primary update-button", disabled:"disabled" %>
-				</span>
+				</div>
 			<% end %>					
 			
 	</div>
