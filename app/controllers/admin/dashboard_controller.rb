@@ -4,7 +4,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check
 
   def index
-  if @shop.present?  
+  if @shop.present?
+    update_tag_no_redirect(@shop)
  	  @tag = @shop.tags.all.order("title ASC")
   else
     puts "shop not present"
@@ -71,4 +72,37 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     end   
   end
 
+
+private
+
+ def update_tag_no_redirect(shop)
+      puts "ssssssssssssssss"
+      @shop = shop
+      shop_domain = @shop.shop_domain
+      tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
+      tag_from_soruce = JSON.parse(tag_raw)
+      tag_from_soruce.each do |tag|
+        unless @shop.tags.find_by_title(tag)
+          unless tag == ""
+            t = Tag.new
+            t.shopify_shop = @shop
+            t.title = tag
+            t.thai_title = ""
+            t.save
+          end
+        end
+
+      database_tags = @shop.tags.map(&:title)
+      puts "DATABASE TAGS 2222= #{database_tags}"
+      puts "TAG FROM SOURCE 22222= #{tag_from_soruce}"
+      database_tags.each do |d_tag|
+        unless tag_from_soruce.include?(d_tag)
+          puts "D TAG is #{d_tag}"
+          tag = @shop.tags.find_by_title(d_tag)
+          tag.destroy if tag.present?
+        end
+      end
+
+      end
+ end
 end
