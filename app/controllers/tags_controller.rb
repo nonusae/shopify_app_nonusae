@@ -31,7 +31,7 @@ class TagsController < ApplicationController
 		end
 		puts params[:tags].split(",")
 		@tag.each do |a_tag|
-			put a_tag.thai_title
+			puts a_tag.thai_title
 		end
 		respond_to do |format|
 			format.json { render :json => @tag }
