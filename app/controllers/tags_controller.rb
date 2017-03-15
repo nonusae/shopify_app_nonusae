@@ -30,7 +30,7 @@ class TagsController < ApplicationController
 			@tag << tag
 		end
 		puts params[:tags].split(",")
-		@tag.each do |a_atag|
+		@tag.each do |a_tag|
 			put a_tag.thai_title
 		end
 		respond_to do |format|
