@@ -24,6 +24,7 @@ class TagsController < ApplicationController
 		@shop = ShopifyShop.find_by_shop_domain(params[:shop_domain])
 		t = params[:tags].split(",") # use this instead of where for correct order
 		@tag= []
+		puts "t is: #{t}"
 		t.each do |tt|
 			puts "tt is #{tt}"
 			tag = @shop.tags.find_by_title(tt)
