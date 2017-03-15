@@ -25,12 +25,14 @@ class TagsController < ApplicationController
 		t = params[:tags].split(",") # use this instead of where for correct order
 		@tag= []
 		t.each do |tt|
+			puts "tt is #{tt}"
 			tag = @shop.tags.find_by_title(tt)
 			tag = "" unless tag.present?
 			@tag << tag
 		end
 		puts params[:tags].split(",")
 		@tag.each do |a_tag|
+			puts a_tag.id
 			puts a_tag.thai_title
 		end
 		respond_to do |format|
