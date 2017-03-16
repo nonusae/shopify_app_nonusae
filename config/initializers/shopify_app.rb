@@ -4,6 +4,6 @@ ShopifyApp.configure do |config|
   config.scope = "read_content,write_content,read_themes,write_themes,read_products,write_products,read_customers,write_customers,read_orders,write_orders,read_script_tags,write_script_tags,read_fulfillments,write_fulfillments,read_shipping,write_shipping"
   config.embedded_app = true
   config.scripttags = [
-  {event:'onload', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/javascripts/test_script26.js'}
+  {event:'onload', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/javascripts/test_script27.js'}
 ]
 end
