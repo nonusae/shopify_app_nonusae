@@ -17,6 +17,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     @recurring_application_charge.test = true
     @recurring_application_charge.return_url = "https://www.google.com"
     puts "Chrage OK!!"
+    puts @recurring_application_charge.confirmation_url
     if @recurring_application_charge.save
       fullpage_redirect_to @recurring_application_charge.confirmation_url
     else
