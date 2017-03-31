@@ -17,7 +17,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       }
       @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
       @recurring_application_charge.test = true
-      @recurring_application_charge.return_url = "https://www."+@shop.shop_domain
+      @recurring_application_charge.return_url = "https://www."+@shop.shop_domain+"/admin"
       puts "Chrage OK!!"
       if @recurring_application_charge.save
         puts @recurring_application_charge.confirmation_url
