@@ -23,7 +23,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         puts @recurring_application_charge.confirmation_url
         s_url = @recurring_application_charge.confirmation_url.split("admin/").last
         # fullpage_redirect_to @recurring_application_charge.confirmation_url
-        render :text => "<script>parent.location.href='admin/'"+s_url+";</script>"
+        render :js => "parent.location.href='admin/'"+s_url
 
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
