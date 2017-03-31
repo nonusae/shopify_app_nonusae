@@ -4,6 +4,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check
 
   def index
+    puts "CHRAGE!!!!"
     a = ShopifyAPI::RecurringApplicationCharge.current
     puts a
   if @shop.present?
