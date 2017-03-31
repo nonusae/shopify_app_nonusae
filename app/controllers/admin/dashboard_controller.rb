@@ -9,6 +9,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
     if @new_user
       puts "NEW USer !!!!!"
+      puts @shop.shop_domain
       recurring_application_charge_params = {
                                         "name": "Super Duper Plan",
                                         "price": 10.0,
