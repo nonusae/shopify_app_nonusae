@@ -17,12 +17,12 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       }
       @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
       @recurring_application_charge.test = true
-      @recurring_application_charge.return_url = "https://www."+@shop_domain
+      @recurring_application_charge.return_url = "https://www."+@shop.shop_domain
       puts "Chrage OK!!"
       if @recurring_application_charge.save
         puts @recurring_application_charge.confirmation_url
         s_url = @recurring_application_charge.confirmation_url.split("admin/").last
-        fullpage_redirect_to "https://www."+@shop_domain+"/admin/"+s_url
+        fullpage_redirect_to "https://www."+@shop.shop_domain+"/admin/"+s_url
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
         redirect_to_correct_path(@recurring_application_charge)
