@@ -21,8 +21,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       puts "Chrage OK!!"
       if @recurring_application_charge.save
         puts @recurring_application_charge.confirmation_url
-        # s_url = @recurring_application_charge.confirmation_url.split("admin/").last
-        # fullpage_redirect_to "https://www."+@shop.shop_domain+"/admin/"+s_url
         render :layout => false, :inline => "<script>window.top.location = '#{@recurring_application_charge.confirmation_url}';</script>"
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
@@ -135,9 +133,9 @@ private
  def check_billing
     bill = ShopifyAPI::RecurringApplicationCharge.current
     unless bill.present?
-      @new_user = true
+      @new_user = false
     else
-      @new_user = true
+      @new_user = false
     end
  end
 end
