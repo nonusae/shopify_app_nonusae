@@ -22,6 +22,8 @@
     <script src="https://cdn.shopify.com/s/assets/external/app.js?<%= Time.now.strftime('%Y%m%d%H') %>"></script>
 
     <script type="text/javascript">
+      console.log("Hey")
+      console.log("<%= "https://#{ @shop_session.url }" if @shop_session %>")
       ShopifyApp.init({
         apiKey: "<%= ShopifyApp.configuration.api_key %>",
         shopOrigin: "<%= "https://#{ @shop_session.url }" if @shop_session %>",
