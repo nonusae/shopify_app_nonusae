@@ -5,28 +5,29 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   def index
 
-  if @new_user
-    puts "NEW USer !!!!!"
-    recurring_application_charge_params = {
-                                      "name": "Super Duper Plan",
-                                      "price": 10.0,
-                                      "trial_days": 1
-                                    
-    }
-    @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-    @recurring_application_charge.test = true
-    @recurring_application_charge.return_url = "https://www.google.com"
-    puts "Chrage OK!!"
-    if @recurring_application_charge.save
-      puts @recurring_application_charge.confirmation_url
-      fullpage_redirect_to @recurring_application_charge.confirmation_url
-    else
-      flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
-      redirect_to_correct_path(@recurring_application_charge)
-    end    
-  end
-
   if @shop.present?
+    
+    if @new_user
+      puts "NEW USer !!!!!"
+      recurring_application_charge_params = {
+                                        "name": "Super Duper Plan",
+                                        "price": 10.0,
+                                        "trial_days": 1
+                                      
+      }
+      @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
+      @recurring_application_charge.test = true
+      @recurring_application_charge.return_url = @shop.shop_domain
+      puts "Chrage OK!!"
+      if @recurring_application_charge.save
+        puts @recurring_application_charge.confirmation_url
+        fullpage_redirect_to @recurring_application_charge.confirmation_url
+      else
+        flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
+        redirect_to_correct_path(@recurring_application_charge)
+      end    
+    end
+
     update_tag_no_redirect(@shop)
  	  @tag = @shop.tags.all.order("title ASC")
   else
