@@ -6,7 +6,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def index
 
   if @shop.present?
-    
+
     if @new_user
       puts "NEW USer !!!!!"
       recurring_application_charge_params = {
@@ -24,7 +24,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         fullpage_redirect_to @recurring_application_charge.confirmation_url
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
-        redirect_to_correct_path(@recurring_application_charge)
+        redirect_to root_path
       end    
     end
 
