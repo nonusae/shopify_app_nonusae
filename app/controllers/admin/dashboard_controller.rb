@@ -21,7 +21,10 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       puts "Chrage OK!!"
       if @recurring_application_charge.save
         puts @recurring_application_charge.confirmation_url
-        fullpage_redirect_to @recurring_application_charge.confirmation_url
+        s_url = @recurring_application_charge.confirmation_url.split("admin/").last
+        # fullpage_redirect_to @recurring_application_charge.confirmation_url
+        render :text => "<script>parent.location.href='admin/'"+s_url+";</script>"
+
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
         redirect_to_correct_path(@recurring_application_charge)
