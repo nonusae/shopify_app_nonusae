@@ -2,8 +2,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
   before_action :check_or_create_shopify_shop, :asset_check, :check_billing
-  protect_from_forgery except: :index
-
 
   def index
 
@@ -25,7 +23,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         puts @recurring_application_charge.confirmation_url
         s_url = @recurring_application_charge.confirmation_url.split("admin/").last
         # fullpage_redirect_to @recurring_application_charge.confirmation_url
-        render :js => "parent.location.href='admin/'"+s_url
+        render :text => "<html><body<script type='text/javascript' charset='utf-8'>parent.location.href='admin/'"+s_url+";</script></body></html>"
+
 
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
