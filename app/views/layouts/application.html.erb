@@ -4,17 +4,6 @@
   <title>Faqapp</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
-  <script type="text/javascript">
-  	console.log("inscript !!")
-  	if !(window.location.href.split("shop=")[1] == null){
-  		console.log("trgigger!!")
-	  	shop = window.location.href.split("shop=")[1].split("&")[0]
-	    ShopifyApp.init({
-	      apiKey: '22ce8526cd1afaaca1975aa54a0d40e3',
-	      shopOrigin: shop
-	    });
-	 }
-  </script>  
   <%= csrf_meta_tags %>
 </head>
 <body>

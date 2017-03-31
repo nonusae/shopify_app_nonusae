@@ -22,8 +22,6 @@
     <script src="https://cdn.shopify.com/s/assets/external/app.js?<%= Time.now.strftime('%Y%m%d%H') %>"></script>
 
     <script type="text/javascript">
-      console.log("Hey")
-      console.log("<%= "https://#{ @shop_session.url }" if @shop_session %>")
       ShopifyApp.init({
         apiKey: "<%= ShopifyApp.configuration.api_key %>",
         shopOrigin: "<%= "https://#{ @shop_session.url }" if @shop_session %>",
@@ -31,6 +29,15 @@
         forceRedirect: true//<%= Rails.env.development? ? 'false' : 'true' %>
       });
     </script>
+
+    <script type="text/javascript">
+      ShopifyApp.ready(function(){
+        ShopifyApp.Bar.initialize({
+          title: "Product Tags translator",
+          icon: "<%= asset_path('favicon.ico') %>"
+        });
+      });
+    </script>    
 
     <%= javascript_include_tag 'application' %>
 
