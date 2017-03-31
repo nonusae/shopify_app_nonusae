@@ -2,6 +2,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
   before_action :check_or_create_shopify_shop, :asset_check, :check_billing
+  protect_from_forgery except: :index
+
 
   def index
 
