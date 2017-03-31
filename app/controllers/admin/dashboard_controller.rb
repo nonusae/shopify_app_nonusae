@@ -15,7 +15,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     }
     @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
     @recurring_application_charge.test = true
-    @recurring_application_charge.return_url = @shop.shop_domain
+    @recurring_application_charge.return_url = "https://www.google.com"
     puts "Chrage OK!!"
     if @recurring_application_charge.save
       puts @recurring_application_charge.confirmation_url
@@ -28,7 +28,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
 
   if @shop.present?
-    
+
     update_tag_no_redirect(@shop)
  	  @tag = @shop.tags.all.order("title ASC")
   else
