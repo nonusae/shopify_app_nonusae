@@ -5,7 +5,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   def index
 
-  if new_user
+  if @new_user
     puts "NEW USer !!!!!"
     recurring_application_charge_params = {
                                       "name": "Super Duper Plan",
