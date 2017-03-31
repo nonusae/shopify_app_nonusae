@@ -4,6 +4,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check
 
   def index
+    a = ShopifyAPI::RecurringApplicationCharge.current
+    puts a
   if @shop.present?
     update_tag_no_redirect(@shop)
  	  @tag = @shop.tags.all.order("title ASC")
