@@ -1,12 +1,30 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
-  before_action :check_or_create_shopify_shop, :asset_check
+  before_action :check_or_create_shopify_shop, :asset_check, :check_billing
 
   def index
-    puts "CHRAGE!!!!"
-    a = ShopifyAPI::RecurringApplicationCharge.current.class
-    puts a
+
+  if new_user
+    puts "NEW USer !!!!!"
+    recurring_application_charge_params = {
+                                      "name": "Super Duper Plan",
+                                      "price": 10.0,
+                                      "trial_days": 1
+                                    
+    }
+    @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
+    @recurring_application_charge.test = true
+    @recurring_application_charge.return_url = "https://www.google.com"
+    puts "Chrage OK!!"
+    if @recurring_application_charge.save
+      fullpage_redirect_to @recurring_application_charge.confirmation_url
+    else
+      flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
+      redirect_to_correct_path(@recurring_application_charge)
+    end    
+  end
+
   if @shop.present?
     update_tag_no_redirect(@shop)
  	  @tag = @shop.tags.all.order("title ASC")
@@ -107,5 +125,14 @@ private
       end
 
       end
+ end
+
+ def check_billing
+    bill = ShopifyAPI::RecurringApplicationCharge.current
+    unless bill.present?
+      @new_user = true
+    else
+      @new_user = true
+    end
  end
 end
