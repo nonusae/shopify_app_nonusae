@@ -5,7 +5,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   def index
     puts "CHRAGE!!!!"
-    a = ShopifyAPI::RecurringApplicationCharge.currentc.class
+    a = ShopifyAPI::RecurringApplicationCharge.current.class
     puts a
   if @shop.present?
     update_tag_no_redirect(@shop)
