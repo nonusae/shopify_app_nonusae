@@ -3,6 +3,10 @@ class RecurringApplicationChargesController < AuthenticatedController
   before_action :load_current_recurring_charge
 
   def show
+    if params[:shop].present?
+      shop_domain = params[:shop]
+      @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+    end
   end
 
   def create
