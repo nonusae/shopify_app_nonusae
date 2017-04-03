@@ -65,12 +65,12 @@
     <div class="col-md-9">
       <p>
         <%= link_to 'Cancel charge', recurring_application_charge_path, method: :delete, class: "btn btn-danger" %>
-        <%= link_to 'Dashboard', root_path(:shop => @shop.shop_domain), class: "btn btn-primary" %>
+        <%= link_to 'Dashboard', root_path(:shop => @shop_domain), class: "btn btn-primary" %>
 
       </p>
     </div>
   </div>
 
   <% else %>
-        <%= link_to 'Dashboard', root_path(:shop => @shop.shop_domain), class: "btn btn-primary" %>
+        <%= link_to 'Dashboard', root_path(:shop => @shop_domain), class: "btn btn-primary" %>
 <% end %>
