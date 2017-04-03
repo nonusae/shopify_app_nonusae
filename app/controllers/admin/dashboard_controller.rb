@@ -159,9 +159,9 @@ private
     bill = ShopifyAPI::RecurringApplicationCharge.all
     puts bill.to_s
     if bill.present?
-      @new_user = true
+      @new_user = false
     else
-      @new_user = true
+      @new_user = false
     end
  end
 
