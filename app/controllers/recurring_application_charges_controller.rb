@@ -8,7 +8,7 @@ class RecurringApplicationChargesController < AuthenticatedController
   def create
     @recurring_application_charge.try!(:cancel)
 
-    @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(params[:recurring_application_charge])
+    @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
     @recurring_application_charge.test = true
     @recurring_application_charge.return_url = "https://www.google.com"
 

@@ -7,41 +7,41 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   if @shop.present?
 
-    # if @new_user
-    #   puts "NEW USer !!!!!"
-    #   recurring_application_charge_params = {
-    #                                     "name": "Super Duper Plan",
-    #                                     "price": 10.0,
-    #                                     "trial_days": 7
-                                      
-    #   }
-    #   @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-    #   @recurring_application_charge.test = true
-    #   @recurring_application_charge.return_url = "https://www."+@shop.shop_domain+"/admin"
-    #   puts "Chrage OK!!"
-    #   if @recurring_application_charge.save
-    #     puts @recurring_application_charge.confirmation_url
-    #     render :layout => false, :inline => "<script>window.top.location = '#{@recurring_application_charge.confirmation_url}';</script>"
-    #   else
-    #     flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
-    #     redirect_to_correct_path(@recurring_application_charge)
-    #   end    
-    # end
-
-    if @new_user
-            recurring_application_charge_params = {
+    if ((@new_user)  && (@shop.shop_domain == "nonusae-app.myshopify.com"))
+      puts "NEW USer !!!!!"
+      recurring_application_charge_params = {
                                         "name": "Super Duper Plan",
                                         "price": 10.0,
                                         "trial_days": 7
                                       
       }
-
-      # @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-      # redirect_to_correct_path(@recurring_application_charge)
-      # redirect_to  recurring_application_charge_path(recurring_application_charge_params)
-      redirect_to  :controller=>'recurring_application_charges',:action=>'create',:recurring_application_charge=>recurring_application_charge_params
-
+      @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
+      @recurring_application_charge.test = true
+      @recurring_application_charge.return_url = "https://www."+@shop.shop_domain+"/admin"
+      puts "Chrage OK!!"
+      if @recurring_application_charge.save
+        puts @recurring_application_charge.confirmation_url
+        render :layout => false, :inline => "<script>window.top.location = '#{@recurring_application_charge.confirmation_url}';</script>"
+      else
+        flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
+        redirect_to_correct_path(@recurring_application_charge)
+      end    
     end
+
+    # if @new_user
+    #         recurring_application_charge_params = {
+    #                                     "name": "Super Duper Plan",
+    #                                     "price": 10.0,
+    #                                     "trial_days": 7
+                                      
+    #   }
+
+    #   # @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
+    #   # redirect_to_correct_path(@recurring_application_charge)
+    #   # redirect_to  recurring_application_charge_path(recurring_application_charge_params)
+    #   redirect_to  :controller=>'recurring_application_charges',:action=>'create',:recurring_application_charge=>recurring_application_charge_params
+
+    # end
 
 
     def callback
@@ -159,9 +159,9 @@ private
     bill = ShopifyAPI::RecurringApplicationCharge.all
     puts bill.to_s
     if bill.present?
-      @new_user = false
+      @new_user = true
     else
-      @new_user = false
+      @new_user = true
     end
  end
 
