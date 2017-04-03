@@ -131,7 +131,7 @@ private
  end
 
  def check_billing
-    bill = ShopifyAPI::RecurringApplicationCharge.current
+    bill = ShopifyAPI::RecurringApplicationCharge.all
     puts "Bill is " + bill.class.to_s + bill.nil?.to_s
     unless bill.nil?
       @new_user = false
