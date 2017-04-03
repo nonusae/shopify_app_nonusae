@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   	end
   end
 
-  match "/admin/recurring_application_charges" => "recurring_application_charge#create" , via: :post
+  match "/admin/recurring_application_charges" => "recurring_application_charge#create" , via: [:get,:post]
 
   get 'update_tags' => 'admin/dashboard#update_tags' 
   get 'proxy' => 'proxy#index'
