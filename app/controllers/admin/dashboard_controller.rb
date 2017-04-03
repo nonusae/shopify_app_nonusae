@@ -132,10 +132,11 @@ private
 
  def check_billing
     bill = ShopifyAPI::RecurringApplicationCharge.current
+    puts bill
     unless bill.present?
       @new_user = false
     else
-      @new_user = false
+      @new_user = true
     end
  end
 end
