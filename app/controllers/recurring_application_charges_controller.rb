@@ -3,6 +3,7 @@ class RecurringApplicationChargesController < AuthenticatedController
   before_action :load_current_recurring_charge
 
   def show
+    @shop=params[:shop]
   end
 
   def create
