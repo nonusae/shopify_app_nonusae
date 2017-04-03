@@ -36,8 +36,9 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
                                       
       }
 
-      @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-      redirect_to_correct_path(@recurring_application_charge)
+      # @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
+      # redirect_to_correct_path(@recurring_application_charge)
+      redirect_to url_for(:controller => :recurring_application_charges, :action => :create, :recurring_application_charge => recurring_application_charge_params)
 
     end
 
@@ -157,9 +158,9 @@ private
     bill = ShopifyAPI::RecurringApplicationCharge.all
     puts bill.to_s
     if bill.present?
-      @new_user = false
+      @new_user = true
     else
-      @new_user = false
+      @new_user = true
     end
  end
 
