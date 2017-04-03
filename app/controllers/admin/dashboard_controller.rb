@@ -39,7 +39,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       # @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
       # redirect_to_correct_path(@recurring_application_charge)
       # redirect_to  recurring_application_charge_path(recurring_application_charge_params)
-      redirect_to  :controller=>'recurring_application_charges',:action=>'create',:recurring_application_charge=>recurring_application_charge_params
+      redirect_to  :controller=>'recurring_application_charges2',:action=>'create',:recurring_application_charge=>recurring_application_charge_params
 
     end
 
