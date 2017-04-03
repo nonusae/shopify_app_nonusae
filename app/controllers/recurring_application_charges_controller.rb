@@ -69,7 +69,7 @@ class RecurringApplicationChargesController < AuthenticatedController
     if recurring_application_charge.try(:capped_amount)
       redirect_to usage_charge_path
     else
-      redirect_to recurring_application_charge_path(shop)
+      redirect_to recurring_application_charge_path(shop: shop)
     end
   end
 
