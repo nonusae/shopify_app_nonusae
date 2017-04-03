@@ -12,7 +12,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       recurring_application_charge_params = {
                                         "name": "Super Duper Plan",
                                         "price": 10.0,
-                                        "trial_days": 1
+                                        "trial_days": 0
                                       
       }
       @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
