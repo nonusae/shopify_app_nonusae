@@ -157,10 +157,10 @@ private
  end
 
  def check_billing
-    bill = ShopifyAPI::RecurringApplicationCharge.all
+    bill = ShopifyAPI::RecurringApplicationCharge.current
     puts bill.to_s
     if bill.present?
-      @new_user = true
+      @new_user = false
     else
       @new_user = true
     end
