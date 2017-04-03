@@ -132,7 +132,6 @@ private
 
  def check_billing
     bill = ShopifyAPI::RecurringApplicationCharge.all
-    bill.first.activate
     puts bill.to_s
     if bill.present?
       @new_user = false
