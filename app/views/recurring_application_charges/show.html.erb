@@ -65,12 +65,10 @@
     <div class="col-md-9">
       <p>
         <%= link_to 'Cancel charge', recurring_application_charge_path, method: :delete, class: "btn btn-danger" %>
-        <%= link_to 'Dashboard', "https://shopify-tag-app.herokuapp.com", class: "btn btn-primary" %>
-
       </p>
     </div>
   </div>
 
   <% else %>
-        <%= link_to 'Dashboard', "https://shopify-tag-app.herokuapp.com", class: "btn btn-primary" %>
+      No Chrages
 <% end %>
