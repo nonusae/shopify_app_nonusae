@@ -7,11 +7,12 @@ class RecurringApplicationChargesController < AuthenticatedController
   end
 
   def create
+    @shop_doamin = params[:shop_doamin]
     @recurring_application_charge.try!(:cancel)
 
     @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
     @recurring_application_charge.test = true
-    @recurring_application_charge.return_url = callback_recurring_application_charge_url
+    @recurring_application_charge.return_url = callback_recurring_application_charge_url+"&shop=#{@shop_domain}"
 
     if @recurring_application_charge.save
       fullpage_redirect_to @recurring_application_charge.confirmation_url

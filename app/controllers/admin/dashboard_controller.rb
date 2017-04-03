@@ -22,7 +22,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       puts "Chrage OK!!"
       if @recurring_application_charge.save
         puts @recurring_application_charge.confirmation_url
-        render :layout => false, :inline => "<script>window.top.location = '#{@recurring_application_charge.confirmation_url}';</script>"
+        render :layout => false, :inline => "<script>window.top.location = '#{@recurring_application_charge.confirmation_url}&shop_domain=#{@shop.shop_domain}';</script>"
       else
         flash[:danger] = @recurring_application_charge.errors.full_messages.first.to_s.capitalize
         redirect_to_correct_path(@recurring_application_charge)
