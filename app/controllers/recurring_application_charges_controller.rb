@@ -12,7 +12,7 @@ class RecurringApplicationChargesController < AuthenticatedController
 
     @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
     @recurring_application_charge.test = true
-    url = callback_recurring_application_charge_url.to_s+"&shop=#{@shop_domain}"
+    url = callback_recurring_application_charge_url
     @recurring_application_charge.return_url = url
 
     if @recurring_application_charge.save
@@ -30,17 +30,13 @@ class RecurringApplicationChargesController < AuthenticatedController
 
   def callback
     @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.find(params[:charge_id])
-    if params[:shop].present?
-      shop_domain = params[:shop]
-      @shop = ShopifyShop.find_by_shop_domain(shop_domain)
-    end
 
     if @recurring_application_charge.status == 'accepted'
       puts "activate"
       @recurring_application_charge.activate
     end
     puts "APP CHRAGES:" +@recurring_application_charge.to_s
-    redirect_to_correct_path(@recurring_application_charge,@shop)
+    redirect_to_correct_path(@recurring_application_charge)
   end
 
   def destroy
@@ -67,11 +63,11 @@ class RecurringApplicationChargesController < AuthenticatedController
     )
   end
 
-  def redirect_to_correct_path(recurring_application_charge,shop)
+  def redirect_to_correct_path(recurring_application_charge)
     if recurring_application_charge.try(:capped_amount)
       redirect_to usage_charge_path
     else
-      redirect_to recurring_application_charge_path(shop_domain: shop.shop_domain)
+      redirect_to recurring_application_charge_path
     end
   end
 
