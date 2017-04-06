@@ -116,7 +116,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           current_theme_name = theme_name["name"]
         end
       end 
-      puts "Theme name is : " + current_theme_name   
+      puts "Theme name is : " + current_theme_name ##   
   end
 
 
