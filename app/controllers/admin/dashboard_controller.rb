@@ -7,7 +7,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
    begin 
     if @shop.present?
 
-      if ((@new_user)  && true ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
+      if ((@new_user)  && !(@shop.shop_domain == "bucket-hats-4.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
         puts "NEW USer !!!!!"
         recurring_application_charge_params = {
                                           "name": "Super Duper Plan",
