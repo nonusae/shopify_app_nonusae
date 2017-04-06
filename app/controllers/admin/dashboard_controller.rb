@@ -100,7 +100,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     begin
       asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
       aa = ShopifyAPI::Theme.all
-      a = aa.first.class
+      a = aa.first.as_json
       puts "ASDASDASDASDASDASDAsadsss = " + a.to_s
     rescue
       asset = nil
