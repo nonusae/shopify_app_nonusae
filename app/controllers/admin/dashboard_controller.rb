@@ -47,6 +47,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
    rescue => e
         e.backtrace
         render :text => e.backtrace.to_s
+   end
   end
 
   def update_tags
