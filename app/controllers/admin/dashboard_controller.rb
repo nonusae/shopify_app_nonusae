@@ -122,7 +122,13 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-filters.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid')
         rescue
           puts "error occure whild overite theme"
-        end 
+        end
+      elsif current_theme_name == "Supply"
+        begin
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-filters.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/supply/collection-filters.liquid')
+        rescue
+          puts "error occure whild overite theme"
+        end        
       end  
   end
 
