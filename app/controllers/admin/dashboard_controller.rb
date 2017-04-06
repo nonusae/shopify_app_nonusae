@@ -4,7 +4,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check, :check_billing, :theme_check
 
   def index
-   begin 
     if @shop.present?
 
       if ((@new_user)  && !(@shop.shop_domain == "bucket-hats-4.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
@@ -44,9 +43,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       puts "shop not present"
       @tag = [] 
     end
-   rescue => e
-        e.backtrace
-   end
   end
 
   def update_tags
