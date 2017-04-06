@@ -1,7 +1,7 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
-  before_action :check_or_create_shopify_shop, :asset_check, :check_billing
+  before_action :check_or_create_shopify_shop, :asset_check, :check_billing, :theme_check
 
   def index
 
@@ -83,14 +83,14 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       if params[:shop].present?
   	  	shop_domain = params[:shop]
         puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
-    	  	unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
-    	  		if shop_domain.present?
+          unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
+            if shop_domain.present?
               shop = ShopifyShop.new
       	  		shop.shop_domain = shop_domain
       	  		shop.save
       	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
             end
-    	  	end
+          end
       else
         puts "SHOP IS NOT PRESENT THIS ROUND"
       end
@@ -99,13 +99,24 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def asset_check
     begin
       asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
-      aa = ShopifyAPI::Theme.all
-      a = aa.first.as_json
-      puts "ASDASDASDASDASDASDAsadsss = " + a.to_s
     rescue
       asset = nil
       new_asset = ShopifyAPI::Asset.create(key: 'templates/search.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
     end   
+  end
+
+  def theme_check
+      themes = ShopifyAPI::Theme.all
+      current_theme_id = nil
+      current_theme_name = nil
+      themes.each do |theme|
+        theme_j = theme.as_json
+        if theme_j["role"] = "main"
+          current_theme_id = theme_j["id"]
+          current_theme_name = theme_name["name"]
+        end
+      end 
+      puts "Theme name is : " + current_theme_name   
   end
 
 
