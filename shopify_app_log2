@@ -1613,3 +1613,44 @@
 2017-04-06T17:12:40.664821+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/server.rb:275:in `block in run'
 2017-04-06T17:12:40.664824+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/thread_pool.rb:120:in `call'
 2017-04-06T17:12:40.664824+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+2017-04-06T17:14:34.000000+00:00 app[api]: Build started by user nonusae@gmail.com
+2017-04-06T17:14:59.298935+00:00 app[api]: Deploy e5409af by user nonusae@gmail.com
+2017-04-06T17:14:59.298935+00:00 app[api]: Release v176 created by user nonusae@gmail.com
+2017-04-06T17:14:34.000000+00:00 app[api]: Build succeeded
+2017-04-06T17:14:59.745583+00:00 heroku[web.1]: Restarting
+2017-04-06T17:14:59.745583+00:00 heroku[web.1]: State changed from up to starting
+2017-04-06T17:14:59.714334+00:00 app[api]: Release v176 created by user nonusae@gmail.com
+2017-04-06T17:15:00.564120+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-04-06T17:15:00.582332+00:00 app[web.1]: - Gracefully stopping, waiting for requests to finish
+2017-04-06T17:15:00.582862+00:00 app[web.1]: === puma shutdown: 2017-04-06 17:15:00 +0000 ===
+2017-04-06T17:15:00.582892+00:00 app[web.1]: - Goodbye!
+2017-04-06T17:15:00.582930+00:00 app[web.1]: Exiting
+2017-04-06T17:15:00.846697+00:00 heroku[web.1]: Process exited with status 0
+2017-04-06T17:15:03.862466+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 16968 -e production`
+2017-04-06T17:15:08.559758+00:00 heroku[web.1]: State changed from starting to up
+2017-04-06T17:15:08.520807+00:00 app[web.1]: => Booting Puma
+2017-04-06T17:15:08.520834+00:00 app[web.1]: => Rails 4.2.6 application starting in production on http://0.0.0.0:16968
+2017-04-06T17:15:08.520835+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2017-04-06T17:15:08.520835+00:00 app[web.1]: => Ctrl-C to shutdown server
+2017-04-06T17:15:08.520840+00:00 app[web.1]: Puma starting in single mode...
+2017-04-06T17:15:08.520840+00:00 app[web.1]: * Version 3.7.0 (ruby 2.2.3-p173), codename: Snowy Sagebrush
+2017-04-06T17:15:08.520841+00:00 app[web.1]: * Min threads: 0, max threads: 16
+2017-04-06T17:15:08.520841+00:00 app[web.1]: * Environment: production
+2017-04-06T17:15:08.520966+00:00 app[web.1]: * Listening on tcp://0.0.0.0:16968
+2017-04-06T17:15:08.521206+00:00 app[web.1]: Use Ctrl-C to stop
+2017-04-06T17:19:17.281689+00:00 heroku[router]: at=info method=GET path="/tags/get_translated_tag.json?tags=&shop_domain=noahstable2.myshopify.com" host=shopify-tag-app.herokuapp.com request_id=522991ed-d500-4118-88b9-78e9d53bf8b9 fwd="66.249.64.96" dyno=web.1 connect=4ms service=65ms status=200 bytes=581 protocol=https
+2017-04-06T17:19:17.407132+00:00 heroku[router]: at=info method=GET path="/tags/get_translated_tag.json?tags=&shop_domain=noahstable2.myshopify.com" host=shopify-tag-app.herokuapp.com request_id=ab91f0d1-d3e1-4e1e-9be2-fcd533df666d fwd="66.249.64.92" dyno=web.1 connect=2ms service=7ms status=200 bytes=581 protocol=https
+2017-04-06T17:19:17.237392+00:00 app[web.1]: Started GET "/tags/get_translated_tag.json?tags=&shop_domain=noahstable2.myshopify.com" for 66.249.64.96 at 2017-04-06 17:19:17 +0000
+2017-04-06T17:19:17.238089+00:00 app[web.1]: Cannot render console from 66.249.64.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+2017-04-06T17:19:17.273574+00:00 app[web.1]: Processing by TagsController#get_translated_tag as JSON
+2017-04-06T17:19:17.273582+00:00 app[web.1]:   Parameters: {"tags"=>"", "shop_domain"=>"noahstable2.myshopify.com"}
+2017-04-06T17:19:17.290110+00:00 app[web.1]:   [1m[36mShopifyShop Load (0.7ms)[0m  [1mSELECT  "shopify_shops".* FROM "shopify_shops" WHERE "shopify_shops"."shop_domain" = $1 LIMIT 1[0m  [["shop_domain", "noahstable2.myshopify.com"]]
+2017-04-06T17:19:17.297628+00:00 app[web.1]: t is: []
+2017-04-06T17:19:17.298122+00:00 app[web.1]: Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 6.9ms)
+2017-04-06T17:19:17.418460+00:00 app[web.1]: Started GET "/tags/get_translated_tag.json?tags=&shop_domain=noahstable2.myshopify.com" for 66.249.64.92 at 2017-04-06 17:19:17 +0000
+2017-04-06T17:19:17.418927+00:00 app[web.1]: Cannot render console from 66.249.64.92! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+2017-04-06T17:19:17.420829+00:00 app[web.1]: Processing by TagsController#get_translated_tag as JSON
+2017-04-06T17:19:17.420833+00:00 app[web.1]:   Parameters: {"tags"=>"", "shop_domain"=>"noahstable2.myshopify.com"}
+2017-04-06T17:19:17.421979+00:00 app[web.1]:   [1m[35mShopifyShop Load (0.6ms)[0m  SELECT  "shopify_shops".* FROM "shopify_shops" WHERE "shopify_shops"."shop_domain" = $1 LIMIT 1  [["shop_domain", "noahstable2.myshopify.com"]]
+2017-04-06T17:19:17.422132+00:00 app[web.1]: t is: []
+2017-04-06T17:19:17.422416+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
