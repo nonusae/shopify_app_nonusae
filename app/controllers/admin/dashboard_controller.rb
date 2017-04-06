@@ -46,7 +46,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     end
    rescue => e
         e.backtrace
-        render :text => e.backtrace.to_s
    end
   end
 
