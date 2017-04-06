@@ -1,9 +1,8 @@
 {% layout none %}
-{% capture output %}
-    {% for collection in collections %} 
-            {% if forloop.index == 1 %}""{% endif %}
-            {% if collection.all_tags.size > 0 %}
-                {% for tag in collection.all_tags %}
+{% capture output %} 
+            {% if collections['all'].all_tags.size > 0 %}
+                {% for tag in collections['all'].all_tags %}
+                    {% if forloop.index == 1 %}""{% endif %}
                  
                     {% if output contains tag %}
                     {% else %}
@@ -12,6 +11,5 @@
      
                 {% endfor %}  
             {% endif %}     
-    {% endfor %}
 {% endcapture %}
 {{ output | strip_newlines | prepend: '[' | append: ']' }}

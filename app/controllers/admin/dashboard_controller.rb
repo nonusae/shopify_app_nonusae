@@ -116,7 +116,11 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           current_theme_name = theme_j["name"]
         end
       end 
-      puts "Theme name is : " + current_theme_name ##   
+      puts "Theme name is : " + current_theme_name ##
+
+      if current_theme_id == "162888069"
+        file_to_overwrite = ShopifyAPI::Asset.create(key: 'section/collection-filters.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid')
+      end  
   end
 
 
