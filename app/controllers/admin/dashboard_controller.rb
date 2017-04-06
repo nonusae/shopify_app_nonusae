@@ -113,7 +113,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         theme_j = theme.as_json
         if theme_j["role"] = "main"
           current_theme_id = theme_j["id"]
-          current_theme_name = theme_name["name"]
+          current_theme_name = theme_j["name"]
         end
       end 
       puts "Theme name is : " + current_theme_name ##   
