@@ -99,9 +99,9 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def asset_check
     begin
       asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
-      aa = ShopifyAPI::Theme.all.first
+      aa = ShopifyAPI::Theme.all
       a = aa.count
-      puts "ASDASDASDASDASDASDAsad = " + a.to_s
+      puts "ASDASDASDASDASDASDAsadsss = " + a.to_s
     rescue
       asset = nil
       new_asset = ShopifyAPI::Asset.create(key: 'templates/search.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
