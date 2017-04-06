@@ -17,7 +17,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       }
       @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
       @recurring_application_charge.test = true
-      # @recurring_application_charge.return_url = "https://www."+@shop.shop_domain+"/admin"
       @recurring_application_charge.return_url = callback_recurring_application_charge_url
       puts "Chrage OK!!"
       if @recurring_application_charge.save
@@ -28,22 +27,6 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         redirect_to_correct_path(@recurring_application_charge)
       end    
     end
-
-    # if @new_user
-    #         recurring_application_charge_params = {
-    #                                     "name": "Super Duper Plan",
-    #                                     "price": 10.0,
-    #                                     "trial_days": 7
-                                      
-    #   }
-
-    #   # @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-    #   # redirect_to_correct_path(@recurring_application_charge)
-    #   # redirect_to  recurring_application_charge_path(recurring_application_charge_params)
-    #   redirect_to  :controller=>'recurring_application_charges',:action=>'create',:recurring_application_charge=>recurring_application_charge_params
-
-    # end
-
 
     def callback
       @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.find(params[:charge_id])
@@ -116,6 +99,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def asset_check
     begin
       asset   = ShopifyAPI::Asset.find('templates/search.tags.liquid')
+      aa = ShopifyAPI::Theme.all
+      puts "ASDASDASDASDASDASDAsad = " + aa.to_s 
     rescue
       asset = nil
       new_asset = ShopifyAPI::Asset.create(key: 'templates/search.tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/search.tags.liquid')
