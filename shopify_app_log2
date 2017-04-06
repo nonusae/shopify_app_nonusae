@@ -1,0 +1,1615 @@
+2017-04-06T17:10:45.497110+00:00 app[web.1]:       
+2017-04-06T17:10:45.497110+00:00 app[web.1]:           });
+2017-04-06T17:10:45.497111+00:00 app[web.1]: 
+2017-04-06T17:10:45.497111+00:00 app[web.1]:           
+2017-04-06T17:10:45.497112+00:00 app[web.1]:       var eventsListenerScript = document.createElement('script');
+2017-04-06T17:10:45.497112+00:00 app[web.1]:       eventsListenerScript.async = true;
+2017-04-06T17:10:45.497113+00:00 app[web.1]:       eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-ac336e6042c0b3ecf23fc811af6e11b9af69994f8f440d84ac06f0ea21e9b84f.js";
+2017-04-06T17:10:45.497113+00:00 app[web.1]:       document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+2017-04-06T17:10:45.497114+00:00 app[web.1]:     
+2017-04-06T17:10:45.497114+00:00 app[web.1]:         })();
+2017-04-06T17:10:45.497135+00:00 app[web.1]:       </script>
+2017-04-06T17:10:45.497136+00:00 app[web.1]:     
+2017-04-06T17:10:45.497136+00:00 app[web.1]: 
+2017-04-06T17:10:45.497137+00:00 app[web.1]: 
+2017-04-06T17:10:45.497138+00:00 app[web.1]: 
+2017-04-06T17:10:45.497138+00:00 app[web.1]:   
+2017-04-06T17:10:45.497139+00:00 app[web.1]: 
+2017-04-06T17:10:45.497139+00:00 app[web.1]: <!--[if lt IE 9]>
+2017-04-06T17:10:45.497140+00:00 app[web.1]: <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+2017-04-06T17:10:45.497140+00:00 app[web.1]: <script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond.min.js?1007652989975767601" type="text/javascript"></script>
+2017-04-06T17:10:45.497144+00:00 app[web.1]: <link href="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+2017-04-06T17:10:45.497145+00:00 app[web.1]: <link href="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" id="respond-redirect" rel="respond-redirect" />
+2017-04-06T17:10:45.497146+00:00 app[web.1]: <script src="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" type="text/javascript"></script>
+2017-04-06T17:10:45.497147+00:00 app[web.1]: <!--[if (lte IE 9) ]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/match-media.min.js?1007652989975767601" type="text/javascript"></script><![endif]-->
+2017-04-06T17:10:45.497148+00:00 app[web.1]: 
+2017-04-06T17:10:45.497146+00:00 app[web.1]: <![endif]-->
+2017-04-06T17:10:45.497148+00:00 app[web.1]: 
+2017-04-06T17:10:45.497149+00:00 app[web.1]:   
+2017-04-06T17:10:45.497149+00:00 app[web.1]:   
+2017-04-06T17:10:45.497150+00:00 app[web.1]: 
+2017-04-06T17:10:45.497150+00:00 app[web.1]:   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+2017-04-06T17:10:45.497151+00:00 app[web.1]: 
+2017-04-06T17:10:45.497151+00:00 app[web.1]: 
+2017-04-06T17:10:45.497152+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:10:45.497153+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:10:45.497153+00:00 app[web.1]: 
+2017-04-06T17:10:45.497154+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:10:45.497155+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:10:45.497155+00:00 app[web.1]: 
+2017-04-06T17:10:45.497155+00:00 app[web.1]: 
+2017-04-06T17:10:45.497157+00:00 app[web.1]: <body id="search" class="template-search" >
+2017-04-06T17:10:45.497156+00:00 app[web.1]: </head>
+2017-04-06T17:10:45.497156+00:00 app[web.1]: 
+2017-04-06T17:10:45.497158+00:00 app[web.1]: 
+2017-04-06T17:10:45.497162+00:00 app[web.1]:   <div id="shopify-section-header" class="shopify-section header-section"><header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+2017-04-06T17:10:45.497164+00:00 app[web.1]:     <div class="grid--full">
+2017-04-06T17:10:45.497163+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:10:45.497166+00:00 app[web.1]:           <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
+2017-04-06T17:10:45.497166+00:00 app[web.1]:         
+2017-04-06T17:10:45.497163+00:00 app[web.1]: 
+2017-04-06T17:10:45.497167+00:00 app[web.1]:             <a href="/" itemprop="url">bucket hats 4</a>
+2017-04-06T17:10:45.497165+00:00 app[web.1]:       <div class="grid-item large--one-half">
+2017-04-06T17:10:45.497167+00:00 app[web.1]:           
+2017-04-06T17:10:45.497171+00:00 app[web.1]:         
+2017-04-06T17:10:45.497168+00:00 app[web.1]:         
+2017-04-06T17:10:45.497173+00:00 app[web.1]: 
+2017-04-06T17:10:45.497170+00:00 app[web.1]: 
+2017-04-06T17:10:45.497169+00:00 app[web.1]:           </div>
+2017-04-06T17:10:45.497173+00:00 app[web.1]:             
+2017-04-06T17:10:45.497171+00:00 app[web.1]:       <div class="grid-item large--one-half text-center large--text-right">
+2017-04-06T17:10:45.497172+00:00 app[web.1]:           <div class="site-header--text-links medium-down--hide">
+2017-04-06T17:10:45.497169+00:00 app[web.1]:         
+2017-04-06T17:10:45.497170+00:00 app[web.1]:       </div>
+2017-04-06T17:10:45.497165+00:00 app[web.1]:         
+2017-04-06T17:10:45.497168+00:00 app[web.1]:           
+2017-04-06T17:10:45.497172+00:00 app[web.1]:             
+2017-04-06T17:10:45.497174+00:00 app[web.1]:               <span class="site-header--meta-links medium-down--hide">
+2017-04-06T17:10:45.497174+00:00 app[web.1]:                 
+2017-04-06T17:10:45.497175+00:00 app[web.1]:                   <a href="/account/login" id="customer_login_link">Sign in</a>
+2017-04-06T17:10:45.497175+00:00 app[web.1]:                   <span class="site-header--spacer">or</span>
+2017-04-06T17:10:45.497176+00:00 app[web.1]:                   <a href="/account/register" id="customer_register_link">Create an Account</a>
+2017-04-06T17:10:45.497176+00:00 app[web.1]:                 
+2017-04-06T17:10:45.497177+00:00 app[web.1]:               </span>
+2017-04-06T17:10:45.497177+00:00 app[web.1]:             
+2017-04-06T17:10:45.497178+00:00 app[web.1]:           </div>
+2017-04-06T17:10:45.497178+00:00 app[web.1]: 
+2017-04-06T17:10:45.497178+00:00 app[web.1]:           <br class="medium-down--hide">
+2017-04-06T17:10:45.497179+00:00 app[web.1]:         
+2017-04-06T17:10:45.497179+00:00 app[web.1]: 
+2017-04-06T17:10:45.497180+00:00 app[web.1]:         <form action="/search" method="get" class="search-bar" role="search">
+2017-04-06T17:10:45.497180+00:00 app[web.1]:   <input type="hidden" name="type" value="product">
+2017-04-06T17:10:45.497181+00:00 app[web.1]: 
+2017-04-06T17:10:45.497181+00:00 app[web.1]:   <input type="search" name="q" value="" placeholder="Search all products..." aria-label="Search all products...">
+2017-04-06T17:10:45.497182+00:00 app[web.1]:   <button type="submit" class="search-bar--submit icon-fallback-text">
+2017-04-06T17:10:45.497182+00:00 app[web.1]:     <span class="icon icon-search" aria-hidden="true"></span>
+2017-04-06T17:10:45.497183+00:00 app[web.1]:     <span class="fallback-text">Search</span>
+2017-04-06T17:10:45.497183+00:00 app[web.1]:   </button>
+2017-04-06T17:10:45.497184+00:00 app[web.1]: </form>
+2017-04-06T17:10:45.497185+00:00 app[web.1]: 
+2017-04-06T17:10:45.497185+00:00 app[web.1]: 
+2017-04-06T17:10:45.497186+00:00 app[web.1]:         <a href="/cart" class="header-cart-btn cart-toggle">
+2017-04-06T17:10:45.497186+00:00 app[web.1]:           <span class="icon icon-cart"></span>
+2017-04-06T17:10:45.497187+00:00 app[web.1]:           Cart <span class="cart-count cart-badge--desktop hidden-count">0</span>
+2017-04-06T17:11:21.261358+00:00 app[web.1]: Started GET "/tags/get_translated_tag.json?tags=&shop_domain=thaidiycupcake.myshopify.com" for 49.228.96.139 at 2017-04-06 17:11:21 +0000
+2017-04-06T17:11:21.263375+00:00 app[web.1]: Cannot render console from 49.228.96.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+2017-04-06T17:11:21.276251+00:00 app[web.1]: Processing by TagsController#get_translated_tag as JSON
+2017-04-06T17:11:21.276337+00:00 app[web.1]:   Parameters: {"tags"=>"", "shop_domain"=>"thaidiycupcake.myshopify.com"}
+2017-04-06T17:11:21.279794+00:00 app[web.1]:   [1m[36mShopifyShop Load (1.4ms)[0m  [1mSELECT  "shopify_shops".* FROM "shopify_shops" WHERE "shopify_shops"."shop_domain" = $1 LIMIT 1[0m  [["shop_domain", "thaidiycupcake.myshopify.com"]]
+2017-04-06T17:11:21.280738+00:00 app[web.1]: t is: []
+2017-04-06T17:11:21.282101+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+2017-04-06T17:11:21.293085+00:00 heroku[router]: at=info method=GET path="/tags/get_translated_tag.json?tags=&shop_domain=thaidiycupcake.myshopify.com" host=shopify-tag-app.herokuapp.com request_id=7b88e735-8f83-41bc-95ce-79e895838b7d fwd="49.228.96.139" dyno=web.1 connect=0ms service=30ms status=200 bytes=578 protocol=https
+2017-04-06T17:12:39.818191+00:00 app[web.1]: Started GET "/?hmac=6a6150ce0697ef4f904dd12a62581f16d349014e4c2bec090b380daf30810a01&protocol=https%3A%2F%2F&shop=bucket-hats-4.myshopify.com&timestamp=1491498757" for 49.228.116.24 at 2017-04-06 17:12:39 +0000
+2017-04-06T17:12:39.818798+00:00 app[web.1]: Cannot render console from 49.228.116.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+2017-04-06T17:12:39.827679+00:00 app[web.1]: Processing by Admin::DashboardController#index as HTML
+2017-04-06T17:12:39.827730+00:00 app[web.1]:   Parameters: {"hmac"=>"6a6150ce0697ef4f904dd12a62581f16d349014e4c2bec090b380daf30810a01", "protocol"=>"https://", "shop"=>"bucket-hats-4.myshopify.com", "timestamp"=>"1491498757"}
+2017-04-06T17:12:39.833373+00:00 app[web.1]:   [1m[35mShop Load (4.5ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 7]]
+2017-04-06T17:12:39.834103+00:00 app[web.1]: !!!!!!!! SHOP  PRESENT THIS ROUND !!!!
+2017-04-06T17:12:39.835825+00:00 app[web.1]:   [1m[36mShopifyShop Load (1.4ms)[0m  [1mSELECT  "shopify_shops".* FROM "shopify_shops" WHERE "shopify_shops"."shop_domain" = $1 LIMIT 1[0m  [["shop_domain", "bucket-hats-4.myshopify.com"]]
+2017-04-06T17:12:40.275836+00:00 app[web.1]: 
+2017-04-06T17:12:40.435358+00:00 app[web.1]: Theme name is : Supply
+2017-04-06T17:12:40.435606+00:00 app[web.1]: ssssssssssssssss
+2017-04-06T17:12:40.664482+00:00 app[web.1]:         </a>
+2017-04-06T17:12:40.664484+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664485+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664486+00:00 app[web.1]: 
+2017-04-06T17:12:40.664486+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664487+00:00 app[web.1]: </header>
+2017-04-06T17:12:40.664487+00:00 app[web.1]: 
+2017-04-06T17:12:40.664488+00:00 app[web.1]: <nav class="nav-bar" role="navigation">
+2017-04-06T17:12:40.664493+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.664494+00:00 app[web.1]:     <form action="/search" method="get" class="search-bar" role="search">
+2017-04-06T17:12:40.664495+00:00 app[web.1]:   <input type="hidden" name="type" value="product">
+2017-04-06T17:12:40.664495+00:00 app[web.1]: 
+2017-04-06T17:12:40.664496+00:00 app[web.1]:   <input type="search" name="q" value="" placeholder="Search all products..." aria-label="Search all products...">
+2017-04-06T17:12:40.664497+00:00 app[web.1]:   <button type="submit" class="search-bar--submit icon-fallback-text">
+2017-04-06T17:12:40.664497+00:00 app[web.1]:     <span class="icon icon-search" aria-hidden="true"></span>
+2017-04-06T17:12:40.664498+00:00 app[web.1]:     <span class="fallback-text">Search</span>
+2017-04-06T17:12:40.664498+00:00 app[web.1]:   </button>
+2017-04-06T17:12:40.664499+00:00 app[web.1]: </form>
+2017-04-06T17:12:40.664499+00:00 app[web.1]: 
+2017-04-06T17:12:40.664500+00:00 app[web.1]:     <ul class="site-nav" id="accessibleNav">
+2017-04-06T17:12:40.664500+00:00 app[web.1]:   
+2017-04-06T17:12:40.664501+00:00 app[web.1]:   
+2017-04-06T17:12:40.664501+00:00 app[web.1]:     
+2017-04-06T17:12:40.664502+00:00 app[web.1]:     
+2017-04-06T17:12:40.664502+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664503+00:00 app[web.1]:         <a href="/">Home</a>
+2017-04-06T17:12:40.664504+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664504+00:00 app[web.1]:     
+2017-04-06T17:12:40.664505+00:00 app[web.1]:   
+2017-04-06T17:12:40.664505+00:00 app[web.1]:     
+2017-04-06T17:12:40.664506+00:00 app[web.1]:     
+2017-04-06T17:12:40.664506+00:00 app[web.1]:       <li class="site-nav--has-dropdown" aria-haspopup="true">
+2017-04-06T17:12:40.664507+00:00 app[web.1]:         <a href="/collections/all">
+2017-04-06T17:12:40.664507+00:00 app[web.1]:           Catalog
+2017-04-06T17:12:40.664508+00:00 app[web.1]:           <span class="icon-fallback-text">
+2017-04-06T17:12:40.664509+00:00 app[web.1]:             <span class="icon icon-arrow-down" aria-hidden="true"></span>
+2017-04-06T17:12:40.664509+00:00 app[web.1]:           </span>
+2017-04-06T17:12:40.664510+00:00 app[web.1]:         </a>
+2017-04-06T17:12:40.664510+00:00 app[web.1]:         <ul class="site-nav--dropdown">
+2017-04-06T17:12:40.664511+00:00 app[web.1]:           
+2017-04-06T17:12:40.664511+00:00 app[web.1]:             <li ><a href="/collections/bucket-hats">Bucket Hats</a></li>
+2017-04-06T17:12:40.664512+00:00 app[web.1]:           
+2017-04-06T17:12:40.664513+00:00 app[web.1]:             <li ><a href="/collections/electronics">Electronics</a></li>
+2017-04-06T17:12:40.664513+00:00 app[web.1]:           
+2017-04-06T17:12:40.664514+00:00 app[web.1]:             <li ><a href="/collections/t-shirts">t-shirts</a></li>
+2017-04-06T17:12:40.664514+00:00 app[web.1]:           
+2017-04-06T17:12:40.664515+00:00 app[web.1]:             <li ><a href="/collections/car-accessories">Car Accesories</a></li>
+2017-04-06T17:12:40.664515+00:00 app[web.1]:           
+2017-04-06T17:12:40.664516+00:00 app[web.1]:         </ul>
+2017-04-06T17:12:40.664516+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664517+00:00 app[web.1]:     
+2017-04-06T17:12:40.664517+00:00 app[web.1]:   
+2017-04-06T17:12:40.664518+00:00 app[web.1]:     
+2017-04-06T17:12:40.664519+00:00 app[web.1]:     
+2017-04-06T17:12:40.664519+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664520+00:00 app[web.1]:         <a href="/blogs/news">Blog</a>
+2017-04-06T17:12:40.664520+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664521+00:00 app[web.1]:     
+2017-04-06T17:12:40.664521+00:00 app[web.1]:   
+2017-04-06T17:12:40.664522+00:00 app[web.1]:     
+2017-04-06T17:12:40.664522+00:00 app[web.1]:     
+2017-04-06T17:12:40.664523+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664523+00:00 app[web.1]:         <a href="/pages/about-us">About us</a>
+2017-04-06T17:12:40.664524+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664524+00:00 app[web.1]:     
+2017-04-06T17:12:40.664525+00:00 app[web.1]:   
+2017-04-06T17:12:40.664525+00:00 app[web.1]:     
+2017-04-06T17:12:40.664526+00:00 app[web.1]:     
+2017-04-06T17:12:40.664526+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664527+00:00 app[web.1]:         <a href="/pages/contact-us">Contact Us</a>
+2017-04-06T17:12:40.664528+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664528+00:00 app[web.1]:     
+2017-04-06T17:12:40.664529+00:00 app[web.1]:   
+2017-04-06T17:12:40.664529+00:00 app[web.1]:     
+2017-04-06T17:12:40.664530+00:00 app[web.1]:     
+2017-04-06T17:12:40.664530+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664531+00:00 app[web.1]:         <a href="https://returns.aftership.com/bucket-hats-4">Returns</a>
+2017-04-06T17:12:40.664531+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664532+00:00 app[web.1]:     
+2017-04-06T17:12:40.664532+00:00 app[web.1]:   
+2017-04-06T17:12:40.664533+00:00 app[web.1]: 
+2017-04-06T17:12:40.664533+00:00 app[web.1]:   
+2017-04-06T17:12:40.664534+00:00 app[web.1]:     
+2017-04-06T17:12:40.664537+00:00 app[web.1]:       <li class="customer-navlink large--hide"><a href="/account/login" id="customer_login_link">Sign in</a></li>
+2017-04-06T17:12:40.664538+00:00 app[web.1]:       <li class="customer-navlink large--hide"><a href="/account/register" id="customer_register_link">Create an Account</a></li>
+2017-04-06T17:12:40.664539+00:00 app[web.1]:     
+2017-04-06T17:12:40.664539+00:00 app[web.1]:   
+2017-04-06T17:12:40.664540+00:00 app[web.1]: </ul>
+2017-04-06T17:12:40.664540+00:00 app[web.1]: 
+2017-04-06T17:12:40.664541+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664542+00:00 app[web.1]: </nav>
+2017-04-06T17:12:40.664542+00:00 app[web.1]: 
+2017-04-06T17:12:40.664543+00:00 app[web.1]: <div id="mobileNavBar">
+2017-04-06T17:12:40.664543+00:00 app[web.1]:   <div class="display-table-cell">
+2017-04-06T17:12:40.664544+00:00 app[web.1]:     <a class="menu-toggle mobileNavBar-link"><span class="icon icon-hamburger"></span>Menu</a>
+2017-04-06T17:12:40.664544+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664545+00:00 app[web.1]:   <div class="display-table-cell">
+2017-04-06T17:12:40.664546+00:00 app[web.1]:     <a href="/cart" class="cart-toggle mobileNavBar-link">
+2017-04-06T17:12:40.664550+00:00 app[web.1]:       <span class="icon icon-cart"></span>
+2017-04-06T17:12:40.664551+00:00 app[web.1]:       Cart <span class="cart-count hidden-count">0</span>
+2017-04-06T17:12:40.664551+00:00 app[web.1]:     </a>
+2017-04-06T17:12:40.664552+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664552+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.664553+00:00 app[web.1]: 
+2017-04-06T17:12:40.664553+00:00 app[web.1]: 
+2017-04-06T17:12:40.664554+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.664554+00:00 app[web.1]: 
+2017-04-06T17:12:40.664555+00:00 app[web.1]:   <main class="wrapper main-content" role="main">
+2017-04-06T17:12:40.664555+00:00 app[web.1]: 
+2017-04-06T17:12:40.664556+00:00 app[web.1]:     
+2017-04-06T17:12:40.664556+00:00 app[web.1]: 
+2017-04-06T17:12:40.664557+00:00 app[web.1]:   </main>
+2017-04-06T17:12:40.664557+00:00 app[web.1]: 
+2017-04-06T17:12:40.664558+00:00 app[web.1]:   <div id="shopify-section-footer" class="shopify-section footer-section">
+2017-04-06T17:12:40.664559+00:00 app[web.1]: 
+2017-04-06T17:12:40.664559+00:00 app[web.1]: <footer class="site-footer small--text-center" role="contentinfo">
+2017-04-06T17:12:40.664560+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.664560+00:00 app[web.1]: 
+2017-04-06T17:12:40.664561+00:00 app[web.1]:     <div class="grid">
+2017-04-06T17:12:40.664561+00:00 app[web.1]: 
+2017-04-06T17:12:40.664562+00:00 app[web.1]:     
+2017-04-06T17:12:40.664562+00:00 app[web.1]: 
+2017-04-06T17:12:40.664563+00:00 app[web.1]:       
+2017-04-06T17:12:40.664563+00:00 app[web.1]: 
+2017-04-06T17:12:40.664564+00:00 app[web.1]: 
+2017-04-06T17:12:40.664565+00:00 app[web.1]:     <div class="grid-item small--one-whole two-twelfths">
+2017-04-06T17:12:40.664566+00:00 app[web.1]:       
+2017-04-06T17:12:40.664566+00:00 app[web.1]:         <h3>Quick links</h3>
+2017-04-06T17:12:40.664567+00:00 app[web.1]:       
+2017-04-06T17:12:40.664567+00:00 app[web.1]: 
+2017-04-06T17:12:40.664568+00:00 app[web.1]:       
+2017-04-06T17:12:40.664568+00:00 app[web.1]:         <ul>
+2017-04-06T17:12:40.664569+00:00 app[web.1]:           
+2017-04-06T17:12:40.664569+00:00 app[web.1]:             
+2017-04-06T17:12:40.664570+00:00 app[web.1]:             Pick a link list to show here in your <a href="/admin/themes/181272328/settings">Theme Settings</a> under <strong>Footer</strong> > <strong>Quick links link list</strong>.
+2017-04-06T17:12:40.664571+00:00 app[web.1]:           
+2017-04-06T17:12:40.664571+00:00 app[web.1]:         </ul>
+2017-04-06T17:12:40.664572+00:00 app[web.1]: 
+2017-04-06T17:12:40.664572+00:00 app[web.1]:         
+2017-04-06T17:12:40.664573+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664573+00:00 app[web.1]:     
+2017-04-06T17:12:40.664574+00:00 app[web.1]: 
+2017-04-06T17:12:40.664574+00:00 app[web.1]:       
+2017-04-06T17:12:40.664575+00:00 app[web.1]: 
+2017-04-06T17:12:40.664575+00:00 app[web.1]: 
+2017-04-06T17:12:40.664576+00:00 app[web.1]:     <div class="grid-item small--one-whole one-half">
+2017-04-06T17:12:40.664577+00:00 app[web.1]:       
+2017-04-06T17:12:40.664577+00:00 app[web.1]:         <h3>Get in touch</h3>
+2017-04-06T17:12:40.664578+00:00 app[web.1]:       
+2017-04-06T17:12:40.664578+00:00 app[web.1]: 
+2017-04-06T17:12:40.664579+00:00 app[web.1]:       
+2017-04-06T17:12:40.664579+00:00 app[web.1]: 
+2017-04-06T17:12:40.664142+00:00 app[web.1]:               </li>
+2017-04-06T17:12:40.664150+00:00 app[web.1]:           </ul>
+2017-04-06T17:12:40.664580+00:00 app[web.1]:             
+2017-04-06T17:12:40.664580+00:00 app[web.1]:               <p>Use this text to share information about your brand with your customers.</p>
+2017-04-06T17:12:40.664581+00:00 app[web.1]:             
+2017-04-06T17:12:40.664151+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664151+00:00 app[web.1]: 
+2017-04-06T17:12:40.664581+00:00 app[web.1]: 
+2017-04-06T17:12:40.664152+00:00 app[web.1]:       
+2017-04-06T17:12:40.664582+00:00 app[web.1]: 
+2017-04-06T17:12:40.664582+00:00 app[web.1]:         
+2017-04-06T17:12:40.664583+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664583+00:00 app[web.1]:     
+2017-04-06T17:12:40.664584+00:00 app[web.1]: 
+2017-04-06T17:12:40.664585+00:00 app[web.1]:       
+2017-04-06T17:12:40.664152+00:00 app[web.1]:         <div class="grid-item large--three-fifths large--text-right">
+2017-04-06T17:12:40.664153+00:00 app[web.1]:           
+2017-04-06T17:12:40.664154+00:00 app[web.1]:           <ul class="inline-list payment-icons">
+2017-04-06T17:12:40.664154+00:00 app[web.1]:             
+2017-04-06T17:12:40.664585+00:00 app[web.1]: 
+2017-04-06T17:12:40.664586+00:00 app[web.1]: 
+2017-04-06T17:12:40.664586+00:00 app[web.1]:     <div class="grid-item small--one-whole one-third">
+2017-04-06T17:12:40.664587+00:00 app[web.1]:       
+2017-04-06T17:12:40.664587+00:00 app[web.1]:         <h3>Newsletter</h3>
+2017-04-06T17:12:40.664155+00:00 app[web.1]:               
+2017-04-06T17:12:40.664159+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664160+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664160+00:00 app[web.1]:                     <span class="icon icon-visa" aria-hidden="true"></span>
+2017-04-06T17:12:40.664161+00:00 app[web.1]:                     <span class="fallback-text">visa</span>
+2017-04-06T17:12:40.664161+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664162+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664162+00:00 app[web.1]:               
+2017-04-06T17:12:40.664163+00:00 app[web.1]:             
+2017-04-06T17:12:40.664163+00:00 app[web.1]:               
+2017-04-06T17:12:40.664164+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664588+00:00 app[web.1]:       
+2017-04-06T17:12:40.664164+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664165+00:00 app[web.1]:                     <span class="icon icon-master" aria-hidden="true"></span>
+2017-04-06T17:12:40.664165+00:00 app[web.1]:                     <span class="fallback-text">master</span>
+2017-04-06T17:12:40.664166+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664167+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664167+00:00 app[web.1]:               
+2017-04-06T17:12:40.664588+00:00 app[web.1]: 
+2017-04-06T17:12:40.664589+00:00 app[web.1]:       
+2017-04-06T17:12:40.664589+00:00 app[web.1]:           <div class="form-vertical">
+2017-04-06T17:12:40.664590+00:00 app[web.1]:     <form method="post" action="https://bucket-hats-4.myshopify.com/contact#contact_form" id="contact_form" class="contact-form" accept-charset="UTF-8"><input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
+2017-04-06T17:12:40.664168+00:00 app[web.1]:             
+2017-04-06T17:12:40.664168+00:00 app[web.1]:               
+2017-04-06T17:12:40.664591+00:00 app[web.1]:       
+2017-04-06T17:12:40.664169+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664170+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664171+00:00 app[web.1]:                     <span class="icon icon-american_express" aria-hidden="true"></span>
+2017-04-06T17:12:40.664172+00:00 app[web.1]:                     <span class="fallback-text">american express</span>
+2017-04-06T17:12:40.664591+00:00 app[web.1]:       
+2017-04-06T17:12:40.664592+00:00 app[web.1]:         <input type="hidden" name="contact[tags]" value="newsletter">
+2017-04-06T17:12:40.664172+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664173+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664173+00:00 app[web.1]:               
+2017-04-06T17:12:40.664592+00:00 app[web.1]:         <div class="input-group">
+2017-04-06T17:12:40.664174+00:00 app[web.1]:             
+2017-04-06T17:12:40.664174+00:00 app[web.1]:               
+2017-04-06T17:12:40.664175+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664593+00:00 app[web.1]:           <label for="Email" class="visually-hidden">E-mail</label>
+2017-04-06T17:12:40.664593+00:00 app[web.1]:           <input type="email" value="" placeholder="Email Address" name="contact[email]" id="Email" class="input-group-field" aria-label="Email Address" autocorrect="off" autocapitalize="off">
+2017-04-06T17:12:40.664594+00:00 app[web.1]:           <span class="input-group-btn">
+2017-04-06T17:12:40.664175+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664176+00:00 app[web.1]:                     <span class="icon icon-paypal" aria-hidden="true"></span>
+2017-04-06T17:12:40.664176+00:00 app[web.1]:                     <span class="fallback-text">paypal</span>
+2017-04-06T17:12:40.664177+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664177+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664178+00:00 app[web.1]:               
+2017-04-06T17:12:40.664178+00:00 app[web.1]:             
+2017-04-06T17:12:40.664595+00:00 app[web.1]:             <button type="submit" class="btn-secondary btn--small" name="commit" id="subscribe">Sign Up</button>
+2017-04-06T17:12:40.664179+00:00 app[web.1]:               
+2017-04-06T17:12:40.664179+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664180+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664595+00:00 app[web.1]:           </span>
+2017-04-06T17:12:40.664181+00:00 app[web.1]:                     <span class="icon icon-diners_club" aria-hidden="true"></span>
+2017-04-06T17:12:40.664596+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664596+00:00 app[web.1]:       
+2017-04-06T17:12:40.664597+00:00 app[web.1]:     </form>
+2017-04-06T17:12:40.664597+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664181+00:00 app[web.1]:                     <span class="fallback-text">diners club</span>
+2017-04-06T17:12:40.664182+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664598+00:00 app[web.1]:         
+2017-04-06T17:12:40.664598+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664183+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664183+00:00 app[web.1]:               
+2017-04-06T17:12:40.664184+00:00 app[web.1]:             
+2017-04-06T17:12:40.664184+00:00 app[web.1]:               
+2017-04-06T17:12:40.664599+00:00 app[web.1]:     
+2017-04-06T17:12:40.664185+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664185+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664186+00:00 app[web.1]:                     <span class="icon icon-discover" aria-hidden="true"></span>
+2017-04-06T17:12:40.664187+00:00 app[web.1]:                     <span class="fallback-text">discover</span>
+2017-04-06T17:12:40.664599+00:00 app[web.1]: 
+2017-04-06T17:12:40.664187+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664188+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664600+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664600+00:00 app[web.1]: 
+2017-04-06T17:12:40.664601+00:00 app[web.1]:   
+2017-04-06T17:12:40.664601+00:00 app[web.1]: 
+2017-04-06T17:12:40.664602+00:00 app[web.1]:     <div class="grid">
+2017-04-06T17:12:40.664602+00:00 app[web.1]:     
+2017-04-06T17:12:40.664188+00:00 app[web.1]:               
+2017-04-06T17:12:40.664189+00:00 app[web.1]:             
+2017-04-06T17:12:40.664189+00:00 app[web.1]:           </ul>
+2017-04-06T17:12:40.664190+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664190+00:00 app[web.1]:       
+2017-04-06T17:12:40.664603+00:00 app[web.1]:       
+2017-04-06T17:12:40.664603+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664604+00:00 app[web.1]:       <hr class="hr--small">
+2017-04-06T17:12:40.664604+00:00 app[web.1]:       <div class="grid">
+2017-04-06T17:12:40.664605+00:00 app[web.1]:       <div class="grid-item large--two-fifths">
+2017-04-06T17:12:40.664191+00:00 app[web.1]: 
+2017-04-06T17:12:40.664191+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664605+00:00 app[web.1]:           <ul class="legal-links inline-list">
+2017-04-06T17:12:40.664606+00:00 app[web.1]:               <li>
+2017-04-06T17:12:40.664192+00:00 app[web.1]: 
+2017-04-06T17:12:40.664192+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664606+00:00 app[web.1]:                 &copy; 2017 <a href="/" title="">bucket hats 4</a>
+2017-04-06T17:12:40.664607+00:00 app[web.1]:               </li>
+2017-04-06T17:12:40.664607+00:00 app[web.1]:               <li>
+2017-04-06T17:12:40.664193+00:00 app[web.1]: 
+2017-04-06T17:12:40.664193+00:00 app[web.1]: </footer>
+2017-04-06T17:12:40.664608+00:00 app[web.1]:                 <a target="_blank" rel="nofollow" href="https://www.shopify.com">Powered by Shopify</a>
+2017-04-06T17:12:40.664608+00:00 app[web.1]:               </li>
+2017-04-06T17:12:40.664609+00:00 app[web.1]:           </ul>
+2017-04-06T17:12:40.664194+00:00 app[web.1]: 
+2017-04-06T17:12:40.664195+00:00 app[web.1]: 
+2017-04-06T17:12:40.664195+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.664196+00:00 app[web.1]: 
+2017-04-06T17:12:40.664609+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664610+00:00 app[web.1]: 
+2017-04-06T17:12:40.664610+00:00 app[web.1]:       
+2017-04-06T17:12:40.664611+00:00 app[web.1]:         <div class="grid-item large--three-fifths large--text-right">
+2017-04-06T17:12:40.664196+00:00 app[web.1]:   <script>
+2017-04-06T17:12:40.664197+00:00 app[web.1]:   var moneyFormat = '<span class=money>${{amount}}';
+2017-04-06T17:12:40.664197+00:00 app[web.1]: 
+2017-04-06T17:12:40.664198+00:00 app[web.1]:   var theme = {
+2017-04-06T17:12:40.664198+00:00 app[web.1]:     strings:{
+2017-04-06T17:12:40.664199+00:00 app[web.1]:       product:{
+2017-04-06T17:12:40.664611+00:00 app[web.1]:           
+2017-04-06T17:12:40.664612+00:00 app[web.1]:           <ul class="inline-list payment-icons">
+2017-04-06T17:12:40.664612+00:00 app[web.1]:             
+2017-04-06T17:12:40.664200+00:00 app[web.1]:         unavailable: "Unavailable",
+2017-04-06T17:12:40.664200+00:00 app[web.1]:         will_be_in_stock_after:"Will be in stock after [date]",
+2017-04-06T17:12:40.664613+00:00 app[web.1]:               
+2017-04-06T17:12:40.664613+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664614+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664614+00:00 app[web.1]:                     <span class="icon icon-visa" aria-hidden="true"></span>
+2017-04-06T17:12:40.664201+00:00 app[web.1]:         only_left:"Only 1 left!"
+2017-04-06T17:12:40.664201+00:00 app[web.1]:       },
+2017-04-06T17:12:40.664202+00:00 app[web.1]:       navigation:{
+2017-04-06T17:12:40.664615+00:00 app[web.1]:                     <span class="fallback-text">visa</span>
+2017-04-06T17:12:40.664615+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664616+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664616+00:00 app[web.1]:               
+2017-04-06T17:12:40.664202+00:00 app[web.1]:         more_link: "More"
+2017-04-06T17:12:40.664203+00:00 app[web.1]:       }
+2017-04-06T17:12:40.664203+00:00 app[web.1]:     }
+2017-04-06T17:12:40.664204+00:00 app[web.1]:   }
+2017-04-06T17:12:40.664205+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664205+00:00 app[web.1]: 
+2017-04-06T17:12:40.664206+00:00 app[web.1]: 
+2017-04-06T17:12:40.664617+00:00 app[web.1]:             
+2017-04-06T17:12:40.664617+00:00 app[web.1]:               
+2017-04-06T17:12:40.664618+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664618+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664206+00:00 app[web.1]: 
+2017-04-06T17:12:40.664207+00:00 app[web.1]:   
+2017-04-06T17:12:40.664207+00:00 app[web.1]:   <script id="cartTemplate" type="text/template">
+2017-04-06T17:12:40.664208+00:00 app[web.1]:   
+2017-04-06T17:12:40.664208+00:00 app[web.1]:     <form action="/cart" method="post" class="cart-form" novalidate>
+2017-04-06T17:12:40.664619+00:00 app[web.1]:                     <span class="icon icon-master" aria-hidden="true"></span>
+2017-04-06T17:12:40.664619+00:00 app[web.1]:                     <span class="fallback-text">master</span>
+2017-04-06T17:12:40.664620+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664209+00:00 app[web.1]:       <div class="ajaxifyCart--products">
+2017-04-06T17:12:40.664209+00:00 app[web.1]:         {{#items}}
+2017-04-06T17:12:40.664620+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664621+00:00 app[web.1]:               
+2017-04-06T17:12:40.664621+00:00 app[web.1]:             
+2017-04-06T17:12:40.664210+00:00 app[web.1]:         <div class="ajaxifyCart--product">
+2017-04-06T17:12:40.664210+00:00 app[web.1]:           <div class="ajaxifyCart--row" data-line="{{line}}">
+2017-04-06T17:12:40.664211+00:00 app[web.1]:             <div class="grid">
+2017-04-06T17:12:40.664212+00:00 app[web.1]:               <div class="grid-item large--two-thirds">
+2017-04-06T17:12:40.664212+00:00 app[web.1]:                 <div class="grid">
+2017-04-06T17:12:40.664213+00:00 app[web.1]:                   <div class="grid-item one-quarter">
+2017-04-06T17:12:40.664213+00:00 app[web.1]:                     <a href="{{url}}" class="ajaxCart--product-image"><img src="{{img}}" alt=""></a>
+2017-04-06T17:12:40.664214+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664214+00:00 app[web.1]:                   <div class="grid-item three-quarters">
+2017-04-06T17:12:40.664622+00:00 app[web.1]:               
+2017-04-06T17:12:40.664215+00:00 app[web.1]:                     <a href="{{url}}" class="h4">{{name}}</a>
+2017-04-06T17:12:40.664622+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664623+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664623+00:00 app[web.1]:                     <span class="icon icon-american_express" aria-hidden="true"></span>
+2017-04-06T17:12:40.664215+00:00 app[web.1]:                     <p>{{variation}}</p>
+2017-04-06T17:12:40.664216+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664624+00:00 app[web.1]:                     <span class="fallback-text">american express</span>
+2017-04-06T17:12:40.664624+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664625+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664625+00:00 app[web.1]:               
+2017-04-06T17:12:40.664626+00:00 app[web.1]:             
+2017-04-06T17:12:40.664217+00:00 app[web.1]:                 </div>
+2017-04-06T17:12:40.664217+00:00 app[web.1]:               </div>
+2017-04-06T17:12:40.664218+00:00 app[web.1]:               <div class="grid-item large--one-third">
+2017-04-06T17:12:40.664219+00:00 app[web.1]:                 <div class="grid">
+2017-04-06T17:12:40.664220+00:00 app[web.1]:                   <div class="grid-item one-third">
+2017-04-06T17:12:40.664220+00:00 app[web.1]:                     <div class="ajaxifyCart--qty">
+2017-04-06T17:12:40.664221+00:00 app[web.1]:                       <input type="text" name="updates[]" class="ajaxifyCart--num" value="{{itemQty}}" min="0" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+2017-04-06T17:12:40.664222+00:00 app[web.1]:                       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--add" data-line="{{line}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.664222+00:00 app[web.1]:                       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--minus" data-line="{{line}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664223+00:00 app[web.1]:                     </div>
+2017-04-06T17:12:40.664223+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664224+00:00 app[web.1]:                   <div class="grid-item one-third text-center">
+2017-04-06T17:12:40.664626+00:00 app[web.1]:               
+2017-04-06T17:12:40.664627+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664627+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664628+00:00 app[web.1]:                     <span class="icon icon-paypal" aria-hidden="true"></span>
+2017-04-06T17:12:40.664628+00:00 app[web.1]:                     <span class="fallback-text">paypal</span>
+2017-04-06T17:12:40.664225+00:00 app[web.1]:                     <p>{{price}}</p>
+2017-04-06T17:12:40.664225+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664226+00:00 app[web.1]:                   <div class="grid-item one-third text-right">
+2017-04-06T17:12:40.664226+00:00 app[web.1]:                     <p>
+2017-04-06T17:12:40.664230+00:00 app[web.1]:                       <small><a href="/cart/change?line={{line}}&amp;quantity=0" class="ajaxifyCart--remove" data-line="{{line}}">Remove</a></small>
+2017-04-06T17:12:40.664231+00:00 app[web.1]:                     </p>
+2017-04-06T17:12:40.664232+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664232+00:00 app[web.1]:                 </div>
+2017-04-06T17:12:40.664233+00:00 app[web.1]:               </div>
+2017-04-06T17:12:40.664233+00:00 app[web.1]:             </div>
+2017-04-06T17:12:40.664234+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.664234+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664235+00:00 app[web.1]:         {{/items}}
+2017-04-06T17:12:40.664235+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664236+00:00 app[web.1]:       <div class="ajaxifyCart--row text-right medium-down--text-center">
+2017-04-06T17:12:40.664236+00:00 app[web.1]:         <span class="h3">Subtotal {{totalPrice}}</span>
+2017-04-06T17:12:40.664237+00:00 app[web.1]:         <input type="submit" class="{{btnClass}}" name="checkout" value="Checkout">
+2017-04-06T17:12:40.664238+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664238+00:00 app[web.1]:     </form>
+2017-04-06T17:12:40.664629+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664239+00:00 app[web.1]:   
+2017-04-06T17:12:40.664629+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664239+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664630+00:00 app[web.1]:               
+2017-04-06T17:12:40.664240+00:00 app[web.1]:   <script id="drawerTemplate" type="text/template">
+2017-04-06T17:12:40.664630+00:00 app[web.1]:             
+2017-04-06T17:12:40.664240+00:00 app[web.1]:   
+2017-04-06T17:12:40.664630+00:00 app[web.1]:               
+2017-04-06T17:12:40.664241+00:00 app[web.1]:     <div id="ajaxifyDrawer" class="ajaxify-drawer">
+2017-04-06T17:12:40.664241+00:00 app[web.1]:       <div id="ajaxifyCart" class="ajaxifyCart--content {{wrapperClass}}"></div>
+2017-04-06T17:12:40.664631+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664631+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664635+00:00 app[web.1]:                     <span class="icon icon-diners_club" aria-hidden="true"></span>
+2017-04-06T17:12:40.664636+00:00 app[web.1]:                     <span class="fallback-text">diners club</span>
+2017-04-06T17:12:40.664636+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664637+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664637+00:00 app[web.1]:               
+2017-04-06T17:12:40.664638+00:00 app[web.1]:             
+2017-04-06T17:12:40.664242+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664638+00:00 app[web.1]:               
+2017-04-06T17:12:40.664639+00:00 app[web.1]:                 <li>
+2017-04-06T17:12:40.664242+00:00 app[web.1]:     <div class="ajaxifyDrawer-caret"><span></span></div>
+2017-04-06T17:12:40.664243+00:00 app[web.1]:   
+2017-04-06T17:12:40.664243+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664244+00:00 app[web.1]:   <script id="modalTemplate" type="text/template">
+2017-04-06T17:12:40.664245+00:00 app[web.1]:   
+2017-04-06T17:12:40.664245+00:00 app[web.1]:     <div id="ajaxifyModal" class="ajaxify-modal">
+2017-04-06T17:12:40.664246+00:00 app[web.1]:       <div id="ajaxifyCart" class="ajaxifyCart--content"></div>
+2017-04-06T17:12:40.664246+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664247+00:00 app[web.1]:   
+2017-04-06T17:12:40.664247+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664639+00:00 app[web.1]:                   <span class="icon-fallback-text">
+2017-04-06T17:12:40.664640+00:00 app[web.1]:                     <span class="icon icon-discover" aria-hidden="true"></span>
+2017-04-06T17:12:40.664640+00:00 app[web.1]:                     <span class="fallback-text">discover</span>
+2017-04-06T17:12:40.664248+00:00 app[web.1]:   <script id="ajaxifyQty" type="text/template">
+2017-04-06T17:12:40.664248+00:00 app[web.1]:   
+2017-04-06T17:12:40.664249+00:00 app[web.1]:     <div class="ajaxifyCart--qty">
+2017-04-06T17:12:40.664250+00:00 app[web.1]:       <input type="text" class="ajaxifyCart--num" value="{{itemQty}}" data-id="{{key}}" min="0" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+2017-04-06T17:12:40.664251+00:00 app[web.1]:       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--add" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.664251+00:00 app[web.1]:       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--minus" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664252+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664252+00:00 app[web.1]:   
+2017-04-06T17:12:40.664641+00:00 app[web.1]:                   </span>
+2017-04-06T17:12:40.664253+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664641+00:00 app[web.1]:                 </li>
+2017-04-06T17:12:40.664642+00:00 app[web.1]:               
+2017-04-06T17:12:40.664642+00:00 app[web.1]:             
+2017-04-06T17:12:40.664643+00:00 app[web.1]:           </ul>
+2017-04-06T17:12:40.664253+00:00 app[web.1]:   <script id="jsQty" type="text/template">
+2017-04-06T17:12:40.664254+00:00 app[web.1]:   
+2017-04-06T17:12:40.664254+00:00 app[web.1]:     <div class="js-qty">
+2017-04-06T17:12:40.664255+00:00 app[web.1]:       <input type="text" class="js--num" value="{{itemQty}}" min="1" data-id="{{key}}" aria-label="quantity" pattern="[0-9]*" name="{{inputName}}" id="{{inputId}}">
+2017-04-06T17:12:40.664256+00:00 app[web.1]:       <span class="js--qty-adjuster js--add" data-id="{{key}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.664256+00:00 app[web.1]:       <span class="js--qty-adjuster js--minus" data-id="{{key}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664643+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664644+00:00 app[web.1]:       
+2017-04-06T17:12:40.664644+00:00 app[web.1]: 
+2017-04-06T17:12:40.664257+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.660922+00:00 app[web.1]: Completed 500 Internal Server Error in 833ms (ActiveRecord: 5.9ms)
+2017-04-06T17:12:40.664258+00:00 app[web.1]:   
+2017-04-06T17:12:40.664258+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664259+00:00 app[web.1]: 
+2017-04-06T17:12:40.664259+00:00 app[web.1]: 
+2017-04-06T17:12:40.664260+00:00 app[web.1]:   <script>
+2017-04-06T17:12:40.664260+00:00 app[web.1]:   jQuery(function($) {
+2017-04-06T17:12:40.664261+00:00 app[web.1]:     ajaxifyShopify.init({
+2017-04-06T17:12:40.664645+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664645+00:00 app[web.1]: 
+2017-04-06T17:12:40.664646+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664646+00:00 app[web.1]: 
+2017-04-06T17:12:40.664646+00:00 app[web.1]: </footer>
+2017-04-06T17:12:40.664647+00:00 app[web.1]: 
+2017-04-06T17:12:40.664647+00:00 app[web.1]: 
+2017-04-06T17:12:40.664648+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.663779+00:00 app[web.1]: 
+2017-04-06T17:12:40.663782+00:00 app[web.1]: JSON::ParserError (784: unexpected token at '<!doctype html>
+2017-04-06T17:12:40.664648+00:00 app[web.1]: 
+2017-04-06T17:12:40.664649+00:00 app[web.1]:   <script>
+2017-04-06T17:12:40.664261+00:00 app[web.1]:       method: 'modal',
+2017-04-06T17:12:40.664262+00:00 app[web.1]:       wrapperClass: 'wrapper',
+2017-04-06T17:12:40.664649+00:00 app[web.1]:   var moneyFormat = '<span class=money>${{amount}}';
+2017-04-06T17:12:40.664650+00:00 app[web.1]: 
+2017-04-06T17:12:40.664262+00:00 app[web.1]:       formSelector: '#addToCartForm',
+2017-04-06T17:12:40.664263+00:00 app[web.1]:       addToCartSelector: '#addToCart',
+2017-04-06T17:12:40.663783+00:00 app[web.1]: <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+2017-04-06T17:12:40.663784+00:00 app[web.1]: <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+2017-04-06T17:12:40.663784+00:00 app[web.1]: <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+2017-04-06T17:12:40.663785+00:00 app[web.1]: <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+2017-04-06T17:12:40.664263+00:00 app[web.1]:       cartCountSelector: '.cart-count',
+2017-04-06T17:12:40.664264+00:00 app[web.1]:       toggleCartButton: '.cart-toggle',
+2017-04-06T17:12:40.663786+00:00 app[web.1]: <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-touch no-js"> <!--<![endif]-->
+2017-04-06T17:12:40.663786+00:00 app[web.1]: <head>
+2017-04-06T17:12:40.664651+00:00 app[web.1]:   var theme = {
+2017-04-06T17:12:40.664651+00:00 app[web.1]:     strings:{
+2017-04-06T17:12:40.664652+00:00 app[web.1]:       product:{
+2017-04-06T17:12:40.664652+00:00 app[web.1]:         unavailable: "Unavailable",
+2017-04-06T17:12:40.664653+00:00 app[web.1]:         will_be_in_stock_after:"Will be in stock after [date]",
+2017-04-06T17:12:40.664653+00:00 app[web.1]:         only_left:"Only 1 left!"
+2017-04-06T17:12:40.664654+00:00 app[web.1]:       },
+2017-04-06T17:12:40.664655+00:00 app[web.1]:       navigation:{
+2017-04-06T17:12:40.664655+00:00 app[web.1]:         more_link: "More"
+2017-04-06T17:12:40.663787+00:00 app[web.1]: 
+2017-04-06T17:12:40.664264+00:00 app[web.1]:       useCartTemplate: true,
+2017-04-06T17:12:40.664265+00:00 app[web.1]:       btnClass: 'btn',
+2017-04-06T17:12:40.664265+00:00 app[web.1]:       moneyFormat: moneyFormat,
+2017-04-06T17:12:40.664266+00:00 app[web.1]:       disableAjaxCart: false,
+2017-04-06T17:12:40.664266+00:00 app[web.1]:       enableQtySelectors: true
+2017-04-06T17:12:40.664267+00:00 app[web.1]:     });
+2017-04-06T17:12:40.664268+00:00 app[web.1]:   });
+2017-04-06T17:12:40.664268+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664268+00:00 app[web.1]: 
+2017-04-06T17:12:40.664269+00:00 app[web.1]: 
+2017-04-06T17:12:40.664656+00:00 app[web.1]:       }
+2017-04-06T17:12:40.664269+00:00 app[web.1]: </body>
+2017-04-06T17:12:40.664656+00:00 app[web.1]:     }
+2017-04-06T17:12:40.664657+00:00 app[web.1]:   }
+2017-04-06T17:12:40.664270+00:00 app[web.1]: </html>
+2017-04-06T17:12:40.664271+00:00 app[web.1]: '):
+2017-04-06T17:12:40.664272+00:00 app[web.1]:   app/controllers/admin/dashboard_controller.rb:139:in `update_tag_no_redirect'
+2017-04-06T17:12:40.664273+00:00 app[web.1]:   app/controllers/admin/dashboard_controller.rb:41:in `index'
+2017-04-06T17:12:40.664273+00:00 app[web.1]: 
+2017-04-06T17:12:40.664274+00:00 app[web.1]: 
+2017-04-06T17:12:40.664658+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664658+00:00 app[web.1]: 
+2017-04-06T17:12:40.664659+00:00 app[web.1]: 
+2017-04-06T17:12:40.664659+00:00 app[web.1]: 
+2017-04-06T17:12:40.664660+00:00 app[web.1]:   
+2017-04-06T17:12:40.664660+00:00 app[web.1]:   <script id="cartTemplate" type="text/template">
+2017-04-06T17:12:40.664661+00:00 app[web.1]:   
+2017-04-06T17:12:40.663788+00:00 app[web.1]:   <!-- Basic page needs ================================================== -->
+2017-04-06T17:12:40.663789+00:00 app[web.1]:   <meta charset="utf-8">
+2017-04-06T17:12:40.663789+00:00 app[web.1]:   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+2017-04-06T17:12:40.663790+00:00 app[web.1]: 
+2017-04-06T17:12:40.663790+00:00 app[web.1]:   
+2017-04-06T17:12:40.663803+00:00 app[web.1]: 
+2017-04-06T17:12:40.664661+00:00 app[web.1]:     <form action="/cart" method="post" class="cart-form" novalidate>
+2017-04-06T17:12:40.663804+00:00 app[web.1]:   <!-- Title and description ================================================== -->
+2017-04-06T17:12:40.664662+00:00 app[web.1]:       <div class="ajaxifyCart--products">
+2017-04-06T17:12:40.663805+00:00 app[web.1]:   <title>
+2017-04-06T17:12:40.663806+00:00 app[web.1]:   Search &ndash; bucket hats 4
+2017-04-06T17:12:40.663806+00:00 app[web.1]:   </title>
+2017-04-06T17:12:40.663807+00:00 app[web.1]: 
+2017-04-06T17:12:40.664274+00:00 app[web.1]: 
+2017-04-06T17:12:40.664275+00:00 app[web.1]: JSON::ParserError: 784: unexpected token at '<!doctype html>
+2017-04-06T17:12:40.664275+00:00 app[web.1]: <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+2017-04-06T17:12:40.663807+00:00 app[web.1]: 
+2017-04-06T17:12:40.663808+00:00 app[web.1]:   
+2017-04-06T17:12:40.663809+00:00 app[web.1]: 
+2017-04-06T17:12:40.663809+00:00 app[web.1]:   <!-- Product meta ================================================== -->
+2017-04-06T17:12:40.664276+00:00 app[web.1]: <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+2017-04-06T17:12:40.663810+00:00 app[web.1]:   
+2017-04-06T17:12:40.663810+00:00 app[web.1]: <meta property="og:site_name" content="bucket hats 4">
+2017-04-06T17:12:40.663811+00:00 app[web.1]: <meta property="og:url" content="https://bucket-hats-4.myshopify.com/search">
+2017-04-06T17:12:40.663812+00:00 app[web.1]: <meta property="og:title" content="Search">
+2017-04-06T17:12:40.664662+00:00 app[web.1]:         {{#items}}
+2017-04-06T17:12:40.664663+00:00 app[web.1]:         <div class="ajaxifyCart--product">
+2017-04-06T17:12:40.664663+00:00 app[web.1]:           <div class="ajaxifyCart--row" data-line="{{line}}">
+2017-04-06T17:12:40.664664+00:00 app[web.1]:             <div class="grid">
+2017-04-06T17:12:40.664277+00:00 app[web.1]: <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+2017-04-06T17:12:40.664665+00:00 app[web.1]:               <div class="grid-item large--two-thirds">
+2017-04-06T17:12:40.664665+00:00 app[web.1]:                 <div class="grid">
+2017-04-06T17:12:40.664666+00:00 app[web.1]:                   <div class="grid-item one-quarter">
+2017-04-06T17:12:40.663812+00:00 app[web.1]: <meta property="og:type" content="website">
+2017-04-06T17:12:40.663813+00:00 app[web.1]: <meta property="og:description" content="bucket hats 4">
+2017-04-06T17:12:40.663814+00:00 app[web.1]: 
+2017-04-06T17:12:40.664277+00:00 app[web.1]: <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+2017-04-06T17:12:40.664278+00:00 app[web.1]: <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-touch no-js"> <!--<![endif]-->
+2017-04-06T17:12:40.664278+00:00 app[web.1]: <head>
+2017-04-06T17:12:40.664666+00:00 app[web.1]:                     <a href="{{url}}" class="ajaxCart--product-image"><img src="{{img}}" alt=""></a>
+2017-04-06T17:12:40.664667+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664667+00:00 app[web.1]:                   <div class="grid-item three-quarters">
+2017-04-06T17:12:40.663814+00:00 app[web.1]: 
+2017-04-06T17:12:40.664279+00:00 app[web.1]: 
+2017-04-06T17:12:40.664279+00:00 app[web.1]:   <!-- Basic page needs ================================================== -->
+2017-04-06T17:12:40.664280+00:00 app[web.1]:   <meta charset="utf-8">
+2017-04-06T17:12:40.664281+00:00 app[web.1]:   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+2017-04-06T17:12:40.664281+00:00 app[web.1]: 
+2017-04-06T17:12:40.664668+00:00 app[web.1]:                     <a href="{{url}}" class="h4">{{name}}</a>
+2017-04-06T17:12:40.664668+00:00 app[web.1]:                     <p>{{variation}}</p>
+2017-04-06T17:12:40.664669+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664670+00:00 app[web.1]:                 </div>
+2017-04-06T17:12:40.664670+00:00 app[web.1]:               </div>
+2017-04-06T17:12:40.664671+00:00 app[web.1]:               <div class="grid-item large--one-third">
+2017-04-06T17:12:40.664671+00:00 app[web.1]:                 <div class="grid">
+2017-04-06T17:12:40.664672+00:00 app[web.1]:                   <div class="grid-item one-third">
+2017-04-06T17:12:40.664672+00:00 app[web.1]:                     <div class="ajaxifyCart--qty">
+2017-04-06T17:12:40.663815+00:00 app[web.1]: 
+2017-04-06T17:12:40.663815+00:00 app[web.1]: 
+2017-04-06T17:12:40.663816+00:00 app[web.1]:   <meta name="twitter:card" content="summary">
+2017-04-06T17:12:40.663817+00:00 app[web.1]: 
+2017-04-06T17:12:40.663817+00:00 app[web.1]: <meta name="twitter:title" content="Search">
+2017-04-06T17:12:40.663818+00:00 app[web.1]: <meta name="twitter:description" content="bucket hats 4">
+2017-04-06T17:12:40.664282+00:00 app[web.1]:   
+2017-04-06T17:12:40.664673+00:00 app[web.1]:                       <input type="text" name="updates[]" class="ajaxifyCart--num" value="{{itemQty}}" min="0" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+2017-04-06T17:12:40.664674+00:00 app[web.1]:                       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--add" data-line="{{line}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.663818+00:00 app[web.1]: 
+2017-04-06T17:12:40.664675+00:00 app[web.1]:                       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--minus" data-line="{{line}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664675+00:00 app[web.1]:                     </div>
+2017-04-06T17:12:40.664676+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664676+00:00 app[web.1]:                   <div class="grid-item one-third text-center">
+2017-04-06T17:12:40.664282+00:00 app[web.1]: 
+2017-04-06T17:12:40.663819+00:00 app[web.1]: 
+2017-04-06T17:12:40.664283+00:00 app[web.1]:   <!-- Title and description ================================================== -->
+2017-04-06T17:12:40.664677+00:00 app[web.1]:                     <p>{{price}}</p>
+2017-04-06T17:12:40.664677+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664283+00:00 app[web.1]:   <title>
+2017-04-06T17:12:40.663820+00:00 app[web.1]:   <!-- Helpers ================================================== -->
+2017-04-06T17:12:40.664678+00:00 app[web.1]:                   <div class="grid-item one-third text-right">
+2017-04-06T17:12:40.663820+00:00 app[web.1]:   <link rel="canonical" href="https://bucket-hats-4.myshopify.com/search">
+2017-04-06T17:12:40.663821+00:00 app[web.1]:   <meta name="viewport" content="width=device-width,initial-scale=1">
+2017-04-06T17:12:40.664678+00:00 app[web.1]:                     <p>
+2017-04-06T17:12:40.664679+00:00 app[web.1]:                       <small><a href="/cart/change?line={{line}}&amp;quantity=0" class="ajaxifyCart--remove" data-line="{{line}}">Remove</a></small>
+2017-04-06T17:12:40.664284+00:00 app[web.1]:   Search &ndash; bucket hats 4
+2017-04-06T17:12:40.663821+00:00 app[web.1]: 
+2017-04-06T17:12:40.663822+00:00 app[web.1]:   <!-- CSS ================================================== -->
+2017-04-06T17:12:40.664284+00:00 app[web.1]:   </title>
+2017-04-06T17:12:40.664285+00:00 app[web.1]: 
+2017-04-06T17:12:40.664679+00:00 app[web.1]:                     </p>
+2017-04-06T17:12:40.664680+00:00 app[web.1]:                   </div>
+2017-04-06T17:12:40.664681+00:00 app[web.1]:                 </div>
+2017-04-06T17:12:40.663823+00:00 app[web.1]:   <link href="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.scss.css?1007652989975767601" rel="stylesheet" type="text/css" media="all" />
+2017-04-06T17:12:40.664681+00:00 app[web.1]:               </div>
+2017-04-06T17:12:40.664285+00:00 app[web.1]: 
+2017-04-06T17:12:40.664286+00:00 app[web.1]:   
+2017-04-06T17:12:40.663824+00:00 app[web.1]:   
+2017-04-06T17:12:40.663824+00:00 app[web.1]:   
+2017-04-06T17:12:40.664286+00:00 app[web.1]: 
+2017-04-06T17:12:40.664287+00:00 app[web.1]:   <!-- Product meta ================================================== -->
+2017-04-06T17:12:40.664682+00:00 app[web.1]:             </div>
+2017-04-06T17:12:40.664682+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.664683+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664683+00:00 app[web.1]:         {{/items}}
+2017-04-06T17:12:40.664684+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664684+00:00 app[web.1]:       <div class="ajaxifyCart--row text-right medium-down--text-center">
+2017-04-06T17:12:40.664685+00:00 app[web.1]:         <span class="h3">Subtotal {{totalPrice}}</span>
+2017-04-06T17:12:40.664287+00:00 app[web.1]:   
+2017-04-06T17:12:40.664288+00:00 app[web.1]: <meta property="og:site_name" content="bucket hats 4">
+2017-04-06T17:12:40.663825+00:00 app[web.1]:   
+2017-04-06T17:12:40.663826+00:00 app[web.1]:   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all" />
+2017-04-06T17:12:40.663826+00:00 app[web.1]: 
+2017-04-06T17:12:40.664685+00:00 app[web.1]:         <input type="submit" class="{{btnClass}}" name="checkout" value="Checkout">
+2017-04-06T17:12:40.663826+00:00 app[web.1]: 
+2017-04-06T17:12:40.664686+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664687+00:00 app[web.1]:     </form>
+2017-04-06T17:12:40.664687+00:00 app[web.1]:   
+2017-04-06T17:12:40.663827+00:00 app[web.1]:   
+2017-04-06T17:12:40.664288+00:00 app[web.1]: <meta property="og:url" content="https://bucket-hats-4.myshopify.com/search">
+2017-04-06T17:12:40.664289+00:00 app[web.1]: <meta property="og:title" content="Search">
+2017-04-06T17:12:40.664688+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664290+00:00 app[web.1]: <meta property="og:type" content="website">
+2017-04-06T17:12:40.663828+00:00 app[web.1]: 
+2017-04-06T17:12:40.664688+00:00 app[web.1]:   <script id="drawerTemplate" type="text/template">
+2017-04-06T17:12:40.664689+00:00 app[web.1]:   
+2017-04-06T17:12:40.664290+00:00 app[web.1]: <meta property="og:description" content="bucket hats 4">
+2017-04-06T17:12:40.664291+00:00 app[web.1]: 
+2017-04-06T17:12:40.664689+00:00 app[web.1]:     <div id="ajaxifyDrawer" class="ajaxify-drawer">
+2017-04-06T17:12:40.664690+00:00 app[web.1]:       <div id="ajaxifyCart" class="ajaxifyCart--content {{wrapperClass}}"></div>
+2017-04-06T17:12:40.663828+00:00 app[web.1]: 
+2017-04-06T17:12:40.664291+00:00 app[web.1]: 
+2017-04-06T17:12:40.664291+00:00 app[web.1]: 
+2017-04-06T17:12:40.663828+00:00 app[web.1]:   
+2017-04-06T17:12:40.664690+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664691+00:00 app[web.1]:     <div class="ajaxifyDrawer-caret"><span></span></div>
+2017-04-06T17:12:40.664292+00:00 app[web.1]: 
+2017-04-06T17:12:40.663829+00:00 app[web.1]: 
+2017-04-06T17:12:40.663829+00:00 app[web.1]: 
+2017-04-06T17:12:40.664293+00:00 app[web.1]:   <meta name="twitter:card" content="summary">
+2017-04-06T17:12:40.663830+00:00 app[web.1]: 
+2017-04-06T17:12:40.664293+00:00 app[web.1]: 
+2017-04-06T17:12:40.664293+00:00 app[web.1]: <meta name="twitter:title" content="Search">
+2017-04-06T17:12:40.664691+00:00 app[web.1]:   
+2017-04-06T17:12:40.664294+00:00 app[web.1]: <meta name="twitter:description" content="bucket hats 4">
+2017-04-06T17:12:40.664295+00:00 app[web.1]: 
+2017-04-06T17:12:40.663831+00:00 app[web.1]:   <!-- Header hook for plugins ================================================== -->
+2017-04-06T17:12:40.664295+00:00 app[web.1]: 
+2017-04-06T17:12:40.664692+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664693+00:00 app[web.1]:   <script id="modalTemplate" type="text/template">
+2017-04-06T17:12:40.664693+00:00 app[web.1]:   
+2017-04-06T17:12:40.664296+00:00 app[web.1]:   <!-- Helpers ================================================== -->
+2017-04-06T17:12:40.664296+00:00 app[web.1]:   <link rel="canonical" href="https://bucket-hats-4.myshopify.com/search">
+2017-04-06T17:12:40.663831+00:00 app[web.1]:   <link rel="stylesheet" href="//cdn.shopify.com/s/global/search.css?6411e349e8e0c5c6f83014ae376982b0b8fece16" type="text/css" />
+2017-04-06T17:12:40.664300+00:00 app[web.1]:   <meta name="viewport" content="width=device-width,initial-scale=1">
+2017-04-06T17:12:40.663832+00:00 app[web.1]: <script type="text/javascript">
+2017-04-06T17:12:40.664694+00:00 app[web.1]:     <div id="ajaxifyModal" class="ajaxify-modal">
+2017-04-06T17:12:40.664694+00:00 app[web.1]:       <div id="ajaxifyCart" class="ajaxifyCart--content"></div>
+2017-04-06T17:12:40.663833+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.664695+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.663833+00:00 app[web.1]:       var Shopify = Shopify || {};
+2017-04-06T17:12:40.664695+00:00 app[web.1]:   
+2017-04-06T17:12:40.664696+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664300+00:00 app[web.1]: 
+2017-04-06T17:12:40.664301+00:00 app[web.1]:   <!-- CSS ================================================== -->
+2017-04-06T17:12:40.664302+00:00 app[web.1]:   <link href="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.scss.css?1007652989975767601" rel="stylesheet" type="text/css" media="all" />
+2017-04-06T17:12:40.664696+00:00 app[web.1]:   <script id="ajaxifyQty" type="text/template">
+2017-04-06T17:12:40.663834+00:00 app[web.1]:       Shopify.shop = "bucket-hats-4.myshopify.com";
+2017-04-06T17:12:40.664302+00:00 app[web.1]:   
+2017-04-06T17:12:40.663834+00:00 app[web.1]:       Shopify.theme = {"name":"Supply","id":181272328,"theme_store_id":679,"role":"main"};
+2017-04-06T17:12:40.664303+00:00 app[web.1]:   
+2017-04-06T17:12:40.664303+00:00 app[web.1]:   
+2017-04-06T17:12:40.663835+00:00 app[web.1]:       Shopify.theme.handle = 'null';
+2017-04-06T17:12:40.663835+00:00 app[web.1]:       Shopify.theme.style = {"id":null,"handle":null};
+2017-04-06T17:12:40.663836+00:00 app[web.1]: 
+2017-04-06T17:12:40.664697+00:00 app[web.1]:   
+2017-04-06T17:12:40.664304+00:00 app[web.1]:   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" media="all" />
+2017-04-06T17:12:40.663837+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.664304+00:00 app[web.1]: 
+2017-04-06T17:12:40.664697+00:00 app[web.1]:     <div class="ajaxifyCart--qty">
+2017-04-06T17:12:40.663837+00:00 app[web.1]: </script><script type="text/javascript">
+2017-04-06T17:12:40.664305+00:00 app[web.1]: 
+2017-04-06T17:12:40.664698+00:00 app[web.1]:       <input type="text" class="ajaxifyCart--num" value="{{itemQty}}" data-id="{{key}}" min="0" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+2017-04-06T17:12:40.664699+00:00 app[web.1]:       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--add" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.664305+00:00 app[web.1]:   
+2017-04-06T17:12:40.663838+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.664306+00:00 app[web.1]: 
+2017-04-06T17:12:40.663838+00:00 app[web.1]:     (function() {
+2017-04-06T17:12:40.664702+00:00 app[web.1]:       <span class="ajaxifyCart--qty-adjuster ajaxifyCart--minus" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664306+00:00 app[web.1]: 
+2017-04-06T17:12:40.664307+00:00 app[web.1]:   
+2017-04-06T17:12:40.664703+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664703+00:00 app[web.1]:   
+2017-04-06T17:12:40.664307+00:00 app[web.1]: 
+2017-04-06T17:12:40.663839+00:00 app[web.1]:       function asyncLoad() {
+2017-04-06T17:12:40.664704+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664705+00:00 app[web.1]:   <script id="jsQty" type="text/template">
+2017-04-06T17:12:40.664308+00:00 app[web.1]: 
+2017-04-06T17:12:40.664705+00:00 app[web.1]:   
+2017-04-06T17:12:40.664706+00:00 app[web.1]:     <div class="js-qty">
+2017-04-06T17:12:40.663840+00:00 app[web.1]:         var urls = ["https:\/\/shopify.webkul.com\/multivendor\/js\/download_prod.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/seller_profile_tag.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/vc_seller_profile.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/customer_script.js?shop=bucket-hats-4.myshopify.com","https:\/\/rawgit.com\/nonusae\/shopify_app_nonusae\/master\/app\/assets\/javascripts\/test_script37.js?shop=bucket-hats-4.myshopify.com"];
+2017-04-06T17:12:40.664706+00:00 app[web.1]:       <input type="text" class="js--num" value="{{itemQty}}" min="1" data-id="{{key}}" aria-label="quantity" pattern="[0-9]*" name="{{inputName}}" id="{{inputId}}">
+2017-04-06T17:12:40.664308+00:00 app[web.1]: 
+2017-04-06T17:12:40.664707+00:00 app[web.1]:       <span class="js--qty-adjuster js--add" data-id="{{key}}" data-qty="{{itemAdd}}">+</span>
+2017-04-06T17:12:40.664708+00:00 app[web.1]:       <span class="js--qty-adjuster js--minus" data-id="{{key}}" data-qty="{{itemMinus}}">-</span>
+2017-04-06T17:12:40.664708+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.664309+00:00 app[web.1]:   <!-- Header hook for plugins ================================================== -->
+2017-04-06T17:12:40.664310+00:00 app[web.1]:   <link rel="stylesheet" href="//cdn.shopify.com/s/global/search.css?6411e349e8e0c5c6f83014ae376982b0b8fece16" type="text/css" />
+2017-04-06T17:12:40.663841+00:00 app[web.1]:         for (var i = 0; i < urls.length; i++) {
+2017-04-06T17:12:40.664310+00:00 app[web.1]: <script type="text/javascript">
+2017-04-06T17:12:40.663842+00:00 app[web.1]:           var s = document.createElement('script');
+2017-04-06T17:12:40.664311+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.663843+00:00 app[web.1]:           s.type = 'text/javascript';
+2017-04-06T17:12:40.664311+00:00 app[web.1]:       var Shopify = Shopify || {};
+2017-04-06T17:12:40.664312+00:00 app[web.1]:       Shopify.shop = "bucket-hats-4.myshopify.com";
+2017-04-06T17:12:40.663843+00:00 app[web.1]:           s.async = true;
+2017-04-06T17:12:40.663844+00:00 app[web.1]:           s.src = urls[i];
+2017-04-06T17:12:40.664709+00:00 app[web.1]:   
+2017-04-06T17:12:40.664313+00:00 app[web.1]:       Shopify.theme = {"name":"Supply","id":181272328,"theme_store_id":679,"role":"main"};
+2017-04-06T17:12:40.664313+00:00 app[web.1]:       Shopify.theme.handle = 'null';
+2017-04-06T17:12:40.663844+00:00 app[web.1]:           var x = document.getElementsByTagName('script')[0];
+2017-04-06T17:12:40.664709+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664710+00:00 app[web.1]: 
+2017-04-06T17:12:40.664314+00:00 app[web.1]:       Shopify.theme.style = {"id":null,"handle":null};
+2017-04-06T17:12:40.664710+00:00 app[web.1]: 
+2017-04-06T17:12:40.664314+00:00 app[web.1]: 
+2017-04-06T17:12:40.664711+00:00 app[web.1]:   <script>
+2017-04-06T17:12:40.664712+00:00 app[web.1]:   jQuery(function($) {
+2017-04-06T17:12:40.663845+00:00 app[web.1]:           x.parentNode.insertBefore(s, x);
+2017-04-06T17:12:40.663845+00:00 app[web.1]:         }
+2017-04-06T17:12:40.664712+00:00 app[web.1]:     ajaxifyShopify.init({
+2017-04-06T17:12:40.664315+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.664713+00:00 app[web.1]:       method: 'modal',
+2017-04-06T17:12:40.664713+00:00 app[web.1]:       wrapperClass: 'wrapper',
+2017-04-06T17:12:40.664316+00:00 app[web.1]: </script><script type="text/javascript">
+2017-04-06T17:12:40.664714+00:00 app[web.1]:       formSelector: '#addToCartForm',
+2017-04-06T17:12:40.664714+00:00 app[web.1]:       addToCartSelector: '#addToCart',
+2017-04-06T17:12:40.664715+00:00 app[web.1]:       cartCountSelector: '.cart-count',
+2017-04-06T17:12:40.664316+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.663846+00:00 app[web.1]:       };
+2017-04-06T17:12:40.664715+00:00 app[web.1]:       toggleCartButton: '.cart-toggle',
+2017-04-06T17:12:40.664716+00:00 app[web.1]:       useCartTemplate: true,
+2017-04-06T17:12:40.663847+00:00 app[web.1]:       if(window.attachEvent) {
+2017-04-06T17:12:40.664317+00:00 app[web.1]:     (function() {
+2017-04-06T17:12:40.664317+00:00 app[web.1]:       function asyncLoad() {
+2017-04-06T17:12:40.664318+00:00 app[web.1]:         var urls = ["https:\/\/shopify.webkul.com\/multivendor\/js\/download_prod.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/seller_profile_tag.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/vc_seller_profile.js?shop=bucket-hats-4.myshopify.com","https:\/\/shopify.webkul.com\/multivendor\/js\/customer_script.js?shop=bucket-hats-4.myshopify.com","https:\/\/rawgit.com\/nonusae\/shopify_app_nonusae\/master\/app\/assets\/javascripts\/test_script37.js?shop=bucket-hats-4.myshopify.com"];
+2017-04-06T17:12:40.664319+00:00 app[web.1]:         for (var i = 0; i < urls.length; i++) {
+2017-04-06T17:12:40.664716+00:00 app[web.1]:       btnClass: 'btn',
+2017-04-06T17:12:40.664717+00:00 app[web.1]:       moneyFormat: moneyFormat,
+2017-04-06T17:12:40.664717+00:00 app[web.1]:       disableAjaxCart: false,
+2017-04-06T17:12:40.664718+00:00 app[web.1]:       enableQtySelectors: true
+2017-04-06T17:12:40.663847+00:00 app[web.1]:         window.attachEvent('onload', asyncLoad);
+2017-04-06T17:12:40.664319+00:00 app[web.1]:           var s = document.createElement('script');
+2017-04-06T17:12:40.664718+00:00 app[web.1]:     });
+2017-04-06T17:12:40.664719+00:00 app[web.1]:   });
+2017-04-06T17:12:40.663848+00:00 app[web.1]:       } else {
+2017-04-06T17:12:40.664320+00:00 app[web.1]:           s.type = 'text/javascript';
+2017-04-06T17:12:40.664320+00:00 app[web.1]:           s.async = true;
+2017-04-06T17:12:40.664719+00:00 app[web.1]:   </script>
+2017-04-06T17:12:40.664720+00:00 app[web.1]: 
+2017-04-06T17:12:40.664720+00:00 app[web.1]: 
+2017-04-06T17:12:40.664721+00:00 app[web.1]: </body>
+2017-04-06T17:12:40.663849+00:00 app[web.1]:         window.addEventListener('load', asyncLoad, false);
+2017-04-06T17:12:40.664321+00:00 app[web.1]:           s.src = urls[i];
+2017-04-06T17:12:40.664721+00:00 app[web.1]: </html>
+2017-04-06T17:12:40.663849+00:00 app[web.1]:       }
+2017-04-06T17:12:40.664321+00:00 app[web.1]:           var x = document.getElementsByTagName('script')[0];
+2017-04-06T17:12:40.663850+00:00 app[web.1]:     })();
+2017-04-06T17:12:40.664722+00:00 app[web.1]: '
+2017-04-06T17:12:40.664322+00:00 app[web.1]:           x.parentNode.insertBefore(s, x);
+2017-04-06T17:12:40.664323+00:00 app[web.1]:         }
+2017-04-06T17:12:40.663851+00:00 app[web.1]: 
+2017-04-06T17:12:40.664722+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/lib/json/common.rb:155:in `parse'
+2017-04-06T17:12:40.664723+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/lib/json/common.rb:155:in `parse'
+2017-04-06T17:12:40.664724+00:00 app[web.1]: 	from /app/app/controllers/admin/dashboard_controller.rb:139:in `update_tag_no_redirect'
+2017-04-06T17:12:40.664323+00:00 app[web.1]:       };
+2017-04-06T17:12:40.663851+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.663852+00:00 app[web.1]: </script><script id="__st">
+2017-04-06T17:12:40.664724+00:00 app[web.1]: 	from /app/app/controllers/admin/dashboard_controller.rb:41:in `index'
+2017-04-06T17:12:40.664725+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+2017-04-06T17:12:40.663852+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.663853+00:00 app[web.1]: var __st={"a":15202864,"offset":-14400,"reqid":"e2758335-a3a1-40f9-93e5-a23d7713dd60","pageurl":"bucket-hats-4.myshopify.com\/search?view=tags","u":"d5e3b06e6feb","p":"searchresults"};
+2017-04-06T17:12:40.664726+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/abstract_controller/base.rb:198:in `process_action'
+2017-04-06T17:12:40.664726+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/rendering.rb:10:in `process_action'
+2017-04-06T17:12:40.664727+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+2017-04-06T17:12:40.664324+00:00 app[web.1]:       if(window.attachEvent) {
+2017-04-06T17:12:40.663854+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.664325+00:00 app[web.1]:         window.attachEvent('onload', asyncLoad);
+2017-04-06T17:12:40.663855+00:00 app[web.1]: </script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
+2017-04-06T17:12:40.664325+00:00 app[web.1]:       } else {
+2017-04-06T17:12:40.663855+00:00 app[web.1]: <meta id="shopify-digital-wallet" data-iframe-url="/15202864/digital_wallets/dialog" />
+2017-04-06T17:12:40.664727+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:117:in `call'
+2017-04-06T17:12:40.664728+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:117:in `call'
+2017-04-06T17:12:40.663856+00:00 app[web.1]: 
+2017-04-06T17:12:40.664326+00:00 app[web.1]:         window.addEventListener('load', asyncLoad, false);
+2017-04-06T17:12:40.664729+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+2017-04-06T17:12:40.663856+00:00 app[web.1]:       <script type="text/javascript">
+2017-04-06T17:12:40.664326+00:00 app[web.1]:       }
+2017-04-06T17:12:40.664730+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:505:in `call'
+2017-04-06T17:12:40.664730+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:505:in `call'
+2017-04-06T17:12:40.664731+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:498:in `block (2 levels) in around'
+2017-04-06T17:12:40.664733+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:313:in `call'
+2017-04-06T17:12:40.664327+00:00 app[web.1]:     })();
+2017-04-06T17:12:40.663857+00:00 app[web.1]:         
+2017-04-06T17:12:40.664733+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:313:in `block (2 levels) in halting'
+2017-04-06T17:12:40.664734+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/shopify_app-7.2.3/lib/shopify_app/login_protection.rb:13:in `shopify_session'
+2017-04-06T17:12:40.664327+00:00 app[web.1]: 
+2017-04-06T17:12:40.663858+00:00 app[web.1]:       window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+2017-04-06T17:12:40.663863+00:00 app[web.1]:       window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+2017-04-06T17:12:40.664735+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:432:in `block in make_lambda'
+2017-04-06T17:12:40.664735+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:312:in `call'
+2017-04-06T17:12:40.663864+00:00 app[web.1]:       window.ShopifyAnalytics.meta.currency = 'CAD';
+2017-04-06T17:12:40.664328+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.663864+00:00 app[web.1]:       var meta = {"page":{"pageType":"searchresults"}};
+2017-04-06T17:12:40.663865+00:00 app[web.1]:       for (var attr in meta) {
+2017-04-06T17:12:40.664736+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:312:in `block in halting'
+2017-04-06T17:12:40.664737+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:497:in `call'
+2017-04-06T17:12:40.664737+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:497:in `block in around'
+2017-04-06T17:12:40.663866+00:00 app[web.1]:         window.ShopifyAnalytics.meta[attr] = meta[attr];
+2017-04-06T17:12:40.664738+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:505:in `call'
+2017-04-06T17:12:40.664738+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:505:in `call'
+2017-04-06T17:12:40.663866+00:00 app[web.1]:       }
+2017-04-06T17:12:40.663867+00:00 app[web.1]:     
+2017-04-06T17:12:40.664328+00:00 app[web.1]: </script><script id="__st">
+2017-04-06T17:12:40.664329+00:00 app[web.1]: //<![CDATA[
+2017-04-06T17:12:40.664739+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+2017-04-06T17:12:40.663868+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.664330+00:00 app[web.1]: var __st={"a":15202864,"offset":-14400,"reqid":"e2758335-a3a1-40f9-93e5-a23d7713dd60","pageurl":"bucket-hats-4.myshopify.com\/search?view=tags","u":"d5e3b06e6feb","p":"searchresults"};
+2017-04-06T17:12:40.664740+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+2017-04-06T17:12:40.664330+00:00 app[web.1]: //]]>
+2017-04-06T17:12:40.663868+00:00 app[web.1]: 
+2017-04-06T17:12:40.664331+00:00 app[web.1]: </script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
+2017-04-06T17:12:40.664331+00:00 app[web.1]: <meta id="shopify-digital-wallet" data-iframe-url="/15202864/digital_wallets/dialog" />
+2017-04-06T17:12:40.663869+00:00 app[web.1]:       <script type="text/javascript">
+2017-04-06T17:12:40.664743+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2017-04-06T17:12:40.664332+00:00 app[web.1]: 
+2017-04-06T17:12:40.663870+00:00 app[web.1]:         window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+2017-04-06T17:12:40.664332+00:00 app[web.1]:       <script type="text/javascript">
+2017-04-06T17:12:40.664333+00:00 app[web.1]:         
+2017-04-06T17:12:40.664744+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+2017-04-06T17:12:40.664333+00:00 app[web.1]:       window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+2017-04-06T17:12:40.664334+00:00 app[web.1]:       window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+2017-04-06T17:12:40.663870+00:00 app[web.1]:           
+2017-04-06T17:12:40.664744+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/rescue.rb:29:in `process_action'
+2017-04-06T17:12:40.664745+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+2017-04-06T17:12:40.664334+00:00 app[web.1]:       window.ShopifyAnalytics.meta.currency = 'CAD';
+2017-04-06T17:12:40.663871+00:00 app[web.1]:         };
+2017-04-06T17:12:40.664335+00:00 app[web.1]:       var meta = {"page":{"pageType":"searchresults"}};
+2017-04-06T17:12:40.663872+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.664335+00:00 app[web.1]:       for (var attr in meta) {
+2017-04-06T17:12:40.664336+00:00 app[web.1]:         window.ShopifyAnalytics.meta[attr] = meta[attr];
+2017-04-06T17:12:40.664336+00:00 app[web.1]:       }
+2017-04-06T17:12:40.664745+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/notifications.rb:164:in `block in instrument'
+2017-04-06T17:12:40.663872+00:00 app[web.1]: 
+2017-04-06T17:12:40.663873+00:00 app[web.1]:       <script type="text/javascript" class="analytics">
+2017-04-06T17:12:40.663874+00:00 app[web.1]:         
+2017-04-06T17:12:40.664337+00:00 app[web.1]:     
+2017-04-06T17:12:40.664337+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.664746+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+2017-04-06T17:12:40.663874+00:00 app[web.1]:         
+2017-04-06T17:12:40.664746+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/notifications.rb:164:in `instrument'
+2017-04-06T17:12:40.664747+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+2017-04-06T17:12:40.663875+00:00 app[web.1]: 
+2017-04-06T17:12:40.664748+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+2017-04-06T17:12:40.663875+00:00 app[web.1]:         (function () {
+2017-04-06T17:12:40.664338+00:00 app[web.1]: 
+2017-04-06T17:12:40.663876+00:00 app[web.1]:           var customDocumentWrite = function(content) {
+2017-04-06T17:12:40.663876+00:00 app[web.1]:             var jquery = null;
+2017-04-06T17:12:40.664338+00:00 app[web.1]:       <script type="text/javascript">
+2017-04-06T17:12:40.664339+00:00 app[web.1]:         window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+2017-04-06T17:12:40.663877+00:00 app[web.1]: 
+2017-04-06T17:12:40.664339+00:00 app[web.1]:           
+2017-04-06T17:12:40.663878+00:00 app[web.1]:             if (window.jQuery) {
+2017-04-06T17:12:40.664340+00:00 app[web.1]:         };
+2017-04-06T17:12:40.664340+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.663878+00:00 app[web.1]:               jquery = window.jQuery;
+2017-04-06T17:12:40.663879+00:00 app[web.1]:             } else if (window.Checkout && window.Checkout.$) {
+2017-04-06T17:12:40.664748+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+2017-04-06T17:12:40.664749+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/abstract_controller/base.rb:137:in `process'
+2017-04-06T17:12:40.663880+00:00 app[web.1]:               jquery = window.Checkout.$;
+2017-04-06T17:12:40.664341+00:00 app[web.1]: 
+2017-04-06T17:12:40.664341+00:00 app[web.1]:       <script type="text/javascript" class="analytics">
+2017-04-06T17:12:40.664750+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionview-4.2.6/lib/action_view/rendering.rb:30:in `process'
+2017-04-06T17:12:40.664750+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal.rb:196:in `dispatch'
+2017-04-06T17:12:40.664751+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+2017-04-06T17:12:40.664751+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_controller/metal.rb:237:in `block in action'
+2017-04-06T17:12:40.664342+00:00 app[web.1]:         
+2017-04-06T17:12:40.664752+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/routing/route_set.rb:74:in `call'
+2017-04-06T17:12:40.664753+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+2017-04-06T17:12:40.664753+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/routing/route_set.rb:43:in `serve'
+2017-04-06T17:12:40.663880+00:00 app[web.1]:             }
+2017-04-06T17:12:40.664343+00:00 app[web.1]:         
+2017-04-06T17:12:40.664343+00:00 app[web.1]: 
+2017-04-06T17:12:40.664344+00:00 app[web.1]:         (function () {
+2017-04-06T17:12:40.664344+00:00 app[web.1]:           var customDocumentWrite = function(content) {
+2017-04-06T17:12:40.664345+00:00 app[web.1]:             var jquery = null;
+2017-04-06T17:12:40.664345+00:00 app[web.1]: 
+2017-04-06T17:12:40.663881+00:00 app[web.1]: 
+2017-04-06T17:12:40.663881+00:00 app[web.1]:             if (jquery) {
+2017-04-06T17:12:40.664346+00:00 app[web.1]:             if (window.jQuery) {
+2017-04-06T17:12:40.664754+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/journey/router.rb:43:in `block in serve'
+2017-04-06T17:12:40.663882+00:00 app[web.1]:               jquery('body').append(content);
+2017-04-06T17:12:40.664754+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/journey/router.rb:30:in `each'
+2017-04-06T17:12:40.664755+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/journey/router.rb:30:in `serve'
+2017-04-06T17:12:40.663883+00:00 app[web.1]:             }
+2017-04-06T17:12:40.664756+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/routing/route_set.rb:817:in `call'
+2017-04-06T17:12:40.664346+00:00 app[web.1]:               jquery = window.jQuery;
+2017-04-06T17:12:40.664347+00:00 app[web.1]:             } else if (window.Checkout && window.Checkout.$) {
+2017-04-06T17:12:40.663883+00:00 app[web.1]:           };
+2017-04-06T17:12:40.663884+00:00 app[web.1]: 
+2017-04-06T17:12:40.664756+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/omniauth-1.3.2/lib/omniauth/strategy.rb:186:in `call!'
+2017-04-06T17:12:40.664757+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/omniauth-1.3.2/lib/omniauth/strategy.rb:164:in `call'
+2017-04-06T17:12:40.664757+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/omniauth-1.3.2/lib/omniauth/builder.rb:63:in `call'
+2017-04-06T17:12:40.664758+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+2017-04-06T17:12:40.664759+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'
+2017-04-06T17:12:40.663884+00:00 app[web.1]:           var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+2017-04-06T17:12:40.663885+00:00 app[web.1]:           if (trekkie.integrations) {
+2017-04-06T17:12:40.664347+00:00 app[web.1]:               jquery = window.Checkout.$;
+2017-04-06T17:12:40.663885+00:00 app[web.1]:             return;
+2017-04-06T17:12:40.663886+00:00 app[web.1]:           }
+2017-04-06T17:12:40.664348+00:00 app[web.1]:             }
+2017-04-06T17:12:40.664759+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+2017-04-06T17:12:40.664760+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+2017-04-06T17:12:40.664760+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/flash.rb:260:in `call'
+2017-04-06T17:12:40.663886+00:00 app[web.1]:           trekkie.methods = [
+2017-04-06T17:12:40.664761+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+2017-04-06T17:12:40.664762+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+2017-04-06T17:12:40.664762+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+2017-04-06T17:12:40.664763+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/query_cache.rb:36:in `call'
+2017-04-06T17:12:40.664763+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+2017-04-06T17:12:40.664348+00:00 app[web.1]: 
+2017-04-06T17:12:40.663887+00:00 app[web.1]:             'identify',
+2017-04-06T17:12:40.663887+00:00 app[web.1]:             'page',
+2017-04-06T17:12:40.664349+00:00 app[web.1]:             if (jquery) {
+2017-04-06T17:12:40.663888+00:00 app[web.1]:             'ready',
+2017-04-06T17:12:40.663889+00:00 app[web.1]:             'track',
+2017-04-06T17:12:40.664764+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+2017-04-06T17:12:40.664766+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+2017-04-06T17:12:40.663889+00:00 app[web.1]:             'trackForm',
+2017-04-06T17:12:40.664767+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+2017-04-06T17:12:40.663890+00:00 app[web.1]:             'trackLink'
+2017-04-06T17:12:40.664768+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2017-04-06T17:12:40.664768+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+2017-04-06T17:12:40.663890+00:00 app[web.1]:           ];
+2017-04-06T17:12:40.664769+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+2017-04-06T17:12:40.664770+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+2017-04-06T17:12:40.664349+00:00 app[web.1]:               jquery('body').append(content);
+2017-04-06T17:12:40.664350+00:00 app[web.1]:             }
+2017-04-06T17:12:40.664350+00:00 app[web.1]:           };
+2017-04-06T17:12:40.664351+00:00 app[web.1]: 
+2017-04-06T17:12:40.664351+00:00 app[web.1]:           var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+2017-04-06T17:12:40.664352+00:00 app[web.1]:           if (trekkie.integrations) {
+2017-04-06T17:12:40.664353+00:00 app[web.1]:             return;
+2017-04-06T17:12:40.664353+00:00 app[web.1]:           }
+2017-04-06T17:12:40.664353+00:00 app[web.1]:           trekkie.methods = [
+2017-04-06T17:12:40.664354+00:00 app[web.1]:             'identify',
+2017-04-06T17:12:40.664354+00:00 app[web.1]:             'page',
+2017-04-06T17:12:40.664770+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:20:in `block in call'
+2017-04-06T17:12:40.664355+00:00 app[web.1]:             'ready',
+2017-04-06T17:12:40.663891+00:00 app[web.1]:           trekkie.factory = function(method) {
+2017-04-06T17:12:40.664355+00:00 app[web.1]:             'track',
+2017-04-06T17:12:40.664356+00:00 app[web.1]:             'trackForm',
+2017-04-06T17:12:40.663891+00:00 app[web.1]:             return function() {
+2017-04-06T17:12:40.664771+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+2017-04-06T17:12:40.663892+00:00 app[web.1]:               var args = Array.prototype.slice.call(arguments);
+2017-04-06T17:12:40.664771+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+2017-04-06T17:12:40.663892+00:00 app[web.1]:               args.unshift(method);
+2017-04-06T17:12:40.664356+00:00 app[web.1]:             'trackLink'
+2017-04-06T17:12:40.664357+00:00 app[web.1]:           ];
+2017-04-06T17:12:40.663893+00:00 app[web.1]:               trekkie.push(args);
+2017-04-06T17:12:40.664357+00:00 app[web.1]:           trekkie.factory = function(method) {
+2017-04-06T17:12:40.664358+00:00 app[web.1]:             return function() {
+2017-04-06T17:12:40.663894+00:00 app[web.1]:               return trekkie;
+2017-04-06T17:12:40.663894+00:00 app[web.1]:             };
+2017-04-06T17:12:40.664772+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2017-04-06T17:12:40.664772+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+2017-04-06T17:12:40.664773+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+2017-04-06T17:12:40.664774+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2017-04-06T17:12:40.664358+00:00 app[web.1]:               var args = Array.prototype.slice.call(arguments);
+2017-04-06T17:12:40.663895+00:00 app[web.1]:           };
+2017-04-06T17:12:40.663895+00:00 app[web.1]:           for (var i = 0; i < trekkie.methods.length; i++) {
+2017-04-06T17:12:40.664362+00:00 app[web.1]:               args.unshift(method);
+2017-04-06T17:12:40.664363+00:00 app[web.1]:               trekkie.push(args);
+2017-04-06T17:12:40.663896+00:00 app[web.1]:             var key = trekkie.methods[i];
+2017-04-06T17:12:40.664363+00:00 app[web.1]:               return trekkie;
+2017-04-06T17:12:40.664364+00:00 app[web.1]:             };
+2017-04-06T17:12:40.663897+00:00 app[web.1]:             trekkie[key] = trekkie.factory(key);
+2017-04-06T17:12:40.664774+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2017-04-06T17:12:40.664364+00:00 app[web.1]:           };
+2017-04-06T17:12:40.664365+00:00 app[web.1]:           for (var i = 0; i < trekkie.methods.length; i++) {
+2017-04-06T17:12:40.664365+00:00 app[web.1]:             var key = trekkie.methods[i];
+2017-04-06T17:12:40.664366+00:00 app[web.1]:             trekkie[key] = trekkie.factory(key);
+2017-04-06T17:12:40.664775+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+2017-04-06T17:12:40.664775+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+2017-04-06T17:12:40.663897+00:00 app[web.1]:           }
+2017-04-06T17:12:40.663898+00:00 app[web.1]:           trekkie.load = function(config) {
+2017-04-06T17:12:40.664776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2017-04-06T17:12:40.664366+00:00 app[web.1]:           }
+2017-04-06T17:12:40.664367+00:00 app[web.1]:           trekkie.load = function(config) {
+2017-04-06T17:12:40.664367+00:00 app[web.1]:             trekkie.config = config;
+2017-04-06T17:12:40.663899+00:00 app[web.1]:             trekkie.config = config;
+2017-04-06T17:12:40.664776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+2017-04-06T17:12:40.664777+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+2017-04-06T17:12:40.664778+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2017-04-06T17:12:40.663899+00:00 app[web.1]:             var script = document.createElement('script');
+2017-04-06T17:12:40.664778+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+2017-04-06T17:12:40.663900+00:00 app[web.1]:             script.type = 'text/javascript';
+2017-04-06T17:12:40.664779+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+2017-04-06T17:12:40.663900+00:00 app[web.1]:             script.onerror = function(e) {
+2017-04-06T17:12:40.664368+00:00 app[web.1]:             var script = document.createElement('script');
+2017-04-06T17:12:40.664368+00:00 app[web.1]:             script.type = 'text/javascript';
+2017-04-06T17:12:40.664369+00:00 app[web.1]:             script.onerror = function(e) {
+2017-04-06T17:12:40.664370+00:00 app[web.1]:               (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+2017-04-06T17:12:40.664780+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-cors-0.3.1/lib/rack/cors.rb:72:in `call'
+2017-04-06T17:12:40.663901+00:00 app[web.1]:               (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+2017-04-06T17:12:40.664780+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+2017-04-06T17:12:40.663902+00:00 app[web.1]:             };
+2017-04-06T17:12:40.664370+00:00 app[web.1]:             };
+2017-04-06T17:12:40.664371+00:00 app[web.1]:             script.async = true;
+2017-04-06T17:12:40.663902+00:00 app[web.1]:             script.async = true;
+2017-04-06T17:12:40.664372+00:00 app[web.1]:             script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.03.29.1';
+2017-04-06T17:12:40.664372+00:00 app[web.1]:             var first = document.getElementsByTagName('script')[0];
+2017-04-06T17:12:40.664781+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+2017-04-06T17:12:40.664373+00:00 app[web.1]:             first.parentNode.insertBefore(script, first);
+2017-04-06T17:12:40.664373+00:00 app[web.1]:           };
+2017-04-06T17:12:40.663903+00:00 app[web.1]:             script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.03.29.1';
+2017-04-06T17:12:40.663904+00:00 app[web.1]:             var first = document.getElementsByTagName('script')[0];
+2017-04-06T17:12:40.664782+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.5/lib/rack/content_length.rb:15:in `call'
+2017-04-06T17:12:40.664374+00:00 app[web.1]:           trekkie.load(
+2017-04-06T17:12:40.664375+00:00 app[web.1]:             {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":15202864,"isMerchantRequest":null}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Session Attribution":{}}
+2017-04-06T17:12:40.664782+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/configuration.rb:226:in `call'
+2017-04-06T17:12:40.664783+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/server.rb:578:in `handle_request'
+2017-04-06T17:12:40.664375+00:00 app[web.1]:           );
+2017-04-06T17:12:40.664376+00:00 app[web.1]: 
+2017-04-06T17:12:40.664376+00:00 app[web.1]:           var loaded = false;
+2017-04-06T17:12:40.663904+00:00 app[web.1]:             first.parentNode.insertBefore(script, first);
+2017-04-06T17:12:40.663905+00:00 app[web.1]:           };
+2017-04-06T17:12:40.664377+00:00 app[web.1]:           trekkie.ready(function() {
+2017-04-06T17:12:40.664377+00:00 app[web.1]:             if (loaded) return;
+2017-04-06T17:12:40.664378+00:00 app[web.1]:             loaded = true;
+2017-04-06T17:12:40.664784+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/server.rb:415:in `process_client'
+2017-04-06T17:12:40.663905+00:00 app[web.1]:           trekkie.load(
+2017-04-06T17:12:40.663907+00:00 app[web.1]:             {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":15202864,"isMerchantRequest":null}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Session Attribution":{}}
+2017-04-06T17:12:40.664378+00:00 app[web.1]: 
+2017-04-06T17:12:40.664379+00:00 app[web.1]:             window.ShopifyAnalytics.lib = window.trekkie;
+2017-04-06T17:12:40.664379+00:00 app[web.1]:             
+2017-04-06T17:12:40.664380+00:00 app[web.1]: 
+2017-04-06T17:12:40.663907+00:00 app[web.1]:           );
+2017-04-06T17:12:40.663908+00:00 app[web.1]: 
+2017-04-06T17:12:40.664380+00:00 app[web.1]:             var originalDocumentWrite = document.write;
+2017-04-06T17:12:40.664381+00:00 app[web.1]:             document.write = customDocumentWrite;
+2017-04-06T17:12:40.663908+00:00 app[web.1]:           var loaded = false;
+2017-04-06T17:12:40.664382+00:00 app[web.1]:             try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+2017-04-06T17:12:40.663909+00:00 app[web.1]:           trekkie.ready(function() {
+2017-04-06T17:12:40.664382+00:00 app[web.1]:             document.write = originalDocumentWrite;
+2017-04-06T17:12:40.664383+00:00 app[web.1]: 
+2017-04-06T17:12:40.664383+00:00 app[web.1]:             
+2017-04-06T17:12:40.663910+00:00 app[web.1]:             if (loaded) return;
+2017-04-06T17:12:40.663910+00:00 app[web.1]:             loaded = true;
+2017-04-06T17:12:40.663911+00:00 app[web.1]: 
+2017-04-06T17:12:40.664384+00:00 app[web.1]:         window.ShopifyAnalytics.lib.page(
+2017-04-06T17:12:40.664384+00:00 app[web.1]:           null,
+2017-04-06T17:12:40.664385+00:00 app[web.1]:           {"pageType":"searchresults"}
+2017-04-06T17:12:40.664385+00:00 app[web.1]:         );
+2017-04-06T17:12:40.664386+00:00 app[web.1]:       
+2017-04-06T17:12:40.664386+00:00 app[web.1]:             
+2017-04-06T17:12:40.664387+00:00 app[web.1]:         window.ShopifyAnalytics.lib.track(
+2017-04-06T17:12:40.663911+00:00 app[web.1]:             window.ShopifyAnalytics.lib = window.trekkie;
+2017-04-06T17:12:40.663912+00:00 app[web.1]:             
+2017-04-06T17:12:40.663912+00:00 app[web.1]: 
+2017-04-06T17:12:40.664387+00:00 app[web.1]:           "Performed Search",
+2017-04-06T17:12:40.664388+00:00 app[web.1]:           {"query":null}
+2017-04-06T17:12:40.663913+00:00 app[web.1]:             var originalDocumentWrite = document.write;
+2017-04-06T17:12:40.664388+00:00 app[web.1]:         );
+2017-04-06T17:12:40.663914+00:00 app[web.1]:             document.write = customDocumentWrite;
+2017-04-06T17:12:40.664389+00:00 app[web.1]:       
+2017-04-06T17:12:40.663914+00:00 app[web.1]:             try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+2017-04-06T17:12:40.664389+00:00 app[web.1]:           });
+2017-04-06T17:12:40.664390+00:00 app[web.1]: 
+2017-04-06T17:12:40.663915+00:00 app[web.1]:             document.write = originalDocumentWrite;
+2017-04-06T17:12:40.664391+00:00 app[web.1]:           
+2017-04-06T17:12:40.663915+00:00 app[web.1]: 
+2017-04-06T17:12:40.663916+00:00 app[web.1]:             
+2017-04-06T17:12:40.663917+00:00 app[web.1]:         window.ShopifyAnalytics.lib.page(
+2017-04-06T17:12:40.663917+00:00 app[web.1]:           null,
+2017-04-06T17:12:40.664391+00:00 app[web.1]:       var eventsListenerScript = document.createElement('script');
+2017-04-06T17:12:40.664392+00:00 app[web.1]:       eventsListenerScript.async = true;
+2017-04-06T17:12:40.664392+00:00 app[web.1]:       eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-ac336e6042c0b3ecf23fc811af6e11b9af69994f8f440d84ac06f0ea21e9b84f.js";
+2017-04-06T17:12:40.664394+00:00 app[web.1]:       document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+2017-04-06T17:12:40.663918+00:00 app[web.1]:           {"pageType":"searchresults"}
+2017-04-06T17:12:40.663919+00:00 app[web.1]:         );
+2017-04-06T17:12:40.664394+00:00 app[web.1]:     
+2017-04-06T17:12:40.664395+00:00 app[web.1]:         })();
+2017-04-06T17:12:40.664395+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.663919+00:00 app[web.1]:       
+2017-04-06T17:12:40.663920+00:00 app[web.1]:             
+2017-04-06T17:12:40.663921+00:00 app[web.1]:         window.ShopifyAnalytics.lib.track(
+2017-04-06T17:12:40.664396+00:00 app[web.1]:     
+2017-04-06T17:12:40.664397+00:00 app[web.1]: 
+2017-04-06T17:12:40.664397+00:00 app[web.1]: 
+2017-04-06T17:12:40.664397+00:00 app[web.1]: 
+2017-04-06T17:12:40.663921+00:00 app[web.1]:           "Performed Search",
+2017-04-06T17:12:40.664398+00:00 app[web.1]:   
+2017-04-06T17:12:40.663922+00:00 app[web.1]:           {"query":null}
+2017-04-06T17:12:40.663922+00:00 app[web.1]:         );
+2017-04-06T17:12:40.664398+00:00 app[web.1]: 
+2017-04-06T17:12:40.664399+00:00 app[web.1]: <!--[if lt IE 9]>
+2017-04-06T17:12:40.664399+00:00 app[web.1]: <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+2017-04-06T17:12:40.663923+00:00 app[web.1]:       
+2017-04-06T17:12:40.664400+00:00 app[web.1]: <script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond.min.js?1007652989975767601" type="text/javascript"></script>
+2017-04-06T17:12:40.663924+00:00 app[web.1]:           });
+2017-04-06T17:12:40.664401+00:00 app[web.1]: <link href="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+2017-04-06T17:12:40.663924+00:00 app[web.1]: 
+2017-04-06T17:12:40.663925+00:00 app[web.1]:           
+2017-04-06T17:12:40.664401+00:00 app[web.1]: <link href="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" id="respond-redirect" rel="respond-redirect" />
+2017-04-06T17:12:40.663925+00:00 app[web.1]:       var eventsListenerScript = document.createElement('script');
+2017-04-06T17:12:40.664402+00:00 app[web.1]: <script src="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" type="text/javascript"></script>
+2017-04-06T17:12:40.664403+00:00 app[web.1]: <![endif]-->
+2017-04-06T17:12:40.663926+00:00 app[web.1]:       eventsListenerScript.async = true;
+2017-04-06T17:12:40.663927+00:00 app[web.1]:       eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-ac336e6042c0b3ecf23fc811af6e11b9af69994f8f440d84ac06f0ea21e9b84f.js";
+2017-04-06T17:12:40.663927+00:00 app[web.1]:       document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+2017-04-06T17:12:40.664403+00:00 app[web.1]: <!--[if (lte IE 9) ]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/match-media.min.js?1007652989975767601" type="text/javascript"></script><![endif]-->
+2017-04-06T17:12:40.663928+00:00 app[web.1]:     
+2017-04-06T17:12:40.663928+00:00 app[web.1]:         })();
+2017-04-06T17:12:40.663929+00:00 app[web.1]:       </script>
+2017-04-06T17:12:40.664404+00:00 app[web.1]: 
+2017-04-06T17:12:40.663929+00:00 app[web.1]:     
+2017-04-06T17:12:40.664404+00:00 app[web.1]: 
+2017-04-06T17:12:40.663930+00:00 app[web.1]: 
+2017-04-06T17:12:40.664405+00:00 app[web.1]:   
+2017-04-06T17:12:40.664405+00:00 app[web.1]:   
+2017-04-06T17:12:40.663930+00:00 app[web.1]: 
+2017-04-06T17:12:40.663931+00:00 app[web.1]: 
+2017-04-06T17:12:40.663931+00:00 app[web.1]:   
+2017-04-06T17:12:40.663932+00:00 app[web.1]: 
+2017-04-06T17:12:40.663932+00:00 app[web.1]: <!--[if lt IE 9]>
+2017-04-06T17:12:40.664406+00:00 app[web.1]: 
+2017-04-06T17:12:40.664407+00:00 app[web.1]:   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+2017-04-06T17:12:40.663933+00:00 app[web.1]: <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+2017-04-06T17:12:40.664407+00:00 app[web.1]: 
+2017-04-06T17:12:40.663934+00:00 app[web.1]: <script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond.min.js?1007652989975767601" type="text/javascript"></script>
+2017-04-06T17:12:40.664408+00:00 app[web.1]: 
+2017-04-06T17:12:40.663937+00:00 app[web.1]: <link href="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+2017-04-06T17:12:40.664408+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:12:40.663938+00:00 app[web.1]: <link href="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" id="respond-redirect" rel="respond-redirect" />
+2017-04-06T17:12:40.664410+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:12:40.663938+00:00 app[web.1]: <script src="//bucket-hats-4.myshopify.com/search?q=07efe7e2aeb4e818f1bc52543550822d" type="text/javascript"></script>
+2017-04-06T17:12:40.663939+00:00 app[web.1]: <![endif]-->
+2017-04-06T17:12:40.664410+00:00 app[web.1]: 
+2017-04-06T17:12:40.663940+00:00 app[web.1]: <!--[if (lte IE 9) ]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/match-media.min.js?1007652989975767601" type="text/javascript"></script><![endif]-->
+2017-04-06T17:12:40.663940+00:00 app[web.1]: 
+2017-04-06T17:12:40.664411+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:12:40.664411+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:12:40.663941+00:00 app[web.1]: 
+2017-04-06T17:12:40.663941+00:00 app[web.1]:   
+2017-04-06T17:12:40.664412+00:00 app[web.1]: 
+2017-04-06T17:12:40.663942+00:00 app[web.1]:   
+2017-04-06T17:12:40.664412+00:00 app[web.1]: 
+2017-04-06T17:12:40.663943+00:00 app[web.1]: 
+2017-04-06T17:12:40.664413+00:00 app[web.1]: </head>
+2017-04-06T17:12:40.663943+00:00 app[web.1]:   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+2017-04-06T17:12:40.663944+00:00 app[web.1]: 
+2017-04-06T17:12:40.664413+00:00 app[web.1]: 
+2017-04-06T17:12:40.663944+00:00 app[web.1]: 
+2017-04-06T17:12:40.663945+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:12:40.664414+00:00 app[web.1]: <body id="search" class="template-search" >
+2017-04-06T17:12:40.664415+00:00 app[web.1]: 
+2017-04-06T17:12:40.663946+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/vendor.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:12:40.664418+00:00 app[web.1]:   <div id="shopify-section-header" class="shopify-section header-section"><header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+2017-04-06T17:12:40.663946+00:00 app[web.1]: 
+2017-04-06T17:12:40.664419+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.664419+00:00 app[web.1]: 
+2017-04-06T17:12:40.664420+00:00 app[web.1]:     <div class="grid--full">
+2017-04-06T17:12:40.663947+00:00 app[web.1]:   <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601" defer="defer"></script><!--<![endif]-->
+2017-04-06T17:12:40.663948+00:00 app[web.1]:   <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/1520/2864/t/9/assets/theme.js?1007652989975767601"></script><![endif]-->
+2017-04-06T17:12:40.663949+00:00 app[web.1]: 
+2017-04-06T17:12:40.663949+00:00 app[web.1]: 
+2017-04-06T17:12:40.664420+00:00 app[web.1]:       <div class="grid-item large--one-half">
+2017-04-06T17:12:40.664421+00:00 app[web.1]:         
+2017-04-06T17:12:40.664422+00:00 app[web.1]:           <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
+2017-04-06T17:12:40.663950+00:00 app[web.1]: </head>
+2017-04-06T17:12:40.663950+00:00 app[web.1]: 
+2017-04-06T17:12:40.664422+00:00 app[web.1]:         
+2017-04-06T17:12:40.664423+00:00 app[web.1]:           
+2017-04-06T17:12:40.663951+00:00 app[web.1]: <body id="search" class="template-search" >
+2017-04-06T17:12:40.663951+00:00 app[web.1]: 
+2017-04-06T17:12:40.663952+00:00 app[web.1]:   <div id="shopify-section-header" class="shopify-section header-section"><header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+2017-04-06T17:12:40.663953+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.664424+00:00 app[web.1]:             <a href="/" itemprop="url">bucket hats 4</a>
+2017-04-06T17:12:40.664424+00:00 app[web.1]:           
+2017-04-06T17:12:40.663953+00:00 app[web.1]: 
+2017-04-06T17:12:40.664425+00:00 app[web.1]:         
+2017-04-06T17:12:40.663954+00:00 app[web.1]:     <div class="grid--full">
+2017-04-06T17:12:40.664425+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.663954+00:00 app[web.1]:       <div class="grid-item large--one-half">
+2017-04-06T17:12:40.664426+00:00 app[web.1]:         
+2017-04-06T17:12:40.663955+00:00 app[web.1]:         
+2017-04-06T17:12:40.664426+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.663955+00:00 app[web.1]:           <div class="h1 header-logo" itemscope itemtype="http://schema.org/Organization">
+2017-04-06T17:12:40.663956+00:00 app[web.1]:         
+2017-04-06T17:12:40.663956+00:00 app[web.1]:           
+2017-04-06T17:12:40.664427+00:00 app[web.1]: 
+2017-04-06T17:12:40.664427+00:00 app[web.1]:       <div class="grid-item large--one-half text-center large--text-right">
+2017-04-06T17:12:40.663957+00:00 app[web.1]:             <a href="/" itemprop="url">bucket hats 4</a>
+2017-04-06T17:12:40.664428+00:00 app[web.1]:         
+2017-04-06T17:12:40.664428+00:00 app[web.1]:           <div class="site-header--text-links medium-down--hide">
+2017-04-06T17:12:40.664429+00:00 app[web.1]:             
+2017-04-06T17:12:40.664429+00:00 app[web.1]: 
+2017-04-06T17:12:40.664430+00:00 app[web.1]:             
+2017-04-06T17:12:40.664431+00:00 app[web.1]:               <span class="site-header--meta-links medium-down--hide">
+2017-04-06T17:12:40.663958+00:00 app[web.1]:           
+2017-04-06T17:12:40.663958+00:00 app[web.1]:         
+2017-04-06T17:12:40.663959+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.664431+00:00 app[web.1]:                 
+2017-04-06T17:12:40.664432+00:00 app[web.1]:                   <a href="/account/login" id="customer_login_link">Sign in</a>
+2017-04-06T17:12:40.663959+00:00 app[web.1]:         
+2017-04-06T17:12:40.663960+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664432+00:00 app[web.1]:                   <span class="site-header--spacer">or</span>
+2017-04-06T17:12:40.663960+00:00 app[web.1]: 
+2017-04-06T17:12:40.664433+00:00 app[web.1]:                   <a href="/account/register" id="customer_register_link">Create an Account</a>
+2017-04-06T17:12:40.664433+00:00 app[web.1]:                 
+2017-04-06T17:12:40.664434+00:00 app[web.1]:               </span>
+2017-04-06T17:12:40.663961+00:00 app[web.1]:       <div class="grid-item large--one-half text-center large--text-right">
+2017-04-06T17:12:40.664434+00:00 app[web.1]:             
+2017-04-06T17:12:40.664435+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.664436+00:00 app[web.1]: 
+2017-04-06T17:12:40.663962+00:00 app[web.1]:         
+2017-04-06T17:12:40.664436+00:00 app[web.1]:           <br class="medium-down--hide">
+2017-04-06T17:12:40.663962+00:00 app[web.1]:           <div class="site-header--text-links medium-down--hide">
+2017-04-06T17:12:40.663963+00:00 app[web.1]:             
+2017-04-06T17:12:40.664437+00:00 app[web.1]:         
+2017-04-06T17:12:40.664437+00:00 app[web.1]: 
+2017-04-06T17:12:40.664438+00:00 app[web.1]:         <form action="/search" method="get" class="search-bar" role="search">
+2017-04-06T17:12:40.664438+00:00 app[web.1]:   <input type="hidden" name="type" value="product">
+2017-04-06T17:12:40.664439+00:00 app[web.1]: 
+2017-04-06T17:12:40.663963+00:00 app[web.1]: 
+2017-04-06T17:12:40.663964+00:00 app[web.1]:             
+2017-04-06T17:12:40.663965+00:00 app[web.1]:               <span class="site-header--meta-links medium-down--hide">
+2017-04-06T17:12:40.664439+00:00 app[web.1]:   <input type="search" name="q" value="" placeholder="Search all products..." aria-label="Search all products...">
+2017-04-06T17:12:40.663965+00:00 app[web.1]:                 
+2017-04-06T17:12:40.664440+00:00 app[web.1]:   <button type="submit" class="search-bar--submit icon-fallback-text">
+2017-04-06T17:12:40.663966+00:00 app[web.1]:                   <a href="/account/login" id="customer_login_link">Sign in</a>
+2017-04-06T17:12:40.663967+00:00 app[web.1]:                   <span class="site-header--spacer">or</span>
+2017-04-06T17:12:40.663967+00:00 app[web.1]:                   <a href="/account/register" id="customer_register_link">Create an Account</a>
+2017-04-06T17:12:40.663968+00:00 app[web.1]:                 
+2017-04-06T17:12:40.664440+00:00 app[web.1]:     <span class="icon icon-search" aria-hidden="true"></span>
+2017-04-06T17:12:40.663968+00:00 app[web.1]:               </span>
+2017-04-06T17:12:40.663969+00:00 app[web.1]:             
+2017-04-06T17:12:40.663969+00:00 app[web.1]:           </div>
+2017-04-06T17:12:40.664441+00:00 app[web.1]:     <span class="fallback-text">Search</span>
+2017-04-06T17:12:40.664442+00:00 app[web.1]:   </button>
+2017-04-06T17:12:40.663970+00:00 app[web.1]: 
+2017-04-06T17:12:40.664442+00:00 app[web.1]: </form>
+2017-04-06T17:12:40.664443+00:00 app[web.1]: 
+2017-04-06T17:12:40.664443+00:00 app[web.1]: 
+2017-04-06T17:12:40.663971+00:00 app[web.1]:           <br class="medium-down--hide">
+2017-04-06T17:12:40.664444+00:00 app[web.1]:         <a href="/cart" class="header-cart-btn cart-toggle">
+2017-04-06T17:12:40.664444+00:00 app[web.1]:           <span class="icon icon-cart"></span>
+2017-04-06T17:12:40.663971+00:00 app[web.1]:         
+2017-04-06T17:12:40.663972+00:00 app[web.1]: 
+2017-04-06T17:12:40.664445+00:00 app[web.1]:           Cart <span class="cart-count cart-badge--desktop hidden-count">0</span>
+2017-04-06T17:12:40.663972+00:00 app[web.1]:         <form action="/search" method="get" class="search-bar" role="search">
+2017-04-06T17:12:40.663973+00:00 app[web.1]:   <input type="hidden" name="type" value="product">
+2017-04-06T17:12:40.663973+00:00 app[web.1]: 
+2017-04-06T17:12:40.663974+00:00 app[web.1]:   <input type="search" name="q" value="" placeholder="Search all products..." aria-label="Search all products...">
+2017-04-06T17:12:40.663975+00:00 app[web.1]:   <button type="submit" class="search-bar--submit icon-fallback-text">
+2017-04-06T17:12:40.663975+00:00 app[web.1]:     <span class="icon icon-search" aria-hidden="true"></span>
+2017-04-06T17:12:40.663976+00:00 app[web.1]:     <span class="fallback-text">Search</span>
+2017-04-06T17:12:40.663977+00:00 app[web.1]:   </button>
+2017-04-06T17:12:40.663977+00:00 app[web.1]: </form>
+2017-04-06T17:12:40.663977+00:00 app[web.1]: 
+2017-04-06T17:12:40.663978+00:00 app[web.1]: 
+2017-04-06T17:12:40.663979+00:00 app[web.1]:         <a href="/cart" class="header-cart-btn cart-toggle">
+2017-04-06T17:12:40.663979+00:00 app[web.1]:           <span class="icon icon-cart"></span>
+2017-04-06T17:12:40.663980+00:00 app[web.1]:           Cart <span class="cart-count cart-badge--desktop hidden-count">0</span>
+2017-04-06T17:12:40.663980+00:00 app[web.1]:         </a>
+2017-04-06T17:12:40.663981+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.663981+00:00 app[web.1]:     </div>
+2017-04-06T17:12:40.663982+00:00 app[web.1]: 
+2017-04-06T17:12:40.663982+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.663983+00:00 app[web.1]: </header>
+2017-04-06T17:12:40.663983+00:00 app[web.1]: 
+2017-04-06T17:12:40.663984+00:00 app[web.1]: <nav class="nav-bar" role="navigation">
+2017-04-06T17:12:40.663984+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.663985+00:00 app[web.1]:     <form action="/search" method="get" class="search-bar" role="search">
+2017-04-06T17:12:40.663986+00:00 app[web.1]:   <input type="hidden" name="type" value="product">
+2017-04-06T17:12:40.663986+00:00 app[web.1]: 
+2017-04-06T17:12:40.663987+00:00 app[web.1]:   <input type="search" name="q" value="" placeholder="Search all products..." aria-label="Search all products...">
+2017-04-06T17:12:40.663988+00:00 app[web.1]:   <button type="submit" class="search-bar--submit icon-fallback-text">
+2017-04-06T17:12:40.663988+00:00 app[web.1]:     <span class="icon icon-search" aria-hidden="true"></span>
+2017-04-06T17:12:40.663989+00:00 app[web.1]:     <span class="fallback-text">Search</span>
+2017-04-06T17:12:40.663990+00:00 app[web.1]:   </button>
+2017-04-06T17:12:40.663990+00:00 app[web.1]: </form>
+2017-04-06T17:12:40.663991+00:00 app[web.1]: 
+2017-04-06T17:12:40.663991+00:00 app[web.1]:     <ul class="site-nav" id="accessibleNav">
+2017-04-06T17:12:40.663992+00:00 app[web.1]:   
+2017-04-06T17:12:40.663992+00:00 app[web.1]:   
+2017-04-06T17:12:40.663993+00:00 app[web.1]:     
+2017-04-06T17:12:40.663993+00:00 app[web.1]:     
+2017-04-06T17:12:40.663994+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.663994+00:00 app[web.1]:         <a href="/">Home</a>
+2017-04-06T17:12:40.663995+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.663995+00:00 app[web.1]:     
+2017-04-06T17:12:40.663996+00:00 app[web.1]:   
+2017-04-06T17:12:40.663996+00:00 app[web.1]:     
+2017-04-06T17:12:40.663997+00:00 app[web.1]:     
+2017-04-06T17:12:40.663997+00:00 app[web.1]:       <li class="site-nav--has-dropdown" aria-haspopup="true">
+2017-04-06T17:12:40.663998+00:00 app[web.1]:         <a href="/collections/all">
+2017-04-06T17:12:40.663998+00:00 app[web.1]:           Catalog
+2017-04-06T17:12:40.663999+00:00 app[web.1]:           <span class="icon-fallback-text">
+2017-04-06T17:12:40.663999+00:00 app[web.1]:             <span class="icon icon-arrow-down" aria-hidden="true"></span>
+2017-04-06T17:12:40.664000+00:00 app[web.1]:           </span>
+2017-04-06T17:12:40.664001+00:00 app[web.1]:         </a>
+2017-04-06T17:12:40.664005+00:00 app[web.1]:         <ul class="site-nav--dropdown">
+2017-04-06T17:12:40.664005+00:00 app[web.1]:           
+2017-04-06T17:12:40.664006+00:00 app[web.1]:             <li ><a href="/collections/bucket-hats">Bucket Hats</a></li>
+2017-04-06T17:12:40.664007+00:00 app[web.1]:           
+2017-04-06T17:12:40.664007+00:00 app[web.1]:             <li ><a href="/collections/electronics">Electronics</a></li>
+2017-04-06T17:12:40.664008+00:00 app[web.1]:           
+2017-04-06T17:12:40.664008+00:00 app[web.1]:             <li ><a href="/collections/t-shirts">t-shirts</a></li>
+2017-04-06T17:12:40.664009+00:00 app[web.1]:           
+2017-04-06T17:12:40.664010+00:00 app[web.1]:             <li ><a href="/collections/car-accessories">Car Accesories</a></li>
+2017-04-06T17:12:40.664010+00:00 app[web.1]:           
+2017-04-06T17:12:40.664011+00:00 app[web.1]:         </ul>
+2017-04-06T17:12:40.664011+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664012+00:00 app[web.1]:     
+2017-04-06T17:12:40.664012+00:00 app[web.1]:   
+2017-04-06T17:12:40.664013+00:00 app[web.1]:     
+2017-04-06T17:12:40.664013+00:00 app[web.1]:     
+2017-04-06T17:12:40.664014+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664015+00:00 app[web.1]:         <a href="/blogs/news">Blog</a>
+2017-04-06T17:12:40.664015+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664016+00:00 app[web.1]:     
+2017-04-06T17:12:40.664017+00:00 app[web.1]:   
+2017-04-06T17:12:40.664017+00:00 app[web.1]:     
+2017-04-06T17:12:40.664018+00:00 app[web.1]:     
+2017-04-06T17:12:40.664019+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664019+00:00 app[web.1]:         <a href="/pages/about-us">About us</a>
+2017-04-06T17:12:40.664020+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664020+00:00 app[web.1]:     
+2017-04-06T17:12:40.664021+00:00 app[web.1]:   
+2017-04-06T17:12:40.664022+00:00 app[web.1]:     
+2017-04-06T17:12:40.664022+00:00 app[web.1]:     
+2017-04-06T17:12:40.664023+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664023+00:00 app[web.1]:         <a href="/pages/contact-us">Contact Us</a>
+2017-04-06T17:12:40.664024+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664024+00:00 app[web.1]:     
+2017-04-06T17:12:40.664025+00:00 app[web.1]:   
+2017-04-06T17:12:40.664026+00:00 app[web.1]:     
+2017-04-06T17:12:40.664026+00:00 app[web.1]:     
+2017-04-06T17:12:40.664027+00:00 app[web.1]:       <li >
+2017-04-06T17:12:40.664028+00:00 app[web.1]:         <a href="https://returns.aftership.com/bucket-hats-4">Returns</a>
+2017-04-06T17:12:40.664028+00:00 app[web.1]:       </li>
+2017-04-06T17:12:40.664029+00:00 app[web.1]:     
+2017-04-06T17:12:40.664029+00:00 app[web.1]:   
+2017-04-06T17:12:40.664030+00:00 app[web.1]: 
+2017-04-06T17:12:40.664031+00:00 app[web.1]:   
+2017-04-06T17:12:40.664031+00:00 app[web.1]:     
+2017-04-06T17:12:40.664032+00:00 app[web.1]:       <li class="customer-navlink large--hide"><a href="/account/login" id="customer_login_link">Sign in</a></li>
+2017-04-06T17:12:40.664033+00:00 app[web.1]:       <li class="customer-navlink large--hide"><a href="/account/register" id="customer_register_link">Create an Account</a></li>
+2017-04-06T17:12:40.664033+00:00 app[web.1]:     
+2017-04-06T17:12:40.664034+00:00 app[web.1]:   
+2017-04-06T17:12:40.664035+00:00 app[web.1]: </ul>
+2017-04-06T17:12:40.664035+00:00 app[web.1]: 
+2017-04-06T17:12:40.664036+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664036+00:00 app[web.1]: </nav>
+2017-04-06T17:12:40.664037+00:00 app[web.1]: 
+2017-04-06T17:12:40.664038+00:00 app[web.1]: <div id="mobileNavBar">
+2017-04-06T17:12:40.664038+00:00 app[web.1]:   <div class="display-table-cell">
+2017-04-06T17:12:40.664039+00:00 app[web.1]:     <a class="menu-toggle mobileNavBar-link"><span class="icon icon-hamburger"></span>Menu</a>
+2017-04-06T17:12:40.664040+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664040+00:00 app[web.1]:   <div class="display-table-cell">
+2017-04-06T17:12:40.664041+00:00 app[web.1]:     <a href="/cart" class="cart-toggle mobileNavBar-link">
+2017-04-06T17:12:40.664042+00:00 app[web.1]:       <span class="icon icon-cart"></span>
+2017-04-06T17:12:40.664042+00:00 app[web.1]:       Cart <span class="cart-count hidden-count">0</span>
+2017-04-06T17:12:40.664043+00:00 app[web.1]:     </a>
+2017-04-06T17:12:40.664043+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664044+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.664044+00:00 app[web.1]: 
+2017-04-06T17:12:40.664045+00:00 app[web.1]: 
+2017-04-06T17:12:40.664045+00:00 app[web.1]: </div>
+2017-04-06T17:12:40.664046+00:00 app[web.1]: 
+2017-04-06T17:12:40.664046+00:00 app[web.1]:   <main class="wrapper main-content" role="main">
+2017-04-06T17:12:40.664047+00:00 app[web.1]: 
+2017-04-06T17:12:40.664047+00:00 app[web.1]:     
+2017-04-06T17:12:40.664048+00:00 app[web.1]: 
+2017-04-06T17:12:40.664048+00:00 app[web.1]:   </main>
+2017-04-06T17:12:40.664049+00:00 app[web.1]: 
+2017-04-06T17:12:40.664050+00:00 app[web.1]:   <div id="shopify-section-footer" class="shopify-section footer-section">
+2017-04-06T17:12:40.664050+00:00 app[web.1]: 
+2017-04-06T17:12:40.664051+00:00 app[web.1]: <footer class="site-footer small--text-center" role="contentinfo">
+2017-04-06T17:12:40.664052+00:00 app[web.1]:   <div class="wrapper">
+2017-04-06T17:12:40.664052+00:00 app[web.1]: 
+2017-04-06T17:12:40.664053+00:00 app[web.1]:     <div class="grid">
+2017-04-06T17:12:40.664054+00:00 app[web.1]: 
+2017-04-06T17:12:40.664054+00:00 app[web.1]:     
+2017-04-06T17:12:40.664055+00:00 app[web.1]: 
+2017-04-06T17:12:40.664055+00:00 app[web.1]:       
+2017-04-06T17:12:40.664056+00:00 app[web.1]: 
+2017-04-06T17:12:40.664056+00:00 app[web.1]: 
+2017-04-06T17:12:40.664057+00:00 app[web.1]:     <div class="grid-item small--one-whole two-twelfths">
+2017-04-06T17:12:40.664057+00:00 app[web.1]:       
+2017-04-06T17:12:40.664058+00:00 app[web.1]:         <h3>Quick links</h3>
+2017-04-06T17:12:40.664058+00:00 app[web.1]:       
+2017-04-06T17:12:40.664059+00:00 app[web.1]: 
+2017-04-06T17:12:40.664059+00:00 app[web.1]:       
+2017-04-06T17:12:40.664060+00:00 app[web.1]:         <ul>
+2017-04-06T17:12:40.664060+00:00 app[web.1]:           
+2017-04-06T17:12:40.664061+00:00 app[web.1]:             
+2017-04-06T17:12:40.664062+00:00 app[web.1]:             Pick a link list to show here in your <a href="/admin/themes/181272328/settings">Theme Settings</a> under <strong>Footer</strong> > <strong>Quick links link list</strong>.
+2017-04-06T17:12:40.664063+00:00 app[web.1]:           
+2017-04-06T17:12:40.664063+00:00 app[web.1]:         </ul>
+2017-04-06T17:12:40.664064+00:00 app[web.1]: 
+2017-04-06T17:12:40.664064+00:00 app[web.1]:         
+2017-04-06T17:12:40.664065+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664066+00:00 app[web.1]:     
+2017-04-06T17:12:40.664066+00:00 app[web.1]: 
+2017-04-06T17:12:40.664067+00:00 app[web.1]:       
+2017-04-06T17:12:40.664067+00:00 app[web.1]: 
+2017-04-06T17:12:40.664068+00:00 app[web.1]: 
+2017-04-06T17:12:40.664068+00:00 app[web.1]:     <div class="grid-item small--one-whole one-half">
+2017-04-06T17:12:40.664069+00:00 app[web.1]:       
+2017-04-06T17:12:40.664069+00:00 app[web.1]:         <h3>Get in touch</h3>
+2017-04-06T17:12:40.664070+00:00 app[web.1]:       
+2017-04-06T17:12:40.664070+00:00 app[web.1]: 
+2017-04-06T17:12:40.664071+00:00 app[web.1]:       
+2017-04-06T17:12:40.664071+00:00 app[web.1]: 
+2017-04-06T17:12:40.664072+00:00 app[web.1]:             
+2017-04-06T17:12:40.664072+00:00 app[web.1]:               <p>Use this text to share information about your brand with your customers.</p>
+2017-04-06T17:12:40.664073+00:00 app[web.1]:             
+2017-04-06T17:12:40.664073+00:00 app[web.1]: 
+2017-04-06T17:12:40.664074+00:00 app[web.1]: 
+2017-04-06T17:12:40.664074+00:00 app[web.1]:         
+2017-04-06T17:12:40.664075+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664075+00:00 app[web.1]:     
+2017-04-06T17:12:40.664076+00:00 app[web.1]: 
+2017-04-06T17:12:40.664076+00:00 app[web.1]:       
+2017-04-06T17:12:40.664077+00:00 app[web.1]: 
+2017-04-06T17:12:40.664077+00:00 app[web.1]: 
+2017-04-06T17:12:40.664078+00:00 app[web.1]:     <div class="grid-item small--one-whole one-third">
+2017-04-06T17:12:40.664078+00:00 app[web.1]:       
+2017-04-06T17:12:40.664079+00:00 app[web.1]:         <h3>Newsletter</h3>
+2017-04-06T17:12:40.664079+00:00 app[web.1]:       
+2017-04-06T17:12:40.664080+00:00 app[web.1]: 
+2017-04-06T17:12:40.664080+00:00 app[web.1]:       
+2017-04-06T17:12:40.664081+00:00 app[web.1]:           <div class="form-vertical">
+2017-04-06T17:12:40.664082+00:00 app[web.1]:     <form method="post" action="https://bucket-hats-4.myshopify.com/contact#contact_form" id="contact_form" class="contact-form" accept-charset="UTF-8"><input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
+2017-04-06T17:12:40.664082+00:00 app[web.1]:       
+2017-04-06T17:12:40.664083+00:00 app[web.1]:       
+2017-04-06T17:12:40.664083+00:00 app[web.1]:         <input type="hidden" name="contact[tags]" value="newsletter">
+2017-04-06T17:12:40.664084+00:00 app[web.1]:         <div class="input-group">
+2017-04-06T17:12:40.664085+00:00 app[web.1]:           <label for="Email" class="visually-hidden">E-mail</label>
+2017-04-06T17:12:40.664085+00:00 app[web.1]:           <input type="email" value="" placeholder="Email Address" name="contact[email]" id="Email" class="input-group-field" aria-label="Email Address" autocorrect="off" autocapitalize="off">
+2017-04-06T17:12:40.664086+00:00 app[web.1]:           <span class="input-group-btn">
+2017-04-06T17:12:40.664087+00:00 app[web.1]:             <button type="submit" class="btn-secondary btn--small" name="commit" id="subscribe">Sign Up</button>
+2017-04-06T17:12:40.664087+00:00 app[web.1]:           </span>
+2017-04-06T17:12:40.664088+00:00 app[web.1]:         </div>
+2017-04-06T17:12:40.664088+00:00 app[web.1]:       
+2017-04-06T17:12:40.664089+00:00 app[web.1]:     </form>
+2017-04-06T17:12:40.664089+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664090+00:00 app[web.1]:         
+2017-04-06T17:12:40.664090+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664091+00:00 app[web.1]:     
+2017-04-06T17:12:40.664091+00:00 app[web.1]: 
+2017-04-06T17:12:40.664092+00:00 app[web.1]:   </div>
+2017-04-06T17:12:40.664092+00:00 app[web.1]: 
+2017-04-06T17:12:40.664092+00:00 app[web.1]:   
+2017-04-06T17:12:40.664093+00:00 app[web.1]: 
+2017-04-06T17:12:40.664093+00:00 app[web.1]:     <div class="grid">
+2017-04-06T17:12:40.664094+00:00 app[web.1]:     
+2017-04-06T17:12:40.664094+00:00 app[web.1]:       
+2017-04-06T17:12:40.664095+00:00 app[web.1]:       </div>
+2017-04-06T17:12:40.664095+00:00 app[web.1]:       <hr class="hr--small">
+2017-04-06T17:12:40.664096+00:00 app[web.1]:       <div class="grid">
+2017-04-06T17:12:40.664097+00:00 app[web.1]:       <div class="grid-item large--two-fifths">
+2017-04-06T17:12:40.664097+00:00 app[web.1]:           <ul class="legal-links inline-list">
+2017-04-06T17:12:40.664098+00:00 app[web.1]:               <li>
+2017-04-06T17:12:40.664098+00:00 app[web.1]:                 &copy; 2017 <a href="/" title="">bucket hats 4</a>
+2017-04-06T17:12:40.664099+00:00 app[web.1]:               </li>
+2017-04-06T17:12:40.664099+00:00 app[web.1]:               <li>
+2017-04-06T17:12:40.664100+00:00 app[web.1]:                 <a target="_blank" rel="nofollow" href="https://www.shopify.com">Powered by Shopify</a>
+2017-04-06T17:12:40.665801+00:00 heroku[router]: at=info method=GET path="/?hmac=6a6150ce0697ef4f904dd12a62581f16d349014e4c2bec090b380daf30810a01&protocol=https%3A%2F%2F&shop=bucket-hats-4.myshopify.com&timestamp=1491498757" host=shopify-tag-app.herokuapp.com request_id=985aad1e-d9fe-454d-8f23-aa863b9b1ca7 fwd="49.228.116.24" dyno=web.1 connect=1ms service=853ms status=500 bytes=1669 protocol=https
+2017-04-06T17:12:40.664821+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/server.rb:275:in `block in run'
+2017-04-06T17:12:40.664824+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/thread_pool.rb:120:in `call'
+2017-04-06T17:12:40.664824+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.2.0/gems/puma-3.7.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
