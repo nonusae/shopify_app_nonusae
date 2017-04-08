@@ -146,7 +146,13 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-template.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/brooklyn/collection-template.liquid')
         rescue
           puts "error occure whild overite theme"
-        end                            
+        end
+      elsif current_theme_name == "Pop"
+        begin
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/pop/collection-tags.liquid')
+        rescue
+          puts "error occure whild overite theme"
+        end                                     
       end          
   end
 
