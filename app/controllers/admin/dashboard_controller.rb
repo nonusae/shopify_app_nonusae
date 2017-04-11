@@ -1,7 +1,7 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
-  before_action :check_or_create_shopify_shop, :asset_check, :check_billing
+  before_action :check_or_create_shopify_shop, :asset_check, :check_billing, :theme_check
 
   def index
     if @shop.present?
@@ -119,7 +119,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
       if current_theme_name == "Venture"
         begin
-          puts "ok" if (file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-filters.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid') )
+           file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-filters.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid')
         rescue
           puts "error occure whild overite theme"
         end
