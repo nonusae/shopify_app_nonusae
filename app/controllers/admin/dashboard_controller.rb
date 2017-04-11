@@ -6,11 +6,11 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def index
     if @shop.present?
 
-      if ((@new_user)  && !(@shop.shop_domain == "bucket-hats-4.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
+      if ((@new_user)  && !(@shop.shop_domain == "nonusae-app.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com")) #(@shop.shop_domain == "nonusae-app.myshopify.com")
         puts "NEW USer !!!!!"
         recurring_application_charge_params = {
-                                          "name": "Super Duper Plan",
-                                          "price": 10.0,
+                                          "name": "Products Tag Traslator Subscription",
+                                          "price": 9.99,
                                           "trial_days": 7
                                         
         }
