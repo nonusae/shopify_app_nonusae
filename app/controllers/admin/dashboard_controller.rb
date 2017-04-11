@@ -109,7 +109,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       current_theme_name = nil
       themes.each do |theme|
         theme_j = theme.as_json
-        if theme_j["role"] = "main"
+        if theme_j["role"] == "main"
           current_theme_id = theme_j["id"]
           current_theme_name = theme_j["name"]
         end
