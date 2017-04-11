@@ -119,49 +119,49 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
       if current_theme_name == "Venture"
         begin
-          puts "ok" if (file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-filters.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid') )
+          puts "ok" if (file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-filters.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/venture/collection-filters.liquid') )
         rescue
           puts "error occure whild overite theme"
         end
       elsif current_theme_name == "Supply"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-filters.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/supply/collection-filters.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-filters.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/supply/collection-filters.liquid')
         rescue
           puts "error occure whild overite theme"
         end        
       elsif current_theme_name == "Debut"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/debut/collection-template.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/debut/collection-template.liquid')
         rescue
           puts "error occure whild overite theme"
         end
       elsif current_theme_name == "Simple"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/simple/collection-template.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/simple/collection-template.liquid')
         rescue
           puts "error occure whild overite theme"
         end
       elsif current_theme_name == "Brooklyn"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-template.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/brooklyn/collection-template.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-template.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/brooklyn/collection-template.liquid')
         rescue
           puts "error occure whild overite theme"
         end
       elsif current_theme_name == "Pop"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/pop/collection-tags.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-tags.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/pop/collection-tags.liquid')
         rescue
           puts "error occure whild overite theme"
         end
       elsif current_theme_name == "Minimal"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-tags.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/minimal/collection-tags.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'snippets/collection-tags.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/minimal/collection-tags.liquid')
         rescue
           puts "error occure whild overite theme"          
         end
       elsif current_theme_name == "Boundless"
         begin
-          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/boundless/collection-template.liquid')
+          file_to_overwrite = ShopifyAPI::Asset.create(key: 'sections/collection-template.liquid', src: 'https://raw.githubusercontent.com/nonusae/shopify_app_nonusae/master/app/assets/shopify_asset/themes_asset/boundless/collection-template.liquid')
         rescue
           puts "error occure whild overite theme"          
         end 
