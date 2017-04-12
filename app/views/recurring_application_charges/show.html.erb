@@ -12,7 +12,6 @@
 <% end %>
 
 <% if @recurring_application_charge.present? && !@recurring_application_charge.try(:capped_amount) %>
- <% unless @shop_domain.present? %> 
   <div class="section">
     <div class= "col-md-3">
       <h4>
@@ -72,7 +71,4 @@
 
   <% else %>
       No Chrages
- <% else %>
-  <div></div>     
- <% end %>     
 <% end %>
