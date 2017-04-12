@@ -4,6 +4,9 @@ class RecurringApplicationChargesController < AuthenticatedController
 
   def show
     @shop_domain=params[:shop]
+    if @shop_domain.present?
+      redirect_to root_path(:shop => @shop_domain)
+    end
   end
 
   def create
