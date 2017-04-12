@@ -68,8 +68,9 @@
       </p>
     </div>
   </div>
-
-  <%= link_to 'Go back to dashboard' , root_path(:shop => @shop_domain) if @shop_domain %>
+  <div>
+    <%= button_to 'Go back to dashboard' , root_path(:shop => @shop_domain), :class => "btn btn-primary" if @shop_domain %>
+  </div>
 
   <% else %>
       No Chrages
