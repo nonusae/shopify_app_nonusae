@@ -12,63 +12,7 @@
 <% end %>
 
 <% if @recurring_application_charge.present? && !@recurring_application_charge.try(:capped_amount) %>
-  <div class="section">
-    <div class= "col-md-3">
-      <h4>
-        Recurring Charge
-      </h4>
-
-      <p>
-        Here you can see the terms of the recurring charge.
-      </p>
-    </div>
-
-    <div class="col-md-9">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Trial Days</th>
-                <th>Billing On</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <%= @recurring_application_charge.name %>
-                </td>
-                <td>
-                  $<%= @recurring_application_charge.price %>
-                </td>
-                <td>
-                  <%= @recurring_application_charge.trial_days %>
-                </td>
-                <td>
-                  <%= @recurring_application_charge.billing_on %>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="section">
-    <div class= "col-md-3">
-    </div>
-    <div class="col-md-9">
-      <p>
-        <%= link_to 'Go back to dashboard' , root_path(:shop => @shop_domain), :class => "btn btn-primary" if @shop_domain %>
-      </p>
-    </div>
-  </div>
 
   <% else %>
-      No Chrages
+  
 <% end %>
