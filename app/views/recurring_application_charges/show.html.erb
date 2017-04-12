@@ -64,7 +64,7 @@
     </div>
     <div class="col-md-9">
       <p>
-        <%= button_to 'Go back to dashboard' , root_path(:shop => @shop_domain), :class => "btn btn-primary" if @shop_domain %>
+        <%= link_to 'Go back to dashboard' , root_path(:shop => @shop_domain), :class => "btn btn-primary" if @shop_domain %>
       </p>
     </div>
   </div>
