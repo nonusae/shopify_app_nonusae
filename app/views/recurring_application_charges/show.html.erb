@@ -68,7 +68,9 @@
       </p>
     </div>
   </div>
-  <%= @shop_domain.inspect  if @shop_domain%>
+
+  <%= link_to 'Go back to dashboard'  root_path(:shop => shop_domain) if @shop_domain%>
+  
   <% else %>
       No Chrages
 <% end %>
