@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   get 'update_tags' => 'admin/dashboard#update_tags' 
   get 'proxy' => 'proxy#index'
+  get 'instructions' => 'admin/dashboard#instructions'
   
   controller :sessions do
     get 'login' => :new, :as => :login

@@ -170,6 +170,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end
 
   def instructions
+    @shop_domain = params[:shop]
   end
 
 private
