@@ -104,7 +104,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end
 
   def theme_check
-      @shop_domain = params[:shop] if params[:shop].persent?
+      @shop_domain = params[:shop] if params[:shop].present?
       puts "THEME ENABLED"
       themes = ShopifyAPI::Theme.all
       current_theme_id = nil
