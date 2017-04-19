@@ -104,6 +104,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end
 
   def theme_check
+      @shop_domain = params[:shop] if params[:shop].persent?
+      puts "THEME ENABLED"
       themes = ShopifyAPI::Theme.all
       current_theme_id = nil
       current_theme_name = nil
@@ -166,7 +168,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           puts "error occure whild overite theme"          
         end 
 
-      end          
+      end
+      redirect_to root_path(shop: @shop_domain)          
   end
 
   def instructions
