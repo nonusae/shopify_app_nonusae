@@ -4,9 +4,10 @@ class RecurringApplicationChargesController < AuthenticatedController
 
   def show
     @shop_domain=params[:shop]
-    if @shop_domain.present?
-      redirect_to root_path(:shop => @shop_domain)
-    end
+    @chrage_status = @status if @status.present?
+    # if @shop_domain.present?
+    #   redirect_to root_path(:shop => @shop_domain)
+    # end
   end
 
   def create
@@ -37,9 +38,13 @@ class RecurringApplicationChargesController < AuthenticatedController
     if @recurring_application_charge.status == 'accepted'
       puts "activate"
       @recurring_application_charge.activate
+      puts "APP CHRAGES:" +@recurring_application_charge.to_s
+      redirect_to_correct_path(@recurring_application_charge,"accepted")      
+    else
+      puts "decline"
+      puts "APP CHRAGES:" +@recurring_application_charge.to_s
+      redirect_to_correct_path(@recurring_application_charge,"decline")       
     end
-    puts "APP CHRAGES:" +@recurring_application_charge.to_s
-    redirect_to_correct_path(@recurring_application_charge)
   end
 
   def destroy
@@ -66,11 +71,16 @@ class RecurringApplicationChargesController < AuthenticatedController
     )
   end
 
-  def redirect_to_correct_path(recurring_application_charge)
+  def redirect_to_correct_path(recurring_application_charge,status)
     if recurring_application_charge.try(:capped_amount)
       redirect_to usage_charge_path
     else
-      redirect_to recurring_application_charge_path
+      if status.present?
+        @status = status
+        redirect_to recurring_application_charge_path
+      else
+        redirect_to recurring_application_charge_path
+      end
     end
   end
 

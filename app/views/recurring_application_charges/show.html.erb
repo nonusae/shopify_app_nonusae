@@ -7,6 +7,13 @@
   });
 </script>
 
+
+<% if @charge_status == "accepted" %>
+<% end %>
+
+<%= @charge_status.inspect %>
+<%= @shop_domain.inspect %>
+
 <% flash.each do |key, value| %>
   <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
