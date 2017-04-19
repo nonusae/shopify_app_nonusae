@@ -5,6 +5,7 @@ class RecurringApplicationChargesController < AuthenticatedController
   def show
     @shop_domain=params[:shop]
     @charge_status = params[:status] if params[:status].present?
+    puts "STATUS STAUS " + params[:status]
     puts "STATUS IS" + @chrage_status if @charge_status.present?
     # if @shop_domain.present?
     #   redirect_to root_path(:shop => @shop_domain)
