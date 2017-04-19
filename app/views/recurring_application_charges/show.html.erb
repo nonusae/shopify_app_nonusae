@@ -16,12 +16,14 @@
   <div class="container">
     <div class= "row centered">  
       <div class= "col-md-10">
-        <h3>Sorry, you have to approve charge before start using Product Tags Translator app. 
-        The trial period is 7-day. You will not charge anything until the trial ends and you can cancel anytime without any obligation. </h3> 
+        Sorry, you have to approve charge before start using Product Tags Translator app. 
+        The trial period is 7-day. You will not charge anything until the trial ends and you can cancel anytime without any obligation. 
       </div>
     </div>  
     <div class= "row centered">
-        <%= link_to "Go to charge confirmation page",root_path(:shop => @shop_domain), class:"btn btn-primary" %>    
+        <<div class="col-md-10">
+          <%= link_to "Go to charge confirmation page",root_path(:shop => @shop_domain), class:"btn btn-primary" %>              
+        </div>
     </div>
   </div>  
   <% end %>
