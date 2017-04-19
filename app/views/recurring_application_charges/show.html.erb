@@ -7,11 +7,18 @@
   });
 </script>
 
+<% if @shop_domain.present? %>
+  <% if @charge_status == "accepted" %>
+   <%= @charge_status.inspect %>
+   <%= @shop_domain.inspect %>
+   Call back page for approved charge
+  <% elsif @charge_status == "decline"  %> 
+   <%= @charge_status.inspect %>
+   <%= @shop_domain.inspect %>  
+   Call back page for decline chrage
+  <% end %>
 
-<% if @charge_status == "accepted" %>
-<%= @charge_status.inspect %>
-<%= @shop_domain.inspect %>
-<% end %>
+<% end %>  
 
 
 <% flash.each do |key, value| %>
