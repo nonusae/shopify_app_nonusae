@@ -15,7 +15,11 @@
   <% elsif @charge_status == "decline"  %> 
    <%= @charge_status.inspect %>
    <%= @shop_domain.inspect %>  
-   Call back page for decline chrage
+  <div class = "col-md-8">
+    <h3>Sorry, you have to approve charge before start using Product Tags Translator app. 
+    The trial period is 7-day. You will not charge anything until the trial ends and you can cancel anytime without any obligation. </h3> 
+  </div>  
+    <%= link_to root_path(:shop => @shop_domain), class:"btn btn-primary" %>
   <% end %>
 
 <% end %>  
