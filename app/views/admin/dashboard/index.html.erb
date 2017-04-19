@@ -8,8 +8,10 @@
 
 				Total tags: <%= @tag.count %>
 				<span class= "btn-group"> 
-					<%= link_to "Go to dashboard", root_path(shop: @shop_domain), class: "btn btn-primary" %>
-					<%= link_to "Go to dashboard", root_path(shop: @shop_domain), class: "btn btn-primary" %>
+					<%= link_to "Instructions", instructions_path(shop: @shop_domain), class: "btn btn-primary" %>
+				</span>
+				<span class= "btn-group"> 
+					<%= link_to "Faq", "", class: "btn btn-primary" %>
 				</span>
 			</div>
 
