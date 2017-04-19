@@ -15,10 +15,10 @@
 			<% if @shop %>
 				<div class= "pull-right">	
 					<span class= "btn-group"> 
-						<%= link_to "Instructions", instructions_path(shop: @shop_domain), class: "btn btn-primary" %>
+						<%= link_to "Instructions", instructions_path(shop: @shop_domain), class: "btn btn-primary btn-custom btnbtn" %>
 					</span>
 					<span class= "btn-group"> 
-						<%= link_to "Faq", "", class: "btn btn-primary" %>
+						<%= link_to "Faq", "", class: "btn btn-primary btn-custom btnbtn" %>
 					</span>				
 					<%= submit_tag "Update tags" , class: "btn btn-primary update-button", disabled:"disabled" %>
 				</div>
