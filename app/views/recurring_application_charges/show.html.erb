@@ -9,10 +9,26 @@
 
 <% if @shop_domain.present? %>
   <% if @charge_status == "accepted" %>
-   <%= @charge_status.inspect %>
-   <%= @shop_domain.inspect %>
-   Call back page for approved charge
+
+  <div class="container">
+    <div class= "row centered">  
+      <div class= "col-md-12 text-center">
+         <h4>Thank you for using our app !!</h4>
+        <br>
+         <h4>You can click the button below to go to instructions page.</h4>h4>
+      </div>
+    </div>  
+    <div class= "row centered">
+        <div class="col-md-12 text-center">
+          <%= link_to "Go to instructions page",root_path(:shop => @shop_domain), class:"btn btn-primary" %>              
+        </div>
+    </div>
+  </div>  
+
+
   <% elsif @charge_status == "decline"  %>
+
+
   <div class="container">
     <div class= "row centered">  
       <div class= "col-md-12 text-center">
@@ -26,7 +42,8 @@
           <%= link_to "Go to charge confirmation page",root_path(:shop => @shop_domain), class:"btn btn-primary" %>              
         </div>
     </div>
-  </div>  
+  </div>
+
   <% end %>
 
 <% end %>  
