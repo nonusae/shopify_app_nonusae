@@ -76,6 +76,7 @@ class RecurringApplicationChargesController < AuthenticatedController
       redirect_to usage_charge_path
     else
       if status.present?
+        puts "STATUS IS" + status
         @status = status
         redirect_to recurring_application_charge_path
       else
