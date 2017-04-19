@@ -1,7 +1,7 @@
 class Admin::DashboardController < ShopifyApp::AuthenticatedController
   # GET /admin
   # GET /admin.json
-  before_action :check_or_create_shopify_shop, :asset_check, :check_billing, :theme_check
+  before_action :check_or_create_shopify_shop, :asset_check, :check_billing
 
   def index
     if @shop.present?
@@ -169,6 +169,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       end          
   end
 
+  def instructions
+  end
 
 private
 
