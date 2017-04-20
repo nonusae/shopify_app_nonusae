@@ -9,13 +9,13 @@
 			</h3>
 			<h4 class="text-center">
 				**Please read this instruction before start using our app **<br /><br />
-				In order to use our app, you need to modify the theme file (mostly, collection-tag.liquid). 
+				In order to use our app, you need to modify the theme file. 
 				<br />There are three options to modify your theme file. <br />
 			</h4>
 
 			<blockquote>
 				<p>
-					1. We provide the automated modification by our app which we support 8 themes. <span>You can click at this button to let we modify your theme automatically. But this method only support themes file without modification before.</span>
+					1. We provide the automated modification by our app which we support 8 themes. <span>You can click at this button to let we modify your theme automatically. But this method only support themes file without modification before. Here are the themese are currenly support auto modifcation, Boundless, Brooklyn, Debut, Minimal, Pop, Simple,Supply,Venture. </span>
 				</p>
 				<p>
 					<%= link_to "Automate update theme", theme_automate_path(shop: @shop_domain), class: "btn btn-primary" %>
@@ -23,12 +23,12 @@
 			</blockquote>
 			<blockquote>
 				<p>
-					2. You can modify the theme manually if you understand our app syntax. You can read the instruction here.
+					2. You can modify the theme manually if you understand our app syntax. You can read the instruction 					<%= link_to "here",'http://www.solutionsify.com/products-translators-app-faqs' %>.
 				</p>
 			</blockquote>
 			<blockquote>
 				<p>
-					3. We also provide support to modify your custom theme manually with some fee. <span>Our service starts at $25 and might be increase depends on the complexity your custom theme. You can contact us here</span>
+					3. We also provide support to modify your custom theme manually with some fee. <span>Our service starts at $25 and might be increase depends on the complexity your custom theme. You can contact us <%= mail_to 'support@sulutionsify.com','here' %></span>
 				</p>
 			</blockquote>						
 		</div>
