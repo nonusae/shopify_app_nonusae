@@ -6,7 +6,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def index
     if @shop.present?
 
-      if ((@new_user) && !(@shop.shop_domain == "nonusae-app.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
+      if ((@new_user) && !(@shop.shop_domain == "nonusae-appasdasd.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
         puts "NEW USer !!!!!"
         recurring_application_charge_params = {
                                           "name": "Products Tag Traslator Subscription",
@@ -15,7 +15,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
                                         
         }
         @recurring_application_charge = ShopifyAPI::RecurringApplicationCharge.new(recurring_application_charge_params)
-        @recurring_application_charge.test = false
+        @recurring_application_charge.test = true
         @recurring_application_charge.return_url = callback_recurring_application_charge_url
         puts "Chrage OK!!"
         if @recurring_application_charge.save
