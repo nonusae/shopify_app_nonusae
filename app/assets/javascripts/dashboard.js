@@ -11,7 +11,7 @@
 
 	console.log("Funciton is ready")
 
-	$('.thai_title_field').on('input',function(){
+	$('.thai_title_field').on('input',function(event){
 		eventTargetId = event.target.id
 		flagLabel(eventTargetId)
 
