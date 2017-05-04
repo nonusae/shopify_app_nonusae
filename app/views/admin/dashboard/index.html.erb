@@ -55,26 +55,28 @@
 				<tbody>
 					<% @tag.each do |tag| %>
 					<!-- <div class="row"> -->
-					<tr>
-						<%= hidden_field_tag "shop", @shop.shop_domain %>
-						<%= hidden_field_tag "tag_ids[]", tag.id %>
-						<!-- <span class="col-md-6"> -->
-						<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
-						<!-- </span>    -->
-						<!-- <span class= "col-md-6"> -->
-						<td class= "text-center">
-							<%= fields_for "tags[]", tag do |t| %>
-							       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
-							<% end %>
-						</td>	
-						<!-- </span> -->
-					</tr>	
-					<!-- </div>	 -->
+						<tr>
+							<%= hidden_field_tag "shop", @shop.shop_domain %>
+							<%= hidden_field_tag "tag_ids[]", tag.id %>
+							<!-- <span class="col-md-6"> -->
+							<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
+							<!-- </span>    -->
+							<!-- <span class= "col-md-6"> -->
+							<td class= "text-center">
+								<%= fields_for "tags[]", tag do |t| %>
+								       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
+								<% end %>
+							</td>	
+							<!-- </span> -->
+						</tr>	
+						<!-- </div>	 -->
 					<% end %>	
 				</tbody>
 				</table>
 				</div>
 
+				<% else %>
+					<h2>It Seem that your shop are protected with password our app initial process work only shop without password </h2>
 				<% end %>	
 
 
