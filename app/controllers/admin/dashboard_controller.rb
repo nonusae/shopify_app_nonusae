@@ -183,12 +183,15 @@ private
       @shop = shop
       shop_domain = @shop.shop_domain
       tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
-      puts "TAG RAW IS " + tag_raw.class.to_s
-      puts "CAN PARSE" unless JSON.parse(tag_raw)
-      tag_from_soruce = JSON.parse(tag_raw)
+      if (JSON.parse(tag_raw)[0] == "TAG_PAGE_CONFIRM")
+        tag_from_soruce = JSON.parse(tag_raw)
+      else
+        redirect_to "https://www.google.com"
+      end
+      
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
-          unless tag == ""
+          unless (tag == "TAG_PAGE_CONFIRM") || (tag == "")
             t = Tag.new
             t.shopify_shop = @shop
             t.title = tag
@@ -196,6 +199,7 @@ private
             t.save
           end
         end
+
 
       database_tags = @shop.tags.map(&:title)
       puts "DATABASE TAGS 2222= #{database_tags}"
