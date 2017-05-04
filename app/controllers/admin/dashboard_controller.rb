@@ -36,8 +36,9 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         redirect_to_correct_path(@recurring_application_charge)
       end      
 
-
-      update_tag_no_redirect(@shop)
+      
+      @error_msg = update_tag_no_redirect(@shop)
+      puts @error_msg if @error_msg.present?
    	  @tag = @shop.tags.all.order("title ASC")
     else
       puts "shop not present"
@@ -197,8 +198,7 @@ private
       end
 
       if tag_from_soruce == "ASDFG"
-        puts "INIF"
-        redirect_to instructions_path && return
+        return "ERROR NO SHOP ARE WITH PASSWORD"
       end
 
 
