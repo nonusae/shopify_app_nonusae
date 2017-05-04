@@ -190,6 +190,7 @@ private
       end
 
       if tag_from_soruce == "ASDFG"
+        puts "INIF"
         redirect_to instructions_path && return
       end
 
