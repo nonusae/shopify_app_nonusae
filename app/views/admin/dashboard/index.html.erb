@@ -86,7 +86,8 @@
  <% end %><%# endof form_tag %>	
 
  <% if @shop %>	
- 	<% if @shop.shop_domain == "nonusae-app.myshopify.com"%>
+ 	<%= @shop.shop_domain.inspect %>
+ 	<% if @shop.shop_domain == "nonusae-app.myshopify.com" %>
  		<% console %>
  	<% end %>
  <% end %>	
