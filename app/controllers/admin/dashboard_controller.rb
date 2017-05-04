@@ -200,7 +200,7 @@ private
 
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
-          unless (tag == "TAG_PAGE_CONFIRM") || (tag == "")
+          unless tag == ""
             t = Tag.new
             t.shopify_shop = @shop
             t.title = tag
