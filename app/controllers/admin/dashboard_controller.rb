@@ -6,6 +6,10 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def index
     @error_msg = nil
     if @shop.present?
+      
+      if @shop.shop_domain == "nonusae-app.myshopify.com"
+        console
+      end
 
       if ((@new_user) && !(@shop.shop_domain == "nonusae-app.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
         puts "NEW USer !!!!!"
