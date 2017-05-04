@@ -186,7 +186,7 @@ private
       begin
         tag_from_soruce = JSON.parse(tag_raw)
       rescue
-        puts "CATCH CATCH"
+        redirect_to instructions_path
         return
       end
       tag_from_soruce.each do |tag|
