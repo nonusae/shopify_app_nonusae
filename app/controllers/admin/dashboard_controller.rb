@@ -183,12 +183,11 @@ private
       @shop = shop
       shop_domain = @shop.shop_domain
       tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
-      if (JSON.parse(tag_raw)[0] == "TAG_PAGE_CONFIRM")
+      begin
         tag_from_soruce = JSON.parse(tag_raw)
-      else
+      rescue
         redirect_to "https://www.google.com"
       end
-      
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
           unless (tag == "TAG_PAGE_CONFIRM") || (tag == "")
