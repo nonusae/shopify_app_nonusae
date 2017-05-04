@@ -222,6 +222,7 @@ private
       end
 
       end
+      return nil
  end
 
  def check_billing
