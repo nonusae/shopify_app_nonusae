@@ -197,6 +197,18 @@ private
       shop_domain = @shop.shop_domain
       tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
 
+      begin
+        tag_from_soruce = JSON.parse(tag_raw)
+      rescue
+        tag_from_soruce = "ASDFG"
+      end
+
+      if tag_from_soruce == "ASDFG"
+        puts "INIF"
+        redirect_to instructions_path && return
+      end
+
+
 
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
