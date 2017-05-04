@@ -53,15 +53,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     begin
       tag_from_soruce = JSON.parse(tag_raw)
     rescue
-      tag_from_soruce = "ASDFG"
+      tag_from_soruce = []
     end
-
-    if tag_from_soruce == "ASDFG"
-      puts "INIF"
-      redirect_to instructions_path && return
-    end
-
-
 
     tag_from_soruce.each do |tag|
     	unless @shop.tags.find_by_title(tag)
