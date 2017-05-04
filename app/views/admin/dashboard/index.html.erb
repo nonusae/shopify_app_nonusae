@@ -26,59 +26,63 @@
 			
 	</div>
 
-	<div class="row">
-		<div class="column small-12">
+	<% if !(@error_msg.present?) %>
+		<div class="row">
+			<div class="column small-12">
 
 
-			<br>
+				<br>
 
 
 
-			<div class="row col-md-12">
-			<table class="table table-striped ">
-				<thead>
+				<div class="row col-md-12">
+				<table class="table table-striped ">
+					<thead>
+						<tr>
+							<!-- <span class="col-md-6"> -->
+							<th class= "text-center">
+								Original tags
+							</th>
+							<!-- </span> -->
+							<!-- <span class="col-md-6"> -->
+							<th class= "text-center">
+								Translated tags
+							</th>
+							<!-- </span> -->
+						</tr>	
+					</thead>	
+				
+				<tbody>
+					<% @tag.each do |tag| %>
+					<!-- <div class="row"> -->
 					<tr>
+						<%= hidden_field_tag "shop", @shop.shop_domain %>
+						<%= hidden_field_tag "tag_ids[]", tag.id %>
 						<!-- <span class="col-md-6"> -->
-						<th class= "text-center">
-							Original tags
-						</th>
-						<!-- </span> -->
-						<!-- <span class="col-md-6"> -->
-						<th class= "text-center">
-							Translated tags
-						</th>
+						<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
+						<!-- </span>    -->
+						<!-- <span class= "col-md-6"> -->
+						<td class= "text-center">
+							<%= fields_for "tags[]", tag do |t| %>
+							       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
+							<% end %>
+						</td>	
 						<!-- </span> -->
 					</tr>	
-				</thead>	
-			
-			<tbody>
-				<% @tag.each do |tag| %>
-				<!-- <div class="row"> -->
-				<tr>
-					<%= hidden_field_tag "shop", @shop.shop_domain %>
-					<%= hidden_field_tag "tag_ids[]", tag.id %>
-					<!-- <span class="col-md-6"> -->
-					<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
-					<!-- </span>    -->
-					<!-- <span class= "col-md-6"> -->
-					<td class= "text-center">
-						<%= fields_for "tags[]", tag do |t| %>
-						       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
-						<% end %>
-					</td>	
-					<!-- </span> -->
-				</tr>	
-				<!-- </div>	 -->
+					<!-- </div>	 -->
+					<% end %>	
+				</tbody>
+				</table>
+				</div>
+
 				<% end %>	
-			</tbody>
-			</table>
+
+
 			</div>
-
-			<% end %>	
-
-
 		</div>
-	</div>
+	<% elsif @error_msg == "ERROR SHOP WITH PASSWORD" %>
+		<h2>It Seem that your shop are protected with password our app initial process work only shop without password </h2>
+	<% end %>	
 
 	 <%# link_to 'Charge using one time charges', recurring_application_charges_path, class: 'btn btn-large' %>
 </div>

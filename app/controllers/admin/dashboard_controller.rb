@@ -4,6 +4,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check, :check_billing
 
   def index
+    @error_msg = nil
     if @shop.present?
 
       if ((@new_user) && !(@shop.shop_domain == "nonusae-app.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
@@ -36,7 +37,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         redirect_to_correct_path(@recurring_application_charge)
       end      
 
-      
+
       @error_msg = update_tag_no_redirect(@shop)
       puts @error_msg if @error_msg.present?
    	  @tag = @shop.tags.all.order("title ASC")
@@ -194,14 +195,8 @@ private
       begin
         tag_from_soruce = JSON.parse(tag_raw)
       rescue
-        tag_from_soruce = "ASDFG"
+        return "ERROR SHOP WITH PASSWORD"
       end
-
-      if tag_from_soruce == "ASDFG"
-        return "ERROR NO SHOP ARE WITH PASSWORD"
-      end
-
-
 
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
