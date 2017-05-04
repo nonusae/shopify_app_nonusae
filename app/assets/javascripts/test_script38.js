@@ -31,7 +31,7 @@ $(function() {
 		}
 
 		console.log('Your app is using jQuery version '+jQuery.fn.jquery)
-		console.log("1123456 This is loaded and work!");
+		console.log("11234567789 This is loaded and work!");
 
 
 		a = $('.normal-tag')
