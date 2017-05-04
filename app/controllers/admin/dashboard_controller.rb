@@ -186,7 +186,7 @@ private
       begin
         tag_from_soruce = JSON.parse(tag_raw)
       rescue
-        render template => "dashboard/instructions" and return
+        flash.now[:error] = "please fix the problems in the record"
       end
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
