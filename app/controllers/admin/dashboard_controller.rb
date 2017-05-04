@@ -187,6 +187,7 @@ private
         tag_from_soruce = JSON.parse(tag_raw)
       rescue
         redirect_to "https://www.google.com"
+        return
       end
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
