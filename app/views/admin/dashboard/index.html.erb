@@ -1,6 +1,7 @@
 <div class="container">
 	<div class= "row col-sm-12">
 			<% if @shop %>	
+
 			<div class= "pull-left">
 				<span class= "btn-group">	
 					<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom btnbtn" %>
@@ -25,7 +26,7 @@
 			<% end %>					
 			
 	</div>
-	
+
 	 <% if (@error_msg.nil?) %>
 		<div class="row">
 			<div class="column small-12">
@@ -83,6 +84,12 @@
 					</div>
 	 <% end %>		
  <% end %><%# endof form_tag %>	
+
+ <% if @shop %>	
+ 	<% if @shop.shop_domain == %>
+ 		<% console %>
+ 	<% end %>
+ <% end %>	
 
 	 <%# link_to 'Charge using one time charges', recurring_application_charges_path, class: 'btn btn-large' %>
 </div>
