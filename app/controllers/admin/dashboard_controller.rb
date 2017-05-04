@@ -186,9 +186,13 @@ private
       begin
         tag_from_soruce = JSON.parse(tag_raw)
       rescue
-        flash.now[:error] = "please fix the problems in the record"
-        return 
+        tag_from_soruce = "ASDFG"
       end
+
+      if tag_from_soruce == "ASDFG"
+        redirect_to instructions_path && return
+      end
+
       tag_from_soruce.each do |tag|
         unless @shop.tags.find_by_title(tag)
           unless (tag == "TAG_PAGE_CONFIRM") || (tag == "")
