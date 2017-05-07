@@ -4,7 +4,7 @@
 
 			<div class= "pull-left">
 				<span class= "btn-group">	
-					<%= button_to 'Sync tag from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom btnbtn" %>
+					<%= button_to 'Sync tags from shop', update_tags_path, method: :get, params: {shop: @shop.shop_domain}, class: "btn btn-primary btn-custom btnbtn" %>
 				</span>
 
 				Total tags: <%= @tag.count %>
