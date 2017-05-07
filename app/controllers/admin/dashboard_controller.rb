@@ -5,6 +5,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
   def index
     @error_msg = nil
+    @shop = ShopifyShop.find_by_shop_domain(params[:shop]) if params[:shop].present?
     if @shop.present?
 
       if @shop.shop_domain == "nonusae-app.myshopify.com"
