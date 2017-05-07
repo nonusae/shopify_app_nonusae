@@ -8,6 +8,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     @shop = ShopifyShop.find_by_shop_domain(params[:shop]) if params[:shop].present?
     if @shop.present?
 
+      @shop_domain = @shop.shop_domain
+      
       if @shop.shop_domain == "nonusae-app.myshopify.com"
         console
       end
