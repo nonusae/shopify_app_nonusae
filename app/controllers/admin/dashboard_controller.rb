@@ -4,7 +4,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   before_action :check_or_create_shopify_shop, :asset_check, :check_billing
 
   def index
-    # @error_msg = nil
+    @error_msg = nil
     if @shop.present?
 
       if @shop.shop_domain == "nonusae-app.myshopify.com"
@@ -43,7 +43,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
 
       # @error_msg = update_tag_no_redirect(@shop)
-      # @error_msg = params[:error] if params[:error].present?
+      @error_msg = params[:error] if params[:error].present?
       puts @error_msg if @error_msg.present?
    	  @tag = @shop.tags.all.order("title ASC")
     else
@@ -59,10 +59,10 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     
       begin
         tag_from_soruce = JSON.parse(tag_raw)
-        @error_msg = nil
+        error_msg = nil
       rescue
         tag_from_soruce = []
-        @error_msg = "ERROR SHOP WITH PASSWORD"
+        error_msg = "ERROR SHOP WITH PASSWORD"
       end
 
     tag_from_soruce.each do |tag|
@@ -89,7 +89,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
     end
 
-    redirect_to root_path(:shop => shop_domain)
+    redirect_to root_path(:shop => shop_domain,:error = error_msg)
   end
 
   def check_or_create_shopify_shop
