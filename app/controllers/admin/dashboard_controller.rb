@@ -6,7 +6,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   def index
     @error_msg = nil
     if @shop.present?
-      
+
       if @shop.shop_domain == "nonusae-app.myshopify.com"
         console
       end
@@ -42,7 +42,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       end      
 
 
-      @error_msg = update_tag_no_redirect(@shop)
+      # @error_msg = update_tag_no_redirect(@shop)
       puts @error_msg if @error_msg.present?
    	  @tag = @shop.tags.all.order("title ASC")
     else
@@ -56,11 +56,12 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
     @shop = ShopifyShop.find_by_shop_domain(shop_domain)
   	tag_raw = HTTParty.get("http://#{shop_domain}/search?view=tags").body
     
-    begin
-      tag_from_soruce = JSON.parse(tag_raw)
-    rescue
-      tag_from_soruce = []
-    end
+      begin
+        tag_from_soruce = JSON.parse(tag_raw)
+        @error_msg = nil
+      rescue
+        @error_msg = "ERROR SHOP WITH PASSWORD"
+      end
 
     tag_from_soruce.each do |tag|
     	unless @shop.tags.find_by_title(tag)
