@@ -89,7 +89,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
     end
 
-    redirect_to root_path(:shop => shop_domain,:error = error_msg)
+    redirect_to root_path(:shop => shop_domain,:error => error_msg)
   end
 
   def check_or_create_shopify_shop
