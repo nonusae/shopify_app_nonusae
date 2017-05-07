@@ -60,6 +60,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         tag_from_soruce = JSON.parse(tag_raw)
         @error_msg = nil
       rescue
+        tag_from_soruce = []
         @error_msg = "ERROR SHOP WITH PASSWORD"
       end
 
