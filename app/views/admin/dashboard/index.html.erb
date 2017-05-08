@@ -14,7 +14,11 @@
 			
  <%= form_tag update_multiple_tags_path, :html => { :method => :put } do %>
 			<% if @shop %>
-				<div class= "pull-right">	
+				<div class= "pull-right">
+				   <span class= "btn-group"> 
+						<%= mail_to 'Contact us','support@solutionsify.com', class: "btn btn-primary btn-custom btnbtn" %>
+					</span>
+
 					<span class= "btn-group"> 
 						<%= link_to "Instructions", instructions_path(shop: @shop_domain), class: "btn btn-primary btn-custom btnbtn" %>
 					</span>
