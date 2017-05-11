@@ -117,6 +117,7 @@ class TagsController < ApplicationController
             end
 
         @tag = result
+        puts @tag
         respond_to do |format|
             format.json { render :json => @tag }
         end
