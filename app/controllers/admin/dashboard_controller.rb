@@ -48,7 +48,9 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       # @error_msg = update_tag_no_redirect(@shop)
       @error_msg = params[:error] if params[:error].present?
       puts @error_msg if @error_msg.present?
-   	  @tag = @shop.tags.all.order("title ASC")
+      @normal_tag_no = @shop.tags.all.where("is_group_tag IS NOT true").count
+   	  @tag = @shop.tags.all.order("is_group_tag ASC").order("title ASC")
+      @cat_container = []
     else
       puts "shop not present"
       @tag = [] 
@@ -68,14 +70,22 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         error_msg = "ERROR SHOP WITH PASSWORD"
       end
 
+    puts   tag_from_soruce
     tag_from_soruce.each do |tag|
     	unless @shop.tags.find_by_title(tag)
     		unless tag == ""
+          puts "come in this loop"
     			t = Tag.new
     			t.shopify_shop = @shop
     			t.title = tag
     			t.thai_title = ""
-    			t.save
+          t.is_group_tag  = t.is_group_tag?
+          if t.save
+            if t.is_group_tag
+              t.assign_group_tag_value
+            end
+          end
+
     		end
     	end
 

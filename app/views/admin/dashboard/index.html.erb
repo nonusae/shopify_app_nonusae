@@ -58,22 +58,50 @@
 					</thead>	
 				
 				<tbody>
+					<% i = 0 %>
 					<% @tag.each do |tag| %>
-					<!-- <div class="row"> -->
+					<% i += 1 %>
 						<tr>
+						<% if i <= @normal_tag_no %>
 							<%= hidden_field_tag "shop", @shop.shop_domain %>
-							<%= hidden_field_tag "tag_ids[]", tag.id %>
-							<!-- <span class="col-md-6"> -->
+							<%= hidden_field_tag "tag_ids[]", tag.id %>	
 							<td class= "text-center", id= "label-<%= tag.id %>"><%= tag.title.squish %></td>	
-							<!-- </span>    -->
-							<!-- <span class= "col-md-6"> -->
+
 							<td class= "text-center">
 								<%= fields_for "tags[]", tag do |t| %>
 								       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
 								<% end %>
-							</td>	
-							<!-- </span> -->
-						</tr>	
+							</td>
+						 <% elsif i > @normal_tag_no %>
+						 	<% i+= 1 %>
+						 	<%= hidden_field_tag "shop", @shop.shop_domain %>
+							<%= hidden_field_tag "tag_ids[]", tag.id %>
+						  <% if !(@cat_container.include?(tag.group_tag_cat.squish)) %>
+						  	<% @cat_container << tag.group_tag_cat.squish %>
+							<td class= "text-left", id= "label-<%= tag.id %>"><%= tag.group_tag_cat.squish %></td>	
+							<td class= "text-center">
+								<%= fields_for "tags[]", tag do |t| %>
+								       <%= t.text_field :group_tag_thai_cat, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
+								<% end %>
+							</td>
+
+							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.squish %></td>	
+							<td class= "text-center">
+								<%= fields_for "tags[]", tag do |t| %>
+								       <%= t.text_field :group_tag_thai_sub, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
+								<% end %>
+							</td>
+						  <% else %>
+							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.squish %></td>	
+							<td class= "text-center">
+								<%= fields_for "tags[]", tag do |t| %>
+									   <%= t.hidden_field :group_tag_thai_cat, value: "GARP_#{@cat_container.last}"  %>
+								       <%= t.text_field :group_tag_thai_sub, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
+								<% end %>
+							</td>
+						  <% end %>	<%# end of if cat_contain %>													
+						 <% end %>
+						</tr>		
 						<!-- </div>	 -->
 					<% end %>	
 				</tbody>

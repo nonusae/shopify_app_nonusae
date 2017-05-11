@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-  config.public_url = 'https://1c07c0d6.ngrok.io';
+  config.public_url = 'https://6480a30b.ngrok.io';
   
   config.shopify_api_key = "9cc5389f4a5d3486306ceb533377e50b"
   config.shopify_secret = "e41e0644198298e1d4d2f4de60ebc9ca"

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   		post 'update_multiple'
   		get 'get_all_translated_tag'
   		get 'get_translated_tag'
+      get 'get_translated_group_tag'
   	end
   end
 
