@@ -90,6 +90,7 @@ class TagsController < ApplicationController
     end
 
     def get_translated_group_tag
+        @shop = ShopifyShop.find_by_shop_domain(params[:shop_domain])
          a= params[:tags].split("*:*")
          b= a
          total = []
