@@ -110,7 +110,7 @@ $(function() {
     	}
 
    // NEW IMPLEMENTATION
-   	if ($('group-tag-cat').length > 0 ) {
+   	if ($('.group-tag-cat').length > 0 ) {
    		a = $('.group-tag-cat')
    		ab = [[],[]]
    		for (m =0; m < a.length; m++){
@@ -131,22 +131,93 @@ $(function() {
    		shop_domain = Shopify.shop
 		console.log("cc is")
 		console.log(cc)	
-
+		var sb
 			$.ajax({
 	        	type: "get",
 	        	dataType: "json",
 	        	url: "https://shopify-tag-app.herokuapp.com/tags/get_translated_group_tag.json?tags="+cc+"&shop_domain="+shop_domain,
 	        	success: function(data){
+	        		sb =data
+	        		for (m=0; m < data[0].length; m++){
+						// title = data[i].title
+						t_cat = data[0][m].group_tag_thai_cat
+						console.log(t_cat)
+						if (/\S/.test(t_cat)) {
+							node =  $(".group-tag-cat-"+(m+1))
+							if (node.children().length == 0) {
+								node.text(t_cat);
+							} else if (node.children().length == 1) {
+								node.children().text(t_cat);	
+							}
+						}
 
+						for (i=0; i < data[1].length; i++){
+							console.log("enter i loop with m,i" + (m) + (i))
+							t_sub =data[1][i].group_tag_thai_sub
+							console.log((m+1)+"_"+(i+1))
+							console.log(t_sub)
+
+							if (/\S/.test(t_sub)) {
+								console.log("node")
+								console.log($(".group-tag-sub-"+(m+1)+"_"+(i+1)))
+								node =  $(".group-tag-sub-"+(m+1)+"_"+(i+1))
+								if (node.children().length == 0) {
+									node.text(t_sub);
+								} else if (node.children().length == 1) {
+									node.children().text(t_sub);	
+								}
+							}							
+						}//end for for i
+
+	        		} // end for m 
 	        	}
 	    	}) // end of ajax 			
 
 
-   	}
+   	} // end of if grouptag
 
 
 
    //END IMPLEMENTATION
+
+
+
+   // IMPLEMENTATION 2
+
+if ($('.group-tag-cat').length > 0 ) {
+
+	a = $('.group-tag-cat')
+	ab = []
+   		for (m =0; m < a.length; m++){
+   			ab.push([])
+   			ab[m].push(a[m].textContent.trim())
+   			ab[m].push([])
+   			for (i = 0; i < 1000; i++){
+   				if ($('.group-tag-sub-'+(m+1)+"_"+(i+1)).length > 0) {
+   					a2 = $('.group-tag-sub-'+(m+1)+"_"+(i+1))
+	   				full_tag = a2[0].className.split(" ").filter(function(element) { return element.match("group-tag-sub-") })[0].split("group-tag-sub-")[1]
+	   				ab[m][1].push(full_tag)
+	   				} else { break ;}   				
+   			}
+   		}// end for m 	
+
+
+   		c = ab.join("*:*")
+   		c = c.replace(/&/g,"%26")
+   		cc = c
+   		shop_domain = Shopify.shop
+		console.log("cc is")
+		console.log(cc)
+
+
+}
+
+
+   //
+
+
+
+
 
 
 
