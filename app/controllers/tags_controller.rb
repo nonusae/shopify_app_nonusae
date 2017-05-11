@@ -78,7 +78,7 @@ class TagsController < ApplicationController
 
 	 sub_array.each do |subs|
 	 	puts "sub tag is #{subs}"
-	 	subs =  @shop.tags.find_by_title(tt)
+	 	subs =  @shop.tags.find_by_title(subs)
 	 	@tag[1] << subs
 	 end
 
