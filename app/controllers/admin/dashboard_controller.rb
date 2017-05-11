@@ -252,6 +252,7 @@ private
       @new_user = false
     else
       @new_user = true
+      ##
     end
  end
 
