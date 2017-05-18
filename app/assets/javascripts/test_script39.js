@@ -209,6 +209,50 @@ if ($('.group-tag-cat').length > 0 ) {
 		console.log("cc is")
 		console.log(cc)
 
+		var sb
+			$.ajax({
+	        	type: "get",
+	        	dataType: "json",
+	        	url: "https://shopify-tag-app.herokuapp.com/tags/get_translated_group_tag.json?tags="+cc+"&shop_domain="+shop_domain,
+	        	success: function(data){
+	        		sb = data
+	        		for (m=0; m < data.length; m++){
+	        			for (n=0; n < data[m].length; n++){ // n max 1
+	        				if (n == 0){
+	        					t_cat = data[m][n].group_tag_thai_cat
+								console.log(t_cat)
+								if (/\S/.test(t_cat)) {
+									node =  $(".group-tag-cat-"+(m+1))
+									if (node.children().length == 0) {
+										node.text(t_cat);
+									} else if (node.children().length == 1) {
+										node.children().text(t_cat);	
+									}
+								} //end of if test t cat	
+	        				}else{
+	        					for (l=0; l < data[m][n].length; l++){
+		        					t_sub = data[m][n][l].group_tag_thai_sub
+									console.log(t_sub)
+
+									if (/\S/.test(t_sub)) {
+										console.log("node")
+										console.log($(".group-tag-sub-"+(m+1)+"_"+(l+1)))
+										node =  $(".group-tag-sub-"+(m+1)+"_"+(l+1))
+										if (node.children().length == 0) {
+											node.text(t_sub);
+										} else if (node.children().length == 1) {
+											node.children().text(t_sub);	
+										}
+									}	
+								}        					
+
+	        				} // end of else
+	        			} // end of n
+	        		} //end of m
+
+	        	}
+	    	}) // end of ajax		
+
 
 }
 
