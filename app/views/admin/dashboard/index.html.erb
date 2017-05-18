@@ -72,12 +72,12 @@
 								       <%= t.text_field :thai_title, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
 								<% end %>
 							</td>
-						 <% elsif i > @normal_tag_no %>
+						 <% elsif ((i > @normal_tag_no) && (tag.group_tag_cat.present?))  %>
 						 	<% i+= 1 %>
 						 	<%= hidden_field_tag "shop", @shop.shop_domain %>
 							<%= hidden_field_tag "tag_ids[]", tag.id %>
 						  <% if !(@cat_container.include?(tag.group_tag_cat)) %>
-						  	<% @cat_container << tag.group_tag_cat.squish %>
+						  	<% @cat_container << tag.group_tag_cat %>
 							<td class= "text-left", id= "label-<%= tag.id %>"><%= tag.group_tag_cat.squish %></td>	
 							<td class= "text-center">
 								<%= fields_for "tags[]", tag do |t| %>
