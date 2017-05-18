@@ -45,6 +45,15 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       end      
 
 
+      ## update all group tag boolen
+        @shop.tags.all.each do |tag|
+          if tag.is_group_tag == nil
+            tag.update_is_group_tag_boolean
+          end
+        end
+      ##
+
+
       # @error_msg = update_tag_no_redirect(@shop)
       @error_msg = params[:error] if params[:error].present?
       puts @error_msg if @error_msg.present?
@@ -56,6 +65,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       @tag = [] 
     end
   end
+
 
   def update_tags
     shop_domain  = params[:shop]

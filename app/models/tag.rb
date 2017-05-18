@@ -22,5 +22,18 @@ class Tag < ActiveRecord::Base
 		end
 	end
 
+	def update_is_group_tag_boolean
+   		puts "come to update_is_group_tag_boolean def"
+   		title = self.title   
+		title_div = title.split("_")
+		if title_div.length == 2
+			puts "gruop_tag detect updating"
+			self.update_attribute(:is_group_tag,true)
+		else
+			self.update_attribute(:is_group_tag,false)
+		end   		
+	end
+
+
 
 end
