@@ -5,6 +5,6 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
   config.scripttags = [
   # {event:'onload', src: 'https://rawgit.com/nonusae/shopify_app_nonusae/master/app/assets/javascripts/test_script37.js'}
-    {event:'onload', src: 'https://cdn.rawgit.com/nonusae/shopify_app_nonusae/cd32621a/app/assets/javascripts/test_script40.js'}
+    {event:'onload', src: 'https://cdn.rawgit.com/nonusae/shopify_app_nonusae/3b1e0a4e/app/assets/javascripts/test_script40.js'}
 ]
 end
