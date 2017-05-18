@@ -16,7 +16,6 @@ $(function() {
   		   Don't use 'jQuery', or 'jQuery191', here. Use the dollar sign
   		   that was passed as argument.*/
   		   	console.log('Your app is using jQuery version '+$.fn.jquery)
-  			$('body').append('<p>Your app is using jQuery version '+$.fn.jquery+'</p>');
 		};
   
 		if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
