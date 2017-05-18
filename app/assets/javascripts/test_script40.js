@@ -103,6 +103,7 @@ $(function() {
 					}				
 					$('.loading').css("display","none")
 					$('.loaded').css("display","true")
+					$('.loaded').show()
 	        	}
 	    	}) 			
 					
