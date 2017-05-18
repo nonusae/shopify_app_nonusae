@@ -60,6 +60,7 @@
 				<tbody>
 					<% i = 0 %>
 					<% @tag.each do |tag| %>
+					<% puts "Now tag is #{tag.title}" %>
 					<% i += 1 %>
 						<tr>
 						<% if i <= @normal_tag_no %>
