@@ -76,7 +76,7 @@
 						 	<% i+= 1 %>
 						 	<%= hidden_field_tag "shop", @shop.shop_domain %>
 							<%= hidden_field_tag "tag_ids[]", tag.id %>
-						  <% if !(@cat_container.include?(tag.group_tag_cat.squish)) %>
+						  <% if !(@cat_container.include?(tag.group_tag_cat)) %>
 						  	<% @cat_container << tag.group_tag_cat.squish %>
 							<td class= "text-left", id= "label-<%= tag.id %>"><%= tag.group_tag_cat.squish %></td>	
 							<td class= "text-center">
