@@ -77,23 +77,23 @@
 						 	<% i+= 1 %>
 						 	<%= hidden_field_tag "shop", @shop.shop_domain %>
 							<%= hidden_field_tag "tag_ids[]", tag.id %>
-						  <% if !(@cat_container.include?(tag.group_tag_cat)) %>
-						  	<% @cat_container << tag.group_tag_cat %>
-							<td class= "text-left", id= "label-<%= tag.id %>"><%= tag.group_tag_cat.squish %></td>	
+						  <% if !(@cat_container.include?(tag.group_tag_cat.gsub("*s*"," ") )) %>
+						  	<% @cat_container << tag.group_tag_cat.gsub("*s*"," ") %>
+							<td class= "text-left", id= "label-<%= tag.id %>"><%= tag.group_tag_cat.gsub("*s*"," ").squish %></td>	
 							<td class= "text-center">
 								<%= fields_for "tags[]", tag do |t| %>
 								       <%= t.text_field :group_tag_thai_cat, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
 								<% end %>
 							</td>
 
-							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.squish %></td>	
+							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.gsub("*s*"," ").squish %></td>	
 							<td class= "text-center">
 								<%= fields_for "tags[]", tag do |t| %>
 								       <%= t.text_field :group_tag_thai_sub, class: "thai_title_field form-control", id: "field-#{tag.id}" %>
 								<% end %>
 							</td>
 						  <% else %>
-							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.squish %></td>	
+							<td class= "text-right", id= "label-<%= tag.id %>"><%= tag.group_tag_sub.gsub("*s*"," ").squish %></td>	
 							<td class= "text-center">
 								<%= fields_for "tags[]", tag do |t| %>
 									   <%= t.hidden_field :group_tag_thai_cat, value: "GARP_#{@cat_container.last}"  %>

@@ -87,7 +87,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           puts "come in this loop"
     			t = Tag.new
     			t.shopify_shop = @shop
-    			t.title = tag
+    			t.title = tag.gsub(" ","*s*")
     			t.thai_title = ""
           t.is_group_tag  = t.is_group_tag?
           if t.save
