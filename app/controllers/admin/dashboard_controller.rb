@@ -82,7 +82,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
     puts   tag_from_soruce
     tag_from_soruce.each do |tag|
-    	unless @shop.tags.find_by_title(tag)
+    	unless @shop.tags.find_by_title(tag.gsub(" ","*s*"))
     		unless tag == ""
           puts "come in this loop"
     			t = Tag.new
