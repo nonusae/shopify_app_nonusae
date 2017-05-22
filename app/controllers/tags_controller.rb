@@ -12,12 +12,15 @@ class TagsController < ApplicationController
         tag.update_attribute(:thai_title,params[:tags][id]["thai_title"])
        else
         id = tag.id.to_s
+        puts "group_tag_thai_cat in update_miltiple is"
         puts params[:tags][id]["group_tag_thai_cat"]
+        puts "group_tag_thai_sub in update_miltiple is"
         puts params[:tags][id]["group_tag_thai_sub"]
         unless params[:tags][id]["group_tag_thai_cat"].split("_")[0] == "GARP"
             tag.update_attribute(:group_tag_thai_cat,params[:tags][id]["group_tag_thai_cat"])
         else
             cat = params[:tags][id]["group_tag_thai_cat"].split("_")[1]
+            puts "cat in update_miltiple is #{cat}"
             thai_cat = @shop.tags.where(group_tag_cat: cat).order("title ASC").first.group_tag_thai_cat
             tag.update_attribute(:group_tag_thai_cat,thai_cat)
         end
