@@ -82,12 +82,12 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
     puts   tag_from_soruce
     tag_from_soruce.each do |tag|
-    	unless @shop.tags.find_by_title(tag.gsub(" ","*s*"))
+    	unless @shop.tags.find_by_title(tag)
     		unless tag == ""
           puts "come in this loop"
     			t = Tag.new
     			t.shopify_shop = @shop
-    			t.title = tag.gsub(" ","*s*")
+    			t.title = tag
     			t.thai_title = ""
           t.is_group_tag  = t.is_group_tag?
           if t.save
