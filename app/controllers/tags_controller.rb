@@ -6,16 +6,13 @@ class TagsController < ApplicationController
       @shop = ShopifyShop.find_by_shop_domain(shop_domain)
       @tags = Tag.find(params[:tag_ids])
       @tags.each do |tag|
+      begin
        unless tag.is_group_tag  
         id = tag.id.to_s
         puts params[:tags][id]["thai_title"]
         tag.update_attribute(:thai_title,params[:tags][id]["thai_title"])
        else
         id = tag.id.to_s
-        puts "group_tag_thai_cat in update_miltiple is"
-        puts params[:tags][id]["group_tag_thai_cat"]
-        puts "group_tag_thai_sub in update_miltiple is"
-        puts params[:tags][id]["group_tag_thai_sub"]
         unless params[:tags][id]["group_tag_thai_cat"].split("_")[0] == "GARP"
             tag.update_attribute(:group_tag_thai_cat,params[:tags][id]["group_tag_thai_cat"])
         else
@@ -27,6 +24,14 @@ class TagsController < ApplicationController
 
         tag.update_attribute(:group_tag_thai_sub,params[:tags][id]["group_tag_thai_sub"])
        end
+      rescue Exception => e
+        puts "Tag that cause error"
+        puts "error: group_tag_thai_cat in update_miltiple is"
+        puts params[:tags][id]["group_tag_thai_cat"]
+        puts "error: group_tag_thai_sub in update_miltiple is"
+        puts params[:tags][id]["group_tag_thai_sub"]
+        puts "With error"
+        puts e.to_s
       end
       redirect_to root_path(:shop => shop_domain)
     end
