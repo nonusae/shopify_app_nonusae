@@ -6,7 +6,7 @@ class TagsController < ApplicationController
       @shop = ShopifyShop.find_by_shop_domain(shop_domain)
       @tags = Tag.find(params[:tag_ids])
       @tags.each do |tag|
-      begin
+      begin  
        unless tag.is_group_tag  
         id = tag.id.to_s
         puts params[:tags][id]["thai_title"]
@@ -32,7 +32,9 @@ class TagsController < ApplicationController
         puts params[:tags][id]["group_tag_thai_sub"]
         puts "With error"
         puts e.to_s
-      end
+      end # end for begin
+      end #end for each do
+
       redirect_to root_path(:shop => shop_domain)
     end
 
