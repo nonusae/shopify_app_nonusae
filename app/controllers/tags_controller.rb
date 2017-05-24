@@ -115,11 +115,11 @@ class TagsController < ApplicationController
                 t.each do |tt|
                     if i == 0
                         result << []
-                        tag = @shop.tags.where(group_tag_cat: tt.to_s).first 
+                        tag = @shop.tags.where(group_tag_cat: tt.to_s).first.gsub("*s*"," ")
                         result[m] << tag
                         result[m] << []
                     else
-                        tag = @shop.tags.find_by_title(tt)
+                        tag = @shop.tags.find_by_title(tt.gsub("*s*"," "))
                         result[m][1] << tag
                     end
                     i += 1
