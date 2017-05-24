@@ -52,7 +52,7 @@ class TagsController < ApplicationController
         puts "t is: #{t}"
         t.each do |tt|
             puts "tt is #{tt}"
-            tag = @shop.tags.find_by_title(tt)
+            tag = @shop.tags.find_by_title(tt.gsub("*s*"," "))
             tag = "" unless tag.present?
             @tag << tag
         end
@@ -81,14 +81,14 @@ class TagsController < ApplicationController
 
      cat_array.each do |cat|
         puts "cat is #{cat}"
-        cat = @shop.tags.where(group_tag_cat: cat.to_s).first
+        cat = @shop.tags.where(group_tag_cat: cat.to_s.gsub("*s*"," ")).first
         cat = "" unless cat.present?
         @tag[0] << cat
      end
 
      sub_array.each do |subs|
         puts "sub tag is #{subs}"
-        subs =  @shop.tags.find_by_title(subs)
+        subs =  @shop.tags.find_by_title(subs.gsub("*s*"," "))
         @tag[1] << subs
      end
 
