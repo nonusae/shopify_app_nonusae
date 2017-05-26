@@ -129,9 +129,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
           end
       else
         puts "SHOP IS PRESENT THIS ROUND"
-        if shop_domain == "nonusae-app.myshopify.com"
-          MainAppMailer.sample_email.deliver
-        end
+        MainAppMailer.sample_email.deliver
       end
   end
 
