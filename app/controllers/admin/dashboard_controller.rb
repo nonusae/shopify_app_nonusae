@@ -119,7 +119,9 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       if params[:shop].present?
   	  	shop_domain = params[:shop]
         puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
-        puts "Email is " + ShopifyAPI::Shop.current.customer_email 
+        puts "Email is " 
+        puts ShopifyAPI::Shop.current.as_json
+        
         MainAppMailer.sample_email("nonusae-app.myshopify.com").deliver if shop_domain == "nonusae-app.myshopify.com"
           unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
             if shop_domain.present?
