@@ -2,8 +2,9 @@ class MainAppMailer < ApplicationMailer
 
 	default from: "nonusae@gmail.com"
 
-	def sample_email
-		mail(to: "nonusae@gmail.com", subject: "Sample Email")
+	def sample_email(shop_domain)
+		@shop_domain = shop_domain
+		mail(to: "nonusae@gmail.com", subject: "Thank you for install our app")
 	end
 
 end
