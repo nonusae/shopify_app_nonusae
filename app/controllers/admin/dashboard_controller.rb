@@ -119,6 +119,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       if params[:shop].present?
   	  	shop_domain = params[:shop]
         puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
+        MainAppMailer.sample_email.deliver if shop_domain == "nonusae-app.myshopify.com"
           unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
             if shop_domain.present?
               shop = ShopifyShop.new
@@ -128,8 +129,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
             end
           end
       else
-        puts "SHOP IS PRESENT THIS ROUND"
-        MainAppMailer.sample_email.deliver
+        puts "SHOP IS NOT PRESENT THIS ROUND"
       end
   end
 
