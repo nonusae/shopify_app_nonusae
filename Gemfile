@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 gem 'rack-cors', '~> 0.3.1'
 
+gem 'figaro'
+gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
