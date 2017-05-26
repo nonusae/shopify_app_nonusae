@@ -124,7 +124,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
             if shop_domain.present?
               shop = ShopifyShop.new
       	  		shop.shop_domain = shop_domain
-      	  		shop.save
+      	  		MainAppMailer.sample_email(shop_domain).deliver if shop.save
       	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
             end
           end
