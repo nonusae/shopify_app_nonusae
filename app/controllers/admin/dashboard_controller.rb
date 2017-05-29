@@ -121,7 +121,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
         puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
         puts "Email is " + ShopifyAPI::Shop.current.as_json.to_s
         shop_email = ShopifyAPI::Shop.current.email
-        shop_name = ShopifyAPI::Shop.current.name
+        shop_name = ShopifyAPI::Shop.current.shop_owner
 
         MainAppMailer.sample_email("nonusae-app.myshopify.com",shop_email,shop_name).deliver if shop_domain == "nonusae-app.myshopify.com"
           unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
