@@ -119,14 +119,16 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
       if params[:shop].present?
   	  	shop_domain = params[:shop]
         puts "!!!!!!!! SHOP  PRESENT THIS ROUND !!!!"
-        puts "Email is " + ShopifyAPI::Shop.current.email
+        puts "Email is " + ShopifyAPI::Shop.current.as_json.to_s
+        shop_email = ShopifyAPI::Shop.current.email
+        shop_name = ShopifyAPI::Shop.current.name
 
-        MainAppMailer.sample_email("nonusae-app.myshopify.com",ShopifyAPI::Shop.current.email).deliver if shop_domain == "nonusae-app.myshopify.com"
+        MainAppMailer.sample_email("nonusae-app.myshopify.com",shop_email,shop_name).deliver if shop_domain == "nonusae-app.myshopify.com"
           unless @shop = ShopifyShop.find_by_shop_domain(shop_domain)
             if shop_domain.present?
               shop = ShopifyShop.new
       	  		shop.shop_domain = shop_domain
-      	  		MainAppMailer.sample_email(shop_domain,ShopifyAPI::Shop.current.email).deliver if shop.save
+      	  		MainAppMailer.sample_email(shop_domain,shop_email,shop_name).deliver if shop.save
       	  		@shop = ShopifyShop.find_by_shop_domain(shop_domain)
             end
           end
