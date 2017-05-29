@@ -1,6 +1,6 @@
 class MainAppMailer < ApplicationMailer
 
-	default from: "Solutionsify"
+	default :from => "Solutionsify <no-reply@email.com>"
 
 	def sample_email(shop_domain,email,shop_name)
 		@shop_domain = shop_domain
