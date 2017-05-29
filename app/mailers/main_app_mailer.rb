@@ -1,6 +1,6 @@
 class MainAppMailer < ApplicationMailer
 
-	default from: "solutionsify@gmail.com"
+	default from: "Solutionsify"
 
 	def sample_email(shop_domain,email,shop_name)
 		@shop_domain = shop_domain
