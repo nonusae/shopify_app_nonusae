@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'proxy' => 'proxy#index'
   get 'instructions' => 'admin/dashboard#instructions'
   get 'theme_automate' => 'admin/dashboard#theme_check'
-  get 'get_shopee_products_csv' => 'admin/dashboard#get_shopee_products_csv'
+  get 'get_shopee_products_csv_all' => 'admin/dashboard#get_shopee_products_csv_all'
   
   controller :sessions do
     get 'login' => :new, :as => :login

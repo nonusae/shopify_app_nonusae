@@ -220,8 +220,8 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end
 
 
-  def get_shopee_products_csv
-    response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json?page=1").body
+  def get_shopee_products_csv(page,mode)
+    response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json?page=#{page}").body
 
 
     json_res = JSON.parse(response)
@@ -229,9 +229,10 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
 
     total = product_json.count
-    CSV.open("file.csv", "wb") do |csv|
+    CSV.open("file.csv", mode) do |csv|
         (-1..(total-1)).each do | i |
           if i == -1
+            if mode == "wb"
               csv << ["เลข id หมวดหมู่สินค้า่",
               "ชื่อสินค้า่",
               "รายละเอียด",
@@ -302,7 +303,10 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
               "ตัวเลือกสินค้า 15: สินค้าคงคลัง",
               "ตัวเลือกสินค้า 15: เลขอ้างอิงหน่วยสต็อกสินค้า(SKU Ref. No.)"
               ]
-              next    
+              next
+            else ## if mode = "a"
+              next
+            end      
           end
           product = product_json[i]
           id = "1"
@@ -402,9 +406,21 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
               ]
         end
     end    
-  
-    send_file "file.csv"
+
+    # send_file "file.csv"
   end ## end of get_shopee
+
+def get_shopee_products_csv_all
+  (1..50).each do |page|
+    if page == 1
+      mode = "wb"
+      get_shopee_products_csv(page,mode)
+    else
+      mode = "ab"
+      get_shopee_products_csv(page,mode)
+    end   
+  end
+end
 
 private
 
