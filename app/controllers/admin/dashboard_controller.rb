@@ -411,15 +411,16 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end ## end of get_shopee
 
 def get_shopee_products_csv_all
-  (1..50).each do |page|
+  (1..3).each do |page|
     if page == 1
       mode = "wb"
-      get_shopee_products_csv(page,mode)
+      get_shopee_products_csv(page.to_s,mode)
     else
       mode = "ab"
-      get_shopee_products_csv(page,mode)
+      get_shopee_products_csv(page.to_s,mode)
     end   
   end
+  send_file "file.csv"
 end
 
 private
