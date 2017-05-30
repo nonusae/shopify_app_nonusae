@@ -419,7 +419,7 @@ def get_shopee_products_csv_all
     max_page = total_decimal
   end  
 
-  (1..maxpage).each do |page|
+  (1..max_page).each do |page|
     if page == 1
       mode = "wb"
       get_shopee_products_csv(page.to_s,mode)
