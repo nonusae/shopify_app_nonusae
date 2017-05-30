@@ -416,7 +416,7 @@ def get_shopee_products_csv_all
     response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products/count.json").body
     total_product =JSON.parse(response)["count"]
     total_decimal = (total_product/50.0).ceil
-    max_page = total_decimal
+    max_page = total_decimal-1
   end  
 
   (1..max_page).each do |page|
