@@ -221,9 +221,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
 
   def get_shopee_products_csv(page,mode)
-    response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json?page=#{page}").body
-
-
+    response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json").body
     json_res = JSON.parse(response)
     product_json = json_res["products"] # this is an array of product
 
@@ -411,7 +409,17 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
   end ## end of get_shopee
 
 def get_shopee_products_csv_all
-  (1..3).each do |page|
+  max_page = 0
+  max_page = params[:maxpage].to_i if params[:maxpage].present?
+
+  if max_page == 0 
+    response = HTTParty.get("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products/count.json")
+    total_product =JSON.parse(response)["count"]
+    total_decimal = (total_product/50.0).ceil
+    max_page = total_decimal
+  end  
+
+  (1..maxpage).each do |page|
     if page == 1
       mode = "wb"
       get_shopee_products_csv(page.to_s,mode)
