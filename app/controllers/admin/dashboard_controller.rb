@@ -476,6 +476,7 @@ private
  def check_billing
     bill = ShopifyAPI::RecurringApplicationCharge.current
     puts bill.to_s
+    puts "Test is the current chrage information"
     puts ShopifyAPI::RecurringApplicationCharge.as_json
     if bill.present?
       @new_user = false
