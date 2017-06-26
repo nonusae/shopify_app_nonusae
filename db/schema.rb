@@ -11,10 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170509073852) do
+ActiveRecord::Schema.define(version: 20170626081134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "images", force: :cascade do |t|
+    t.string   "img_url"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "product_id"
+    t.string   "lazada_url"
+  end
+
+  add_index "images", ["product_id"], name: "index_images_on_product_id", using: :btree
+
+  create_table "products", force: :cascade do |t|
+    t.string   "shopify_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "vendor"
+    t.string   "handle"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "short_description"
+    t.string   "model"
+    t.string   "name_en"
+    t.string   "seller_sku"
+    t.string   "price"
+    t.string   "package_content"
+    t.string   "package_weight"
+    t.string   "quantity"
+    t.string   "weight"
+  end
 
   create_table "shopify_shops", force: :cascade do |t|
     t.string   "shop_domain"

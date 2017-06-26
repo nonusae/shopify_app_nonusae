@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   mount ShopifyApp::Engine, at: '/'
   
   root :to => 'admin/dashboard#index'
