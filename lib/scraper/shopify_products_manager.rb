@@ -35,7 +35,7 @@ module Scraper
                 model = product["product_type"]
                 full_description = product["body_html"]
                 short_description = self.get_short_description(full_description)
-                seller_sku = "thaidiycupcake-a-" + rand(1000).to_s
+                seller_sku = "diycake" + rand(10000).to_s
                 quantity = first_variant["inventory_quantity"]
                 price = first_variant["price"]
                 package_content = product["title"]
@@ -143,8 +143,7 @@ module Scraper
                         :Skus => {
                             :Sku => {
                                 :SellerSku => product.seller_sku,
-                                :barcode_ean => "6901294175372",
-                                :color_family => "Green",
+                                :color_family => "Not Specified",
                                 :size => "41",
                                 :quantity => product.quantity,
                                 :price => (product.price.to_i * 2.0).to_s,
