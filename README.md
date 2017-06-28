@@ -43,3 +43,19 @@ rake product_tasks:import_products[no_of_product,page,collection_id,product_type
 ```ruby
 rake product_tasks:import_products[2,1,3310]
 ```
+
+### Upload products to Lazada
+
+ - For upload products in database to lazada use following command
+
+ ```ruby
+rake product_tasks:upload_to_lazada
+```
+
+### Clear database
+
+ - Uploading product to lazada task will upload all product in database to Lazada(If product is duplicated the uploader will skip it automatically). However I recommend to reset/clear our database everytime you want to upload new set products.
+
+ ```ruby
+rake product_tasks:clear 
+```
