@@ -26,7 +26,6 @@ http://demacmedia.com/blog/shopify-pp
 ## How to Use Custom Task
 
  - For import product from Shopify Using shopify api. Enter command in following format in terminal
-
-``ruby
+```ruby
 rake product_tasks:import_products[no_of_product]
-``
+```
