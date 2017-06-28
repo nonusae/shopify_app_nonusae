@@ -109,7 +109,7 @@ module Scraper
                     puts "Product with 0 images destroying..."
                     puts ""
                     product_ins.destroy
-                    max+1
+                    max += 1
                 end
 
             end
