@@ -7,8 +7,18 @@ module Scraper
         require "active_support/all"
         require "scraper/image_uploader"
 
-        def self.import(max)
-            response = HTTParty.get(URI.encode("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json")).body
+        def self.import(max,page,collection_id,product_type,vendor)
+            query_string = ""
+            query_string = "page=#{page}" if page
+            query_string += "&product_type=#{product_type}" if product_type
+            query_string += "&collection_id=#{collection_id}" if collection_id
+            query_string += "&vendor=#{vendor}" if vendor
+            puts ""
+            puts "---------------------------------------------------------------------------------"
+            puts ""
+            puts "Query string is :"  + " " + query_string
+
+            response = HTTParty.get(URI.encode("https://b7b232283836b5124bc13e40b1299be2:0f66356e3fd198115d2698a710db71f1@thaidiycupcake.myshopify.com/admin/products.json?#{query_string}&order=created_at+DESC")).body
             json_res = JSON.parse(response)
 
             product_json = json_res["products"] # this is an array of product
@@ -18,19 +28,20 @@ module Scraper
             maximum = total if max == "0"
             max = max.to_i
             i = 0
-            puts max.to_i
             while i <= max-1     
             # (0..(2)).each do | i |
-                puts i.to_s +  " " + max.to_s
                 i += 1
                 product = product_json[i]
                 first_variant = product["variants"][0]
                 if Product.find_by_title(product["title"])
-                    puts "duplicated"
+                    puts "Duplicated"
                     max += 1
                     next 
                 end
                 title = product["title"]
+                puts ""
+                puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+                puts ""
                 puts "Product title is " + title
                 model = product["product_type"]
                 full_description = product["body_html"]
@@ -74,7 +85,9 @@ module Scraper
                         image.height = img_height
 
                          if image.save
-                            puts "New image creatred"
+                            puts ""
+                            puts "----------------------------------------------------"
+                            puts "New image created"
                             puts "Beginning migrate image id = " + image.id.to_s
                             begin
                                 sleep(1)
@@ -87,7 +100,15 @@ module Scraper
                     else
                         next
                     end
-                end   
+                    puts "----------------------------------------------------"
+                end  #End of 0..8 
+
+                if product_ins.images.count == 0
+                    puts ""
+                    puts "Product with 0 images destroying..."
+                    puts ""
+                    product_ins.destroy
+                end
 
             end
 

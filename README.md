@@ -21,3 +21,11 @@ http://demacmedia.com/blog/shopify-pp
 
 - turbolinks disabled by default
 - don't need all that AJAX jazz happening inside the Shopify admin panel -- messes with deep-linking
+
+
+## How to Use Custom Task
+
+ - For import product from Shopify Using shopify api. Enter command in following format in terminal
+``Ruby
+rake product_tasks:import_products[no_of_product]
+``

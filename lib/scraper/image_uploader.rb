@@ -64,6 +64,8 @@ module Scraper
                 return "Sucesss"
             else
                 puts "Upload Image Fail !!. Wih image id = " + image_id.to_s
+                puts "Destroying image from database..."
+                image.destroy
                 puts res
                 return "Fail"
             end
