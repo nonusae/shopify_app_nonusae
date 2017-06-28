@@ -30,7 +30,7 @@ http://demacmedia.com/blog/shopify-pp
 rake product_tasks:import_products[no_of_product]
 ```
 
-	- For Example if you to import 2 products from first page shopify store with  collection id =3310. You have to enter following command
+ - For Example if you to import 2 products from first page shopify store with  collection id =3310. You have to enter following command
 
 ```ruby
 rake product_tasks:import_products[2,1,3310]
