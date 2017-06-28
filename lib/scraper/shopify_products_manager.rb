@@ -55,7 +55,8 @@ module Scraper
                 package_height = "10"
                 package_length =  "10"
                 name_en = product["handle"].gsub("-"," ")
-                name_en[0] = name_en[0].capitalize! unless Float(name_en[0])
+                # puts name_en
+                name_en[0] = name_en[0].capitalize! unless (name_en[0] =~ /^[0-9]+$/)
 
                 product_ins = Product.new
                 product_ins.title = title
