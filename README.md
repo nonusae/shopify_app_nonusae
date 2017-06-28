@@ -3,7 +3,7 @@
 
 ## How to Use Custom Task
 
-### Import Pproducts
+### Import products
 
  - For import product from Shopify Using shopify api. Enter command in following format in terminal
  	- no_of_product =>  number of products you need to import (Enter 0 to import all products from output)
