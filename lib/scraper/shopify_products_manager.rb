@@ -30,8 +30,8 @@ module Scraper
             i = 0
             while i <= max-1     
             # (0..(2)).each do | i |
-                i += 1
                 product = product_json[i]
+                i += 1
                 first_variant = product["variants"][0]
                 if Product.find_by_title(product["title"])
                     puts "Duplicated"
