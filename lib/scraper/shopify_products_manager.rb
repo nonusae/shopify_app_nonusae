@@ -150,6 +150,26 @@ module Scraper
                 image_hash[String.new("Image")] = image.lazada_url
                 i += 1
             end 
+
+            ## price manipulator
+                input_price = product.price.to_i
+                if input_price > 100
+                    modified_price = (input_price * 1.13).to_i
+                    last_digit = (modified_price.to_s[-1]).to_i
+                    if last_digit > 0 and last_digit < 5
+                        last_digit = 5
+                        new_modified_price =  modified_price.to_s[0..-2] + last_digit.to_s
+                    elsif last_digit >5 and last_digit < 9
+                        last_digit =9
+                        new_modified_price =  modified_price.to_s[0..-2] + last_digit.to_s
+                    else
+                        new_modified_price = modified_price.to_s
+                    end
+
+                    new_modified_price = new_modified_price.to_i
+
+                end
+            ##
             data = {
                     :Product => {
                         :PrimaryCategory => "4709",
@@ -169,8 +189,8 @@ module Scraper
                                 :color_family => "Not Specified",
                                 :size => "41",
                                 :quantity => product.quantity,
-                                :price => (product.price.to_i * 2.0).to_s,
-                                :special_price => product.price.to_s,
+                                :price => (new_modified_price * 2.0).to_s,
+                                :special_price => new_modified_price.to_s,
                                 :special_from_date => DateTime.yesterday.strftime('%Y-%m-%d').to_s,
                                 :special_to_date => (DateTime.yesterday + 5.year ).strftime('%Y-%m-%d').to_s,
                                 :package_length => "10",
