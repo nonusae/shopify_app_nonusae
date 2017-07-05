@@ -133,7 +133,7 @@ module Scraper
 
         end
 
-        def self.upload_to_lazada(product_id,category)
+        def self.upload_to_lazada(product_id,category,multiplier)
 
             product = Product.find_by_id(product_id)
             title = product.title
@@ -171,7 +171,7 @@ module Scraper
             ## price manipulator
                 input_price = product.price.to_i
                 if input_price > 100
-                    modified_price = (input_price * 1.13).to_i
+                    modified_price = (input_price * multiplier.to_f).to_i
                     last_digit = (modified_price.to_s[-1]).to_i
                     if last_digit > 0 and last_digit < 5
                         last_digit = 5

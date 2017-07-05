@@ -32,14 +32,16 @@ namespace :product_tasks do
   end
 
   desc "Uploading to products to lazada account"
-  task :upload_to_lazada,[:category] => [:environment] do |t, args|
+  task :upload_to_lazada,[:category,:multipier] => [:environment] do |t, args|
+    multipier = 1.13
     category = nil
+    multipier = args[:multipier] if args[:multipier].present?
     category =  args[:category] if args[:category].present?
     if category.present?
       Product.all.each do |p|
           puts "uploading product id " + p.id.to_s
           sleep(1)
-          Scraper::ShopifyProductsManager.upload_to_lazada(p.id,category)
+          Scraper::ShopifyProductsManager.upload_to_lazada(p.id,category,multipier)
       end
     else
       puts "Please enter lazada category"
