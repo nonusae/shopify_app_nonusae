@@ -247,8 +247,8 @@ module Scraper
         end
 
         def self.get_short_description(full_description)
-            first_filter = full_description.split.join("")[/<ul>(.*)<\/ul>/,1]
-            puts "FULL is " + full_description.split.join("")
+            first_filter = full_description.split("\n").join("")[/<ul>(.*)<\/ul>/,1]
+            puts "FULL is " + full_description.split("\n").join("")
             if first_filter.present?
                 short_description = "<ul>" + first_filter + "</ul>"
                 puts "1234123"
