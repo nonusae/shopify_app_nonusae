@@ -116,7 +116,7 @@ module Scraper
 
         end
 
-        def self.upload_to_lazada(product_id)
+        def self.upload_to_lazada(product_id,category)
 
             product = Product.find_by_id(product_id)
             title = product.title
@@ -172,7 +172,7 @@ module Scraper
             ##
             data = {
                     :Product => {
-                        :PrimaryCategory => "12024",
+                        :PrimaryCategory => category.to_s,
                         :SPUId => "",
                         :Attributes => {
                             :name => product.title,
