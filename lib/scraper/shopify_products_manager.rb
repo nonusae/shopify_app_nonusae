@@ -177,7 +177,8 @@ module Scraper
                     end
 
                     new_modified_price = new_modified_price.to_i
-
+                else   
+                    new_modified_price = input_price
                 end
             ##
             data = {
