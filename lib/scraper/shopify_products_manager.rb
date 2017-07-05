@@ -213,7 +213,7 @@ module Scraper
                                 :special_to_date => (DateTime.yesterday + 5.year ).strftime('%Y-%m-%d').to_s,
                                 :package_length => "10",
                                 :package_height => "10",
-                                :package_weight => "0.1",
+                                :package_weight => product.package_weight,
                                 :package_width => "10",
                                 :package_content => product.package_content,
                                 :Images =>  image_hash  #End of Images
