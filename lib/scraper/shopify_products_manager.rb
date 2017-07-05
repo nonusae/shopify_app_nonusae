@@ -46,7 +46,12 @@ module Scraper
                 model = product["product_type"]
                 full_description = product["body_html"]
                 short_description = self.get_short_description(full_description)
-                seller_sku = "diycake" + rand(10000).to_s
+                puts first_variant["sku"] + "  AAAAAAAAAA"
+                unless first_variant["sku"] == "nil"
+                    seller_sku = first_variant["sku"] 
+                else   
+                    seller_sku = "diycake" + rand(10000).to_s
+                end
                 quantity = first_variant["inventory_quantity"]
                 price = first_variant["price"]
                 package_content = product["title"]
