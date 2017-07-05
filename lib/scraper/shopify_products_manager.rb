@@ -46,6 +46,7 @@ module Scraper
                 model = product["product_type"]
                 full_description = product["body_html"]
                 short_description = self.get_short_description(full_description)
+                puts "SHORT DES is " + short_description
                 # puts first_variant["sku"] + "  AAAAAAAAAA"
                 unless first_variant["sku"] == "nil"
                     seller_sku = first_variant["sku"] 
@@ -55,7 +56,11 @@ module Scraper
                 quantity = first_variant["inventory_quantity"]
                 price = first_variant["price"]
                 package_content = product["title"]
-                (first_variant["grams"] != "0") ? package_weight = first_variant["grams"] : package_weight = "0.15"
+                if first_variant["grams"] == "0" || first_variant["grams"] == 0
+                    package_weight = "0.15"
+                else
+                    package_weight = (first_variant["grams"].to_i * 0.001).to_s
+                end
                 package_width = "10"
                 package_height = "10"
                 package_length =  "10"
@@ -181,7 +186,7 @@ module Scraper
                         :SPUId => "",
                         :Attributes => {
                             :name => product.title,
-                            :short_description => '<![CDATA[<ul><li>รับประกันสินค้า</li><li>คุณภาพดี</li><li>สินค้าพร้อมส่ง</li></ul>',
+                            :short_description => '<![CDATA[' + short_description,
                             :description => product.description,
                             :name_en => product.name_en,
                             :warranty_type => "Warranty by Seller",
@@ -234,6 +239,16 @@ module Scraper
         end
 
         def self.get_short_description(full_description)
+            first_filter = full_description.split.join("")[/<ul>(.*)<\/ul>/,1]
+            puts "FULL is " + full_description.split.join("")
+            if first_filter.present?
+                short_description = "<ul>" + first_filter + "</ul>"
+                puts "1234123"
+            else
+                short_description = "<ul><li>รับประกันสินค้า</li><li>คุณภาพดี</li><li>สินค้าพร้อมส่ง</li></ul>"
+            end
+
+            return short_description
         end
     end
 end
