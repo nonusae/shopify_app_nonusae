@@ -172,7 +172,7 @@ module Scraper
             ##
             data = {
                     :Product => {
-                        :PrimaryCategory => "4709",
+                        :PrimaryCategory => "12024",
                         :SPUId => "",
                         :Attributes => {
                             :name => product.title,
