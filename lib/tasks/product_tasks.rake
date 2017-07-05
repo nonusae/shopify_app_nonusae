@@ -32,7 +32,7 @@ namespace :product_tasks do
   end
 
   desc "Uploading to products to lazada account"
-  task :upload_to_lazada,[:category] => [:environment] do
+  task :upload_to_lazada,[:category] => [:environment] do |t, args|
     category = nil
     category =  args[:category] if args[:category].present?
     if category.present?
