@@ -33,6 +33,13 @@ module Scraper
                 product = product_json[i]
                 i += 1
                 first_variant = product["variants"][0]
+
+                if product["variants"].count > 1
+                    puts "Product with multiple variants. Skip..."
+                    max += 1
+                    next 
+                end
+
                 if Product.find_by_title(product["title"])
                     puts "Duplicated"
                     max += 1
