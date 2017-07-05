@@ -46,7 +46,7 @@ module Scraper
                 model = product["product_type"]
                 full_description = product["body_html"]
                 short_description = self.get_short_description(full_description)
-                puts first_variant["sku"] + "  AAAAAAAAAA"
+                # puts first_variant["sku"] + "  AAAAAAAAAA"
                 unless first_variant["sku"] == "nil"
                     seller_sku = first_variant["sku"] 
                 else   
