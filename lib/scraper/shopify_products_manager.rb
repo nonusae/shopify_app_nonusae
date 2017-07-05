@@ -55,7 +55,7 @@ module Scraper
                 short_description = self.get_short_description(full_description)
                 puts "SHORT DES is " + short_description
                 # puts first_variant["sku"] + "  AAAAAAAAAA"
-                unless first_variant["sku"] == "nil"
+                unless first_variant["sku"] == "null"
                     seller_sku = first_variant["sku"] 
                 else   
                     seller_sku = "diycake" + rand(10000).to_s
