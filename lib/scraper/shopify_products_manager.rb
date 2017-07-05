@@ -186,7 +186,7 @@ module Scraper
                         :SPUId => "",
                         :Attributes => {
                             :name => product.title,
-                            :short_description => '<![CDATA[' + short_description,
+                            :short_description => '<![CDATA[' + product_ins.short_description,
                             :description => product.description,
                             :name_en => product.name_en,
                             :warranty_type => "Warranty by Seller",
