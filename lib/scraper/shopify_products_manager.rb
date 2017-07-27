@@ -200,6 +200,7 @@ module Scraper
                             :description => product.description,
                             :name_en => product.name_en,
                             :warranty_type => "Warranty by Seller",
+                            :warranty => "3 Months",
                             :brand => "Thai DIY Cupcake",
                             :model => product.model,
                         },# End of Attribues

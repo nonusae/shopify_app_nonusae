@@ -37,6 +37,9 @@ namespace :product_tasks do
     category = nil
     multipier = args[:multipier] if args[:multipier].present?
     category =  args[:category] if args[:category].present?
+    total = Product.count
+    success_no = 0
+    fail_no = 0
     if category.present?
       Product.all.each do |p|
           puts "uploading product id " + p.id.to_s
@@ -46,6 +49,12 @@ namespace :product_tasks do
     else
       puts "Please enter lazada category"
     end
+
+    puts "Finish upload product..."
+    puts "Total: #{total.to_s}"
+    puts "Sucess: #{success_no.to_s}"
+    puts "Fail: #{fail_no}"
+
   end
 
   desc "Clear all product database"
