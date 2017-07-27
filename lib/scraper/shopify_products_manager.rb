@@ -137,6 +137,8 @@ module Scraper
 
         def self.upload_to_lazada(product_id,category,multiplier)
 
+            final_error = nil
+
             product = Product.find_by_id(product_id)
             title = product.title
 
@@ -245,7 +247,21 @@ module Scraper
 
             puts res
 
+            if res["ErrorResponse"].present?
+                sku = res["ErrorResponse"]["Body"]["Errors"][0]["SellerSku"]
+                field = res["ErrorResponse"]["Body"]["Errors"][0]["Field"]
+                message = res["ErrorResponse"]["Body"]["Errors"][0]["Message"]
+                error_hash = { error: 
+                                      {
+                                        sku: sku,
+                                        field: field,
+                                        message: message
+                                      }
+                                }
+                final_error = error_hash
+            end
 
+            return final_error
 
         end
 

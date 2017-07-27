@@ -40,20 +40,47 @@ namespace :product_tasks do
     total = Product.count
     success_no = 0
     fail_no = 0
+    error_hash = []
     if category.present?
       Product.all.each do |p|
           puts "uploading product id " + p.id.to_s
           sleep(1)
-          Scraper::ShopifyProductsManager.upload_to_lazada(p.id,category,multipier)
+          error = Scraper::ShopifyProductsManager.upload_to_lazada(p.id,category,multipier)
+          unless error.nil?
+            error_hash << error
+            fail_no += 1
+          else
+            success_no += 1
+          end
       end
     else
       puts "Please enter lazada category"
     end
-
+    puts ""
     puts "Finish upload product..."
+    puts "Summary of uploading"
     puts "Total: #{total.to_s}"
     puts "Sucess: #{success_no.to_s}"
     puts "Fail: #{fail_no}"
+
+    m = 0
+    if error_hash.count > 0
+      error_hash.each do |error|
+        m += 1
+        sku = error[:error][:sku]
+        field = error[:error][:field]
+        message = error[:error][:message]
+        puts "--------------------------------------------"
+        puts "Error no.#{m}"
+        puts "Sku: #{sku}"
+        puts "Field: #{field}"
+        puts "Message: #{message}"
+        puts "--------------------------------------------"
+        puts ""
+      end
+    end
+
+    puts "-------------- Finish Upload ------------------" 
 
   end
 
