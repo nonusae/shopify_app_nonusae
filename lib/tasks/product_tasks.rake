@@ -25,7 +25,22 @@ namespace :product_tasks do
     puts "vendor = " + vendor.to_s 
     puts '####################################################' 
 
-    Scraper::ShopifyProductsManager.import(no_of_products,page,collection_id,product_type,vendor)
+    result = Scraper::ShopifyProductsManager.import(no_of_products,page,collection_id,product_type,vendor)
+
+    fail_image_no = result[0]
+    fail_images_array =  result[1]
+
+    puts "Import completed: #{fail_image_no.to_s} images fails to upload"
+    puts ""
+    if fail_images_array.count > 0
+      m = 0
+      fail_images_array.each do |i|
+        m += 1  
+        puts "Fail image url #{m} "
+        puts i.to_s
+        puts ""
+      end
+    end
 
     puts "---------------------------------------------------------------------------------"
 

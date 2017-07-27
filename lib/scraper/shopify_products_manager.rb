@@ -8,6 +8,8 @@ module Scraper
         require "scraper/image_uploader"
 
         def self.import(max,page,collection_id,product_type,vendor)
+            image_error = 0 
+            fail_images_array =[]
             query_string = ""
             query_string = "page=#{page}" if page
             query_string += "&product_type=#{product_type}" if product_type
@@ -93,6 +95,7 @@ module Scraper
                 if product_ins.save
                     product_id = product_ins.id
                 end
+
                 (0..8).each do |n|
                     if product["images"][n]
                         img_src = product["images"][n]["src"]
@@ -112,7 +115,12 @@ module Scraper
                             begin
                                 sleep(1)
                                 result = Scraper::ImageUploader.lazada_migrate(image.id)
-                                puts "Success migrate !!" if result == "Success"
+                                puts "Success migrate !!" if result[0] == "Success"
+                                if result[0] == "Fail"
+                                    image_error += 1 
+                                    img_fail_url = result[1]
+                                    fail_images_array << img_fail_url
+                                end
                             rescue
                                 puts "Error in image migration"
                             end
@@ -132,7 +140,7 @@ module Scraper
                 end
 
             end
-
+            return [image_error,fail_images_array]
         end
 
         def self.upload_to_lazada(product_id,category,multiplier)

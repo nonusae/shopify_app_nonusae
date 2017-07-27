@@ -61,13 +61,13 @@ module Scraper
             if json_res["SuccessResponse"]
                 location = json_res["SuccessResponse"]["Body"]["Image"]["Url"]
                 image.update_attribute(:lazada_url, location)
-                return "Sucesss"
+                return ["Sucesss",""]
             else
                 puts "Upload Image Fail !!. Wih image id = " + image_id.to_s
                 puts "Destroying image from database..."
                 image.destroy
                 puts res
-                return "Fail"
+                return ["Fail",src.to_s]
             end
 
             # puts res
