@@ -32,6 +32,8 @@ module Scraper
             # (0..(2)).each do | i |
                 product = product_json[i]
                 i += 1
+                # puts "i = #{i}"
+                next if product.nil?
                 first_variant = product["variants"][0]
 
                 if product["variants"].count > 1
