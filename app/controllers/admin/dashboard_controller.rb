@@ -10,9 +10,7 @@ class Admin::DashboardController < ShopifyApp::AuthenticatedController
 
       @shop_domain = @shop.shop_domain
       
-      if @shop.shop_domain == "nonusae-app.myshopify.com"
-        console
-      end
+      
 
       if ((@new_user) && !(@shop.shop_domain == "nonusae-app.myshopify.com") && !(@shop.shop_domain == "thaidiycupcake.myshopify.com") ) #(@shop.shop_domain == "nonusae-app.myshopify.com")
         puts "NEW USer !!!!!"
