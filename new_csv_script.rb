@@ -1,7 +1,9 @@
 require 'csv'
 require 'httparty'
+require './lib/html_to_plain_text'
 
  def get_shopee_products_csv(page,mode,product_type,collection_id,vendor,category_id,days_to_ship)
+    convertor = HtmlToPlainText
     query_string = ""
     query_string = "page=#{page}" if page
     query_string += "&product_type=#{product_type}" if product_type
@@ -38,15 +40,15 @@ require 'httparty'
               "ps_variation 3 ps_variation_sku",
               "ps_variation 3 ps_variation_name",
               "ps_variation 3 ps_variation_price",
-              "ps_variation 3 ps_variation_stock", 
+              "ps_variation 3 ps_variation_stock",
               "ps_variation 4 ps_variation_sku",
               "ps_variation 4 ps_variation_name",
               "ps_variation 4 ps_variation_price",
-              "ps_variation 4 ps_variation_stock",             
+              "ps_variation 4 ps_variation_stock",
               "ps_variation 5 ps_variation_sku",
               "ps_variation 5 ps_variation_name",
               "ps_variation 5 ps_variation_price",
-              "ps_variation 5 ps_variation_stock", 
+              "ps_variation 5 ps_variation_stock",
               "ps_variation 6 ps_variation_sku",
               "ps_variation 6 ps_variation_name",
               "ps_variation 6 ps_variation_price",
@@ -58,15 +60,15 @@ require 'httparty'
               "ps_variation 8 ps_variation_sku",
               "ps_variation 8 ps_variation_name",
               "ps_variation 8 ps_variation_price",
-              "ps_variation 8 ps_variation_stock", 
+              "ps_variation 8 ps_variation_stock",
               "ps_variation 9 ps_variation_sku",
               "ps_variation 9 ps_variation_name",
               "ps_variation 9 ps_variation_price",
-              "ps_variation 9 ps_variation_stock",             
+              "ps_variation 9 ps_variation_stock",
               "ps_variation 10 ps_variation_sku",
               "ps_variation 10 ps_variation_name",
               "ps_variation 10 ps_variation_price",
-              "ps_variation 10 ps_variation_stock", 
+              "ps_variation 10 ps_variation_stock",
               "ps_variation 11 ps_variation_sku",
               "ps_variation 11 ps_variation_name",
               "ps_variation 11 ps_variation_price",
@@ -78,15 +80,15 @@ require 'httparty'
               "ps_variation 13 ps_variation_sku",
               "ps_variation 13 ps_variation_name",
               "ps_variation 13 ps_variation_price",
-              "ps_variation 13 ps_variation_stock", 
+              "ps_variation 13 ps_variation_stock",
               "ps_variation 14 ps_variation_sku",
               "ps_variation 14 ps_variation_name",
               "ps_variation 14 ps_variation_price",
-              "ps_variation 14 ps_variation_stock",             
+              "ps_variation 14 ps_variation_stock",
               "ps_variation 15 ps_variation_sku",
               "ps_variation 15 ps_variation_name",
               "ps_variation 15 ps_variation_price",
-              "ps_variation 15 ps_variation_stock", 
+              "ps_variation 15 ps_variation_stock",
               "ps_img_1",
               "ps_img_2",
               "ps_img_3",
@@ -100,12 +102,12 @@ require 'httparty'
               next
             else ## if mode = "a"
               next
-            end      
+            end
           end
           product = product_json[i]
           id = category_id.to_s
           title = product["title"]
-          description = product["title"]
+          description = convertor.convert_to_text(product["body_html"])
           price = product["variants"][0]["price"]
           product["variants"][0]["inventory_quantity"] != 1 ? inventory = product["variants"][0]["inventory_quantity"] : inventory = 99
           weight = product["variants"][0]["weight"]
@@ -117,17 +119,17 @@ require 'httparty'
           v_inventory =[]
           img = []
           (0..14).each do |m|
-            if product["variants"][m+1] 
+            if product["variants"][m+1]
                 v_sku[m] = product["variants"][m+1]["sku"]
                 v_title[m] = product["variants"][m+1]["title"]
-                v_price[m] = product["variants"][m+1]["price"]  
-                product["variants"][m+1]["inventory_quantity"] != 1 ? v_inventory[m] = product["variants"][m+1]["inventory_quantity"] : v_inventory[m] = "99"           
+                v_price[m] = product["variants"][m+1]["price"]
+                product["variants"][m+1]["inventory_quantity"] != 1 ? v_inventory[m] = product["variants"][m+1]["inventory_quantity"] : v_inventory[m] = "99"
             else
                 v_sku[m] =  ""
                 v_title[m] =  ""
                 v_price[m] = ""
                 v_inventory[m] = ""
-            end 
+            end
           end
 
           (0..8).each do |n|
@@ -218,7 +220,7 @@ require 'httparty'
               img[8]
               ]
         end
-    end    
+    end
 
     # send_file "file.csv"
   end ## end of get_shopee
@@ -238,7 +240,7 @@ def get_shopee_products_csv_all(maxpage,product_type,collection_id,vendor,catego
     total_decimal = (total_product/50.0).ceil
     max_page = total_decimal
     puts "maxpage is " + max_page.to_s
-  end  
+  end
 
   (1..max_page).each do |page|
     puts "Processing page: " + page.to_s + "..."
@@ -248,7 +250,7 @@ def get_shopee_products_csv_all(maxpage,product_type,collection_id,vendor,catego
     else
       mode = "ab"
       get_shopee_products_csv(page.to_s,mode,product_type,collection_id,vendor,category_id,days_to_ship)
-    end   
+    end
   end
   # send_file "file.csv"
 end

@@ -1,0 +1,35 @@
+{
+"debride": {
+  "rails": true //Add some rails call conversions.
+}
+
+"ruby" //no settings
+"reek" //no settings
+"fasterer" //no settings
+
+"ruby-lint": {
+  "levels": [ /* a subset of these */
+    "error",
+    "warning",
+    "info"
+  ],
+  "classes": [ /* a subset of these */
+    "argument_amount",
+    "loop_keywords",
+    "pedantics",
+    "shadowing_variables",
+    "undefined_methods",
+    "undefined_variables",
+    "unused_variables",
+    "useless_equality_checks"
+  ]
+}
+
+"rubocop": {
+  "lint": true, //enable all lint cops.
+  "only": [ /* array: Run only the specified cop(s) and/or cops in the specified departments. */],
+  "except": [ /* array: Run all cops enabled by configuration except the specified cop(s) and/or departments. */],
+  "require": [ /* array: Require Ruby files. */],
+  "rails": true //Run extra rails cops
+}
+}

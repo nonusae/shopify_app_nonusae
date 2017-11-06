@@ -21,6 +21,8 @@ gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+gem 'flog'
+
 
 group :development, :test do
  
