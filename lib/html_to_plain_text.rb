@@ -69,7 +69,7 @@ module HtmlToPlainText
     txt.gsub!(/(<\/span>)[\s]+(<span)/mi, '\1 \2')
 
     # lists -- TODO: should handle ordered lists
-    txt.gsub!(/[\s]*(<li[^>]*>)[\s]*/i, '* ')
+    txt.gsub!(/[\s]*(<li[^>]*>)[\s]*/i, '- ')
     # list not followed by a newline
     txt.gsub!(/<\/li>[\s]*(?![\n])/i, "\n")
 
